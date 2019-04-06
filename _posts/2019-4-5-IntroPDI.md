@@ -13,5 +13,8 @@ que tanto las coordenadas, así como los niveles de brillo, sean de naturaleza d
 continua respecto a una imagen digital.
 
 ![Parroquia]({{ site.baseurl }}/images/iglesia.png)
-> Espero y se vea chido
+> _Figura 1.1_ Parroquia de Nuestra Señora de la Asunción, Lagos de Moreno, Jal. La 
+imagen de la izquiera es una representación de una imagen continua, y a la derecha una
+se simula una imagen digital (adquirida por mi poderosísimo Alcatel), donde se observa 
+la constitución discreta de la imagen. 
 
