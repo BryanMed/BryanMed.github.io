@@ -26,3 +26,5 @@ Y &= aX + bU + c \tag{assume linear relationships} \\
 a&= (Y-bU + c)X^{-1} \\
 \end{align}
 $$
+
+jala parillo
