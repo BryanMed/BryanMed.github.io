@@ -1,10 +1,11 @@
 ---
 layout: post
+mathjax: true
 title: Procesamiento Digital de Imágenes - Introducción
 ---
 
 
-# 1.1 Introducción
+# 1.1 ¿Qué es una imagen digital?
 
 Una __imagen digital__ es una función bidimensional _f(x, y)_, en donde _f_ se refiere al nivel de intensidad (brillo) 
 que se encuentra en determinada posición (x, y). Los sistemas de adquisición de estas imágenes, consisten en un arreglo de sensores, 
@@ -15,5 +16,8 @@ continua respecto a una imagen digital.
 ![Parroquia]({{ site.baseurl }}/images/iglesia.png)
 > _Figura 1.1_ Parroquia de Nuestra Señora de la Asunción, Lagos de Moreno, Jal. La imagen de la izquierda es una representación de una imagen continua, y a la derecha se simula una imagen digital (adquirida por mi poderosísimo Alcatel), donde se observa la constitución discreta de la imagen. 
 
+{% raw %} 
+ 	
+$$a^2 + b^2 = c^2$$--> note that all equations between these tags will not need escaping!	
 
-
+ {% endraw %} 
