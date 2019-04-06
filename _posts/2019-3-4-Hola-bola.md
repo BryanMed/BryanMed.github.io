@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Hola bola!
+title: Hola bolita!
 ---
-Así es, ya estoy viendo que onda
+por que no jala?
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
