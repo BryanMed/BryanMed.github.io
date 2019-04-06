@@ -1,3 +1,8 @@
+---
+layout: post
+title: Hola bola!
+---
+
 # Procesamiento Digital de Imágenes
 ## 1.1 Introducción
 
