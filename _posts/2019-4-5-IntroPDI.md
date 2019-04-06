@@ -11,7 +11,7 @@ que tanto las coordenadas, así como los niveles de brillo, sean de naturaleza d
 continua respecto a una imagen digital.
 
 ![Parroquia]({{ site.baseurl }}/images/iglesia.png)
-  __Figura 1.1__ _Parroquia de Nuestra Señora de la Asunción, Lagos de Moreno, Jal. La imagen de la izquierda es una representación de una imagen continua, y a la derecha se simula una imagen digital (adquirida por mi poderosísimo Alcatel), donde se observa la constitución discreta de la imagen_. 
+###### __Figura 1.1__ _Parroquia de Nuestra Señora de la Asunción, Lagos de Moreno, Jal. La imagen de la izquierda es una representación de una imagen continua, y a la derecha se simula una imagen digital (adquirida por mi poderosísimo Alcatel), donde se observa la constitución discreta de la imagen_. 
 
 Estas imágenes son representadas como una matriz de (M x N) elementos de la forma:
 
@@ -24,11 +24,12 @@ corazón se da por la manera en la que están dispuesto el brillo en los pixeles
 
 ![corazón]({{ site.baseurl }}/images/corazonpixel.PNG)
  
- __Figura 1.2__ _Los pixeles definen la información contenida en la imagen, al especificar el nivel de brillo en determinada posición._
+###### __Figura 1.2__ _Los pixeles definen la información contenida en la imagen, al especificar el nivel de brillo en determinada posición._
 
 ## Procesamiento de imágenes
 Son un conjunto de técnicas que tiene como finalidad obtener una representación más adecuada de la imagen, o la extracción de características relevantes encaminadas a obtener información mas profunda. La __Figura 1.3__ muestra estos dos enfoques.
 
 ![corazón]({{ site.baseurl }}/images/imageprocessing.PNG)
-__Figura 1.3__ _La mejora de la imagen (image enhancement) y la extracción de características (feature extraction) son los dos principales objetivos que plantea el procesamiento de imágenes. _
+###### __Figura 1.3__ _La mejora de la imagen (image enhancement) y la extracción de características (feature extraction) son los dos principales objetivos que plantea el procesamiento de imágenes. _
 
+### Bibliografía utilizada
