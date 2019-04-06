@@ -27,7 +27,8 @@ corazón se da por la manera en la que están dispuesto el brillo en los pixeles
  __Figura 1.2__ _Los pixeles definen la información contenida en la imagen, al especificar el nivel de brillo en determinada posición._
 
 ## Procesamiento de imágenes
-Son un conjunto de técnicas que tiene como finalidad obtener una representación más adecuada de la imagen, o la extracción de características relevantes encaminadas a obtener información mas profunda. La _Figurra 1.3_ muestra estos dos enfoques.
+Son un conjunto de técnicas que tiene como finalidad obtener una representación más adecuada de la imagen, o la extracción de características relevantes encaminadas a obtener información mas profunda. La __Figura 1.3__ muestra estos dos enfoques.
 
-
+![corazón]({{ site.baseurl }}/images/imageprocessing.PNG)
+__Figura 1.3__ _La mejora de la imagen (image enhancement) y la extracción de características (feature extraction) son los dos principales objetivos que plantea el procesamiento de imágenes. _
 
