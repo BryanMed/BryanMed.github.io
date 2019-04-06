@@ -11,7 +11,7 @@ que tanto las coordenadas, así como los niveles de brillo, sean de naturaleza d
 continua respecto a una imagen digital.
 
 ![Parroquia]({{ site.baseurl }}/images/iglesia.png)
-> _Figura 1.1_ Parroquia de Nuestra Señora de la Asunción, Lagos de Moreno, Jal. La imagen de la izquierda es una representación de una imagen continua, y a la derecha se simula una imagen digital (adquirida por mi poderosísimo Alcatel), donde se observa la constitución discreta de la imagen. 
+ :camera: _Figura 1.1 Parroquia de Nuestra Señora de la Asunción, Lagos de Moreno, Jal. La imagen de la izquierda es una representación de una imagen continua, y a la derecha se simula una imagen digital (adquirida por mi poderosísimo Alcatel), donde se observa la constitución discreta de la imagen_. 
 
 Estas imágenes son representadas como una matriz de (M x N) elementos de la forma:
 ![grafica]({{ site.baseurl }}/images/CodeCogsEqn (1).png)
@@ -21,7 +21,7 @@ por la cual está conformada una imagen. En la _Figura 1.2_ se observa una image
 en donde, un valor de intensidad igual a 1 corresponde a un pixel color blanco, y negro en caso de ser 0. La formación del
 corazón se da por la manera en la que están dispuesto el brillo en los pixeles en toda la imagen.
 
-![corazón]({{ site.baseurl }}/images/step1.jpg)
+![corazón]({{ site.baseurl }}/images/corazonpixel.PNG)
 > Figura 1.2 Los pixeles definen la información contenida en la imagen, al especificar el nivel de brillo en determinada posición.
 
 ## Procesamiento de imágenes
