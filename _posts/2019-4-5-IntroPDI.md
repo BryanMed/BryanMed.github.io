@@ -23,4 +23,7 @@ $$
 \end{bmatrix}
 $$
 
-y ya papito
+Cada elemento de este arreglo es conocido como __pixel__ (del inglés _picture element_), y es la unidad mínima
+por la cual está conformada una imagen. En la _Figura 1.2_ se observa una imagen con niveles de intensidad binarios,
+en donde, un valor de intensidad igual a 1 corresponde a un pixel color blanco, y negro en caso de ser 0. La formación del
+corazón se da por la manera en la que están dispuesto el brillo en los pixeles de toda la imagen.
