@@ -13,4 +13,5 @@ que tanto las coordenadas, así como los niveles de brillo, sean de naturaleza d
 continua respecto a una imagen digital.
 
 ![Parroquia de Nuestra Señora]({{ site.baseurl }}/images/iglesia.png)
+> Espero y se vea chido
 
