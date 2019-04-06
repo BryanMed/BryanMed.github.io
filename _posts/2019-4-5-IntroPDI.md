@@ -21,7 +21,7 @@ por la cual está conformada una imagen. En la _Figura 1.2_ se observa una image
 en donde, un valor de intensidad igual a 1 corresponde a un pixel color blanco, y negro en caso de ser 0. La formación del
 corazón se da por la manera en la que están dispuesto el brillo en los pixeles en toda la imagen.
 
-![corazón]({{ site.baseurl }}/images/corazon.png){:height="50%" width="50%"}
+-> ![corazón]({{ site.baseurl }}/images/corazon.png){:height="50%" width="50%"} <-
 > Figura 1.2 Los pixeles definen la información contenida en la imagen, al especificar el nivel de brillo en determinada posición.
 
 ## Procesamiento de imágenes
