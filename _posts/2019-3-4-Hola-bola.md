@@ -3,10 +3,6 @@ layout: post
 title: Hola bola!
 ---
 Así es, ya estoy viendo que onda
-## debería estar terminando la tesis
-Pero soy así, así nací y así me moriré, uuuuun lobo domesticado
-
-## VAlentín Elizalde el gallo de oro
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
