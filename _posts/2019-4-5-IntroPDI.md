@@ -1,5 +1,6 @@
 ---
 layout: post
+usemathjax: true
 title: ¿Qué es una imagen digital?
 ---
 
@@ -14,3 +15,12 @@ continua respecto a una imagen digital.
 
 Estas imágenes son representadas como una matriz de (M x N) elementos de la forma:
 ![grafica]({{ site.baseurl }}/images/grafica1.gif)
+
+$$
+\begin{bmatrix}
+1 & 2\\ 
+3 & 4
+\end{bmatrix}
+$$
+
+y ya papito
