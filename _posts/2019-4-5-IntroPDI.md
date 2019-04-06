@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Procesamiento Digital de Imágenes
+title: 1. Procesamiento Digital de Imágenes
 ---
 ## ¿Qué es una imagen digital?
 
