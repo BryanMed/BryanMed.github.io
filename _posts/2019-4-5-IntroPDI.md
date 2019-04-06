@@ -1,7 +1,6 @@
 ---
 layout: post
-mathjax: true
-comments: true
+usemathjax: true
 title: Procesamiento Digital de Imágenes - Introducción
 ---
 
