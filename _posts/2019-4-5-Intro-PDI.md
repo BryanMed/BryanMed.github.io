@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Hola bola!
+title: Procesamiento digital de imágenes
 ---
 
-# Procesamiento Digital de Imágenes
-## 1.1 Introducción
+
+# 1.1 Introducción
 
 Una __imagen digital__ es una función bidimensional _f(x, y)_, en donde _f_ se refiere al nivel de intensidad(brillo) 
 que se encuentra en la posición (x, y). Los sistemas de adquisición de estas imágenes, consisten en un arreglo de sensores, 
