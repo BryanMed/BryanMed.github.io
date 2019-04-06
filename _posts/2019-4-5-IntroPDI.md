@@ -23,6 +23,7 @@ en donde, un valor de intensidad igual a 1 corresponde a un pixel color blanco, 
 corazón se da por la manera en la que están dispuesto el brillo en los pixeles en toda la imagen.
 
 ![corazón]({{ site.baseurl }}/images/corazonpixel.PNG)
+ 
  __Figura 1.2__ _Los pixeles definen la información contenida en la imagen, al especificar el nivel de brillo en determinada posición._
 
 ## Procesamiento de imágenes
