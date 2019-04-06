@@ -1,10 +1,7 @@
 ---
 layout: post
-title: Procesamiento Digital de Imágenes - Introducción
+title: ¿Qué es una imagen digital?
 ---
-
-
-## 1.1 ¿Qué es una imagen digital?
 
 Una __imagen digital__ es una función bidimensional _f(x, y)_, en donde _f_ se refiere al nivel de intensidad (brillo) 
 que se encuentra en determinada posición (x, y). Los sistemas de adquisición de estas imágenes, consisten en un arreglo de sensores, 
