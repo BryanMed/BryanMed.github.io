@@ -1,7 +1,7 @@
 ---
 layout: post
 usemathjax: true
-title: ¿Qué es una imagen digital?
+title: Procesamiento Digital de Imágenes
 ---
 
 Una __imagen digital__ es una función bidimensional _f(x, y)_, en donde _f_ se refiere al nivel de intensidad (brillo) 
