@@ -1,6 +1,5 @@
 ---
 layout: post
-usemathjax: true
 title: Procesamiento Digital de Imágenes
 ---
 ### ¿Qué es una imagen digital?
@@ -17,17 +16,10 @@ continua respecto a una imagen digital.
 Estas imágenes son representadas como una matriz de (M x N) elementos de la forma:
 ![grafica]({{ site.baseurl }}/images/CodeCogsEqn (1).png)
 
-$$
-\begin{bmatrix}
-1 & 2\\ 
-3 & 4
-\end{bmatrix}
-$$
-
-Cada elemento de este arreglo es conocido como __pixel__ (del inglés _picture element_), y es la unidad mínima
+En donde cada elemento de este arreglo es conocido como __pixel__ (del inglés _picture element_), y es la unidad mínima
 por la cual está conformada una imagen. En la _Figura 1.2_ se observa una imagen con niveles de intensidad binarios,
 en donde, un valor de intensidad igual a 1 corresponde a un pixel color blanco, y negro en caso de ser 0. La formación del
-corazón se da por la manera en la que están dispuesto el brillo en los pixeles de toda la imagen.
+corazón se da por la manera en la que están dispuesto el brillo en los pixeles en toda la imagen.
 
 ![corazón]({{ site.baseurl }}/images/corazon.png)
 > Figura 1.2 Los pixeles definen la información contenida en la imagen, al especificar el nivel de brillo en determinada posición.
