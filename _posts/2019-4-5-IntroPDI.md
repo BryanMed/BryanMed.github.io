@@ -20,7 +20,7 @@ Estas imágenes son representadas como una matriz de (M x N) elementos de la for
 En donde cada elemento de este arreglo es conocido como __pixel__ (del inglés _picture element_), y es la unidad mínima
 por la cual está conformada una imagen. En la __Figura 1.2__ se observa una imagen con niveles de intensidad binarios,
 en donde, un valor de intensidad igual a 1 corresponde a un pixel color blanco, y negro en caso de ser 0. La formación del
-corazón se da por la manera en la que están dispuesto el brillo en los pixeles en toda la imagen.
+corazón se da por la manera en la que están dispuesto el brillo de los pixeles en toda la imagen.
 
 ![corazón]({{ site.baseurl }}/images/corazonpixel.PNG)
  
