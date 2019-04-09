@@ -16,7 +16,16 @@ continua respecto a una imagen digital.
 ![Parroquia]({{ site.baseurl }}/images/iglesia.png)
 __Figura 1.1__ _Parroquia de Nuestra Señora de la Asunción, Lagos de Moreno, Jal. La imagen de la izquierda es una representación de una imagen continua, y a la derecha se simula una imagen digital (adquirida por mi poderosísimo Alcatel), donde se observa la constitución discreta de la imagen_. 
 
-Estas imágenes son representadas como una matriz de $$(M x N)$$ elementos de la forma:
+Estas imágenes son representadas como una matriz de $$M \times N)$$ elementos de la forma:
+
+$$
+f(x, y) = \begin{bmatrix}
+f(0,0) & f(0,1) & ... & f(0, N-1)\\ 
+f(1,0) & f(1,1) & ... & f(1, N-1)\\ 
+... & ... &  & ... \\ 
+f(M-1, 0) & f(M-1, 1) & ... & f(M-1, N-1)
+\end{bmatrix}
+$$
 
 {: .center}
 ![grafica]({{ site.baseurl }}/images/CodeCogsEqn (1).png)
