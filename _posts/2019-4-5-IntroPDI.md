@@ -8,13 +8,15 @@ title: 1. Procesamiento Digital de Imágenes
 
 Una __imagen digital__ es una función bidimensional $$f(x, y)$$, en donde $$f$$ se refiere al nivel de intensidad (brillo) 
 que se encuentra en determinada posición $$(x, y)$$. Los sistemas de adquisición de estas imágenes, consisten en un arreglo de sensores, 
-encargados de medir la intensidad de la luz que llega a cada uno de estos. Este proceso de __muestreo__ tiene como resultado, 
+encargados de medir la cantidad de energia que llega a cada uno de estos. Este proceso de __muestreo__ tiene como resultado, 
 que tanto las coordenadas, así como los niveles de brillo, sean de naturaleza discreta. La __Figura 1.1__ ejemplifica una imagen 
 continua respecto a una imagen digital.
 
 {: .center}
 ![Parroquia]({{ site.baseurl }}/images/iglesia.png)
-__Figura 1.1__ _Parroquia de Nuestra Señora de la Asunción, Lagos de Moreno, Jal. La imagen de la izquierda es una representación de una imagen continua, y a la derecha se simula una imagen digital (adquirida por mi poderosísimo Alcatel), donde se observa la constitución discreta de la imagen_. 
+__Figura 1.1__ _La imagen de la izquierda es una representación de una imagen continua, y a la derecha se simula una imagen digital (adquirida por mi poderosísimo Alcatel), donde se observa la constitución discreta de la imagen_. 
+
+
 
 Estas imágenes son representadas como una matriz de tamaño $$M \times N$$, de la forma:
 
