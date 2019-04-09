@@ -1,6 +1,7 @@
 ---
 layout: post
 comments: true
+mathjax: true
 title: 1. Procesamiento Digital de Imágenes
 ---
 ## ¿Qué es una imagen digital?
@@ -15,7 +16,7 @@ continua respecto a una imagen digital.
 ![Parroquia]({{ site.baseurl }}/images/iglesia.png)
 __Figura 1.1__ _Parroquia de Nuestra Señora de la Asunción, Lagos de Moreno, Jal. La imagen de la izquierda es una representación de una imagen continua, y a la derecha se simula una imagen digital (adquirida por mi poderosísimo Alcatel), donde se observa la constitución discreta de la imagen_. 
 
-Estas imágenes son representadas como una matriz de (M x N) elementos de la forma:
+Estas imágenes son representadas como una matriz de $$(M x N)$$ elementos de la forma:
 
 {: .center}
 ![grafica]({{ site.baseurl }}/images/CodeCogsEqn (1).png)
