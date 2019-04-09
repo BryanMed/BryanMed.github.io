@@ -4,11 +4,11 @@ comments: true
 mathjax: true
 title: 2. Transformaciones en el dominio espacial
 ---
+## 2.1 Funciones de transformación de intensidad
 
-Son un conjunto de métodos caracterizados por _manipular_ directamente los pixeles de la imagen. Estas técnicas se encuentran de la forma
+Este conjunto de métodos _manipula directamente_ los pixeles de la imagen, en donde estas operaciones están expresadas de la forma:
 
-{: .center}
-![spatialtrans]({{ site.baseurl }}/images/spatialTrans.png)
+$$ g(x, y) = T[f(x, y)] $$
 
 en donde las transformaciones _T_, son básicamente funciones encargadas de _mapear_ las intensidades de los pixeles de entrada _f(x, y)_, a las de una imagen de salida _g(x, y)_.
 
