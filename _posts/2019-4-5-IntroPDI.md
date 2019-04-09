@@ -41,7 +41,7 @@ __Figura 1.2__ _Los pixeles definen la información contenida en la imagen, al e
 Son un conjunto de técnicas que tiene como finalidad obtener una representación más adecuada de la imagen, o la extracción de características relevantes encaminadas a obtener información mas profunda. La __Figura 1.3__ muestra estos dos enfoques.
 
 {: .center}
-![corazón]({{ site.baseurl }}/images/imageprocessing.PNG)
+![corazón]({{ site.baseurl }}/images/imageprocessing1.PNG)
  __Figura 1.3__ _La mejora de la imagen (image enhancement) y la extracción de características (feature extraction) son los dos principales objetivos que plantea el procesamiento de imágenes._
 
 ### Bibliografía utilizada
