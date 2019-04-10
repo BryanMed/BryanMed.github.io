@@ -12,7 +12,11 @@ $$ g(x, y) = T[f(x, y)] $$
 
 La transformación $$T$$ es básicamente una función encargada de __mapear__ las intensidades de los pixeles de entrada $$f(x, y)$$ a las de la imagen de salida $$g(x, y)$$.
 
-Tomemos el caso mostrado en la __Figura 2.1__ en donde la función de transformación $$T$$ tiene un efecto nulo, dado que los niveles de gris de la imagen de entrada es el mismo para la imagen de salida, es decir $$ g(x, y) = f(x, y) $$.
-{: .center}![grafica1]({{ site.baseurl }}/images/grafica1a1.png)
-{: .center}![comparison1]({{ site.baseurl }}/images/transformada1.PNG)
+Tomemos el caso mostrado en la __Gráfica 2.1__ en donde se observa la correspondencia que existe entre los niveles de intensidad de la imagen de entrada $$f(x, y)$$ es la misma respecto a aquellas en la imagen de salida $$g(x, y)$$, por lo tanto, la transformada $$T$$ en este ejemplo, es nula, esto se observa en la __Figura 2.1__ en donde no existe diferencia alguna entre ambas imagenes dado que tienen los mismos niveles de brillo en cada pixel.
 
+{: .center}![grafica1]({{ site.baseurl }}/images/grafica1a1.png)
+
+{: .center} __Gráfica 2.1__ los niveles de brillo de la imagen de entrada son los mismos que los de la imagen de salida.
+
+{: .center}![comparison1]({{ site.baseurl }}/images/transformada1.PNG)
+{: .center} __Figura 2.1__ El efecto de la transformada $$T$$ es nulo, dado que $$g(x, y) = f(x, y)$$
