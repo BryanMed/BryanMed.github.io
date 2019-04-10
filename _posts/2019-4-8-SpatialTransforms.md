@@ -34,6 +34,7 @@ Este tipo de transformacion es utilizada para ayudar a mejorar un poco la percep
 $$f(x, y) + g(x, y) = L-1$$
 
 Por lo tanto, el brillo que se obtiene en la imagen de salida es:
+
 {: .center}
 $$g(x, y) = L-1 - f(x, y)$$
 
