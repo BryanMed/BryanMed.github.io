@@ -57,8 +57,7 @@ El efecto que tiene sobre las imágenes se muestra en la __Figura 2.2__ , hacien
 ![pulmon]({{ site.baseurl }}/images/chest.PNG)
 
 {: .center} 
-__Figura 2.2__ _A la izquierda encontramos una imagen adquirida por rayos X, de un paciente con lesiones adquiridas por tuberculosis (Ghon's complex) [imagen](https://commons.wikimedia.org/wiki/File:Chest_x-ray_of_Ghon%27s_complex_of_active_tuberculosis.jpg#/media/File:Chest_x-ray_of_Ghon%27s_complex_of_active_tuberculosis.jpg) 
- y a la derecha se aprecian mejor estos detalles debido a la aplicación de la transformada complemento._
+__Figura 2.2__ _A la izquierda encontramos una [imagen](https://commons.wikimedia.org/wiki/File:Chest_x-ray_of_Ghon%27s_complex_of_active_tuberculosis.jpg#/media/File:Chest_x-ray_of_Ghon%27s_complex_of_active_tuberculosis.jpg) adquirida por rayos X, de un paciente con lesiones adquiridas por tuberculosis (Ghon's complex) y a la derecha se aprecian mejor estos detalles debido a la aplicación de la transformada complemento._
 
 
 
