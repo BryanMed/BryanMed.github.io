@@ -52,7 +52,8 @@ __Figura 2.2__ _A la izquierda encontramos una imagen adquirida por rayos X, de 
 
 
 ### Referencias
-+ [Capítulo 3 del libro de Digital Image Processing de Gonzalez.](Gonzalez, R. C., & Woods, R. E. (2002). Digital image processing [M]. Publishing house of electronics industry, 141(7)).
++ [Capítulo 3 del libro de Digital Image Processing de Gonzalez.](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
+
 + [Imagen del pulmón tomado de la wiki](https://commons.wikimedia.org/wiki/File:Chest_x-ray_of_Ghon%27s_complex_of_active_tuberculosis.jpg#/media/File:Chest_x-ray_of_Ghon%27s_complex_of_active_tuberculosis.jpg)
 
 
