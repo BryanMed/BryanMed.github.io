@@ -8,6 +8,7 @@ title: 2. Transformaciones en el dominio espacial
 
 Este conjunto de métodos _manipula directamente_ los pixeles de la imagen, en donde estas operaciones están expresadas de la forma:
 
+{: .center}
 $$ g(x, y) = T[f(x, y)] $$
 
 La transformación $$T$$ es básicamente una función encargada de __mapear__ las intensidades de los pixeles de entrada $$f(x, y)$$ a las de la imagen de salida $$g(x, y)$$.
@@ -28,12 +29,17 @@ __Figura 2.1__ _El efecto de la transformada $$T$$ es nulo, dado que $$g(x, y) =
 ## 2.1 Imagen negativa (Transformacion complemento)
 
 Este tipo de transformacion es utilizada para ayudar a mejorar un poco la percepción de elementos blancos/grisáceos dentro de regiones oscuras. En esta función, se espera que los niveles de intensidad de la imagen de entrada $$f(x, y)$$, sean complementarios a aquellos en la imagen de salida. Así, al trabajar con imágenes con $$L$$ niveles de intensidad, la suma tanto del pixel de entrada, como su correspondiente de salida debe ser $$L-1$$ (dado que el rango de brillo va de $$0$$ a $$L-1$$), es decir:
+
+{: .center}
 $$f(x, y) + g(x, y) = L-1$$
 
 Por lo tanto, el brillo que se obtiene en la imagen de salida es:
+{: .center}
 $$g(x, y) = L-1 - f(x, y)$$
 
 Véase el ejemplo de la __Gráfica 2.2__ , en donde se considera que las imágenes son de formato Uint8 (256 niveles de brillo), con lo cual, la expresión queda de la siguiente manera:
+
+{: .center}
 $$g(x, y) = 255 - f(x, y)$$
 
 {: .center} 
@@ -49,6 +55,11 @@ El efecto que tiene sobre las imágenes se muestra en la __Figura 2.2__ , hacien
 
 {: .center} 
 __Figura 2.2__ _A la izquierda encontramos una imagen adquirida por rayos X, de un paciente con lesiones adquiridas por tuberculosis (Ghon's complex) [wikiChest] y a la derecha se aprecian mejor estos detalles debido a la aplicación de la transformada complemento._
+
+
+
+
+
 
 
 ### Referencias
