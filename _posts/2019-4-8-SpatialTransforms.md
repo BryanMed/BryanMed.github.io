@@ -17,11 +17,13 @@ Tomemos el caso mostrado en la __Gráfica 2.1__ en donde se observa la correspon
 
 {: .center}
 ![grafica1]({{ site.baseurl }}/images/grafica1a1.png)
+
 {: .center}  
 __Gráfica 2.1__ _los niveles de brillo de la imagen de entrada son los mismos que los de la imagen de salida._
 
 {: .center} 
 ![comparison1]({{ site.baseurl }}/images/transformada1.PNG)
+
 {: .center}  
 __Figura 2.1__ _El efecto de la transformada $$T$$ es nulo, dado que $$g(x, y) = f(x, y)$$_
 
