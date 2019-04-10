@@ -28,7 +28,7 @@ __Figura 2.1__ _El efecto de la transformada $$T$$ es nulo, dado que $$g(x, y) =
 
 ## 2.1 Imagen negativa (Transformacion complemento)
 
-Este tipo de transformacion es utilizada para ayudar a mejorar un poco la percepción de elementos blancos/grisáceos dentro de regiones oscuras. En esta función, se espera que los niveles de intensidad de la imagen de entrada $$f(x, y)$$, sean complementarios a aquellos en la imagen de salida. Así, al trabajar con imágenes con $$L$$ niveles de intensidad, la suma tanto del pixel de entrada, como su correspondiente de salida debe ser $$L-1$$ (dado que el rango de brillo va de $$0$$ a $$L-1$$), es decir:
+Este tipo de transformacion es utilizada para ayudar a mejorar un poco la percepción de elementos blancos/grisáceos dentro de regiones oscuras. En esta función, se espera que los niveles de intensidad de la imagen de entrada $$f(x, y)$$, sean complementarios a aquellos en la imagen de salida. Así, al trabajar con imágenes con $$L$$ niveles de intensidad, la suma tanto del pixel de entrada, como su correspondiente en salida debe ser $$L-1$$ (dado que el rango de brillo va de $$0$$ a $$L-1$$), es decir:
 
 {: .center}
 $$f(x, y) + g(x, y) = L-1$$
