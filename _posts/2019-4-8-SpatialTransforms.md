@@ -4,10 +4,6 @@ comments: true
 mathjax: true
 title: 2. Transformaciones en el dominio espacial
 ---
-
-
-
-
 ## Funciones de transformación de intensidad
 
 Este conjunto de métodos _manipula directamente_ los pixeles de la imagen, en donde estas operaciones están expresadas de la forma:
@@ -17,7 +13,7 @@ $$ g(x, y) = T[f(x, y)] $$
 
 La transformación $$T$$ es básicamente una función encargada de __mapear__ las intensidades de los pixeles de entrada $$f(x, y)$$ a las de la imagen de salida $$g(x, y)$$.
 
-Tomemos el caso mostrado en la __Gráfica 2.1__ en donde se observa la correspondencia que existe entre los niveles de intensidad de la imagen de entrada $$f(x, y)$$ es la misma respecto a aquellas en la imagen de salida $$g(x, y)$$, por lo tanto, la transformada $$T$$ en este ejemplo, es nula. Esto se observa en la __Figura 2.1__ dado que no existe diferencia alguna entre ambas imagenes dado que tienen los mismos niveles de brillo en cada pixel.
+Tomemos el caso mostrado en la __Gráfica 2.1__ en donde se observa la correspondencia que existe entre los niveles de intensidad de la imagen de entrada $$f(x, y)$$ es la misma respecto a aquellas en la imagen de salida $$g(x, y)$$, por lo tanto, la transformada $$T$$ en este ejemplo, es nula. Esto se observa en la __Figura 2.1__ dado que no existe diferencia alguna entre ambas imagenes debido que tienen los mismos niveles de brillo en cada pixel.
 
 {: .center}
 ![grafica1]({{ site.baseurl }}/images/grafica1a1.png)
@@ -32,9 +28,9 @@ __Gráfica 2.1__ _los niveles de brillo de la imagen de entrada son los mismos q
 __Figura 2.1__ _El efecto de la transformada $$T$$ es nulo, dado que $$g(x, y) = f(x, y)$$_
 
 
-## 2.1 Imagen negativa (Transformacion complemento)
+## 2.1 Imagen negativa (Transformación complemento)
 
-Este tipo de transformacion es utilizada para ayudar a mejorar un poco la percepción de elementos blancos/grisáceos dentro de regiones oscuras. En esta función, se espera que los niveles de intensidad de la imagen de entrada $$f(x, y)$$, sean complementarios a aquellos en la imagen de salida. Así, al trabajar con imágenes con $$L$$ niveles de intensidad, la suma tanto del pixel de entrada, como su correspondiente en salida debe ser $$L-1$$ (dado que el rango de brillo va de $$0$$ a $$L-1$$), es decir:
+Este tipo de transformación es utilizada para ayudar a mejorar un poco la percepción de elementos blancos/grisáceos dentro de regiones oscuras. En esta función, se espera que los niveles de intensidad de la imagen de entrada $$f(x, y)$$, sean complementarios a aquellos en la imagen de salida. Así, al trabajar con imágenes con $$L$$ niveles de intensidad, la suma tanto del pixel de entrada, como su correspondiente en salida debe ser $$L-1$$ (dado que el rango de brillo va de $$0$$ a $$L-1$$), es decir:
 
 {: .center}
 $$f(x, y) + g(x, y) = L-1$$
