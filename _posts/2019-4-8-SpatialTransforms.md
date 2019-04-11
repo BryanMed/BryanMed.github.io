@@ -4,7 +4,11 @@ comments: true
 mathjax: true
 title: 2. Transformaciones en el dominio espacial
 ---
-# Funciones de transformación de intensidad
+
+
+
+
+## Funciones de transformación de intensidad
 
 Este conjunto de métodos _manipula directamente_ los pixeles de la imagen, en donde estas operaciones están expresadas de la forma:
 
