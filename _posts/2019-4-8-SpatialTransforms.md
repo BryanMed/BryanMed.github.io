@@ -95,7 +95,7 @@ __Figura 2.3__ _El efecto de la transformación logaritmo, que permite diferenci
 
 + [Imagen 2.2](https://commons.wikimedia.org/wiki/File:Chest_x-ray_of_Ghon%27s_complex_of_active_tuberculosis.jpg#/media/File:Chest_x-ray_of_Ghon%27s_complex_of_active_tuberculosis.jpg)
 
-+[Imagen 2.3](https://multimedia.larepublica.pe/660x392/larepublica/imagen/2019/04/10/noticia-1554945348-netflix.png)
++ [Imagen 2.3](https://multimedia.larepublica.pe/660x392/larepublica/imagen/2019/04/10/noticia-1554945348-netflix.png)
 
 
 
