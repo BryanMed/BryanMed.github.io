@@ -66,12 +66,12 @@ __Figura 2.2__ _A la izquierda encontramos una imagen adquirida por rayos X, de 
 No es necesario que el comportamiento de una transformación sea lineal, de hecho, muchas aplicaciones se benefician del uso de funciones no lineales, en donde mayormente se utilizan para ampliar el rango dinámico de ciertas intensidades, con el compromiso de disminuirlo en otras regiones. Por ejemplo, al aplicar la función __logaritmo__ se logra mejorar el nivel de detalle en las regiones con poco brillo, siguiendo la formula:
 
 {: .center}
-$$ g(x, y) =  c\:log(1 + f(x, y) )$$
+$$ g(x, y) =  c\:log(1 + f(x, y))$$
 
 Es necesario agregar un 1 a la función, debido a que, como se muestra en la __Gráfica 2.3__ , el logaritmo no está definido en $$0$$. Por otro lado, el valor $$c$$ es una constante que está definida por:
 
 {: .center}
-$$c = 255/log(1 + máx(f(x, y)))$$
+$$c = \frac{255}{log(1 + máx(f(x, y)))}$$
 
 Y la cual permite ajustar el rango de valores de salida al mismo que el de la imagen de entrada, es decir, de 0 a 255. Con ello, finalmente es posible observar el efecto de esta transformación, que, como muestra la __Figura 2.3__ es visible diferenciar con mayor detalle algunas regiones.
 
