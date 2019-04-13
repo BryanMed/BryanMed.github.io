@@ -79,12 +79,13 @@ Y la cual permite ajustar el rango de valores de salida al mismo que el de la im
 ![grafica23]({{ site.baseurl }}/images/logaritmoGraph.png)
 
 {: .center} 
-__Gráfica 2.3__ Las regiones con bajo nivel de brillo, son mapeadas a un rango mas amplio de intensidades.
+__Gráfica 2.3__ _Las regiones con bajo nivel de brillo, son mapeadas a un rango mas amplio de intensidades_.
 
 {: .center}
 ![logaritmo]({{ site.baseurl }}/images/logaritmo.png)
+
 {: .center}
-__Figura 2.3__ El efecto de la transformación logaritmo, que permite diferenciar regiones en zonas oscuras de la imagen.
+__Figura 2.3__ _El efecto de la transformación logaritmo, que permite diferenciar regiones en zonas oscuras de la imagen_.
 
 > La implementación del algoritmo de __Transformación logaritmo__ (Python y MATLAB) la encuentras en [este](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/2.2%20logaritmo) repositorio.
 
