@@ -83,7 +83,6 @@ __Gráfica 2.3__ Las regiones con bajo nivel de brillo, son mapeadas a un rango 
 
 {: .center}
 ![logaritmo]({{ site.baseurl }}/images/logaritmo.png)
-
 {: .center}
 __Figura 2.3__ El efecto de la transformación logaritmo, que permite diferenciar regiones en zonas oscuras de la imagen.
 
