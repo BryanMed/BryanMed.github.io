@@ -57,16 +57,45 @@ El efecto que tiene sobre las imágenes se muestra en la __Figura 2.2__ , hacien
 ![pulmon]({{ site.baseurl }}/images/chest.PNG)
 
 {: .center} 
-__Figura 2.2__ _A la izquierda encontramos una [imagen](https://commons.wikimedia.org/wiki/File:Chest_x-ray_of_Ghon%27s_complex_of_active_tuberculosis.jpg#/media/File:Chest_x-ray_of_Ghon%27s_complex_of_active_tuberculosis.jpg) adquirida por rayos X, de un paciente con lesiones adquiridas por tuberculosis (Ghon's complex) y a la derecha se aprecian mejor estos detalles debido a la aplicación de la transformada complemento._
+__Figura 2.2__ _A la izquierda encontramos una imagen adquirida por rayos X, de un paciente con lesiones adquiridas por tuberculosis (Ghon's complex) y a la derecha se aprecian mejor estos detalles debido a la aplicación de la transformada complemento._
 
-> La implementación de este algoritmo (Python y MATLAB) la encuentras en [este](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/2.1%20imagen%20negativa) repositorio.
+> La implementación del algoritmo de __imagen negativa__ (Python y MATLAB) la encuentras en [este](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/2.1%20imagen%20negativa) repositorio.
+
+## 2.2 Transformación Logaritmo
+
+No es necesario que el comportamiento de una transformación sea lineal, de hecho, muchas aplicaciones se benefician del uso de funciones no lineales, en donde mayormente se utilizan para ampliar el rango dinámico de ciertas intensidades, con el compromiso de disminuirlo en otras regiones. Por ejemplo, al aplicar la función __logaritmo__ se logra mejorar el nivel de detalle en las regiones con poco brillo, siguiendo la formula:
+
+{: .center}
+$$ g(x, y) =  c log(1 + f(x, y) )$$
+
+Es necesario agregar un 1 a la función, debido a que, como se muestra en la __Gráfica 2.3__ , el logaritmo no está definido en $$0$$. Por otro lado, el valor $$c$$ es una constante que está definida por:
+
+{: .center}
+$$c = 255/log(1 + máx(f(x, y)))$$
+
+Y la cual permite ajustar el rango de valores de salida al mismo que el de la imagen de entrada, es decir, de 0 a 255. Con ello, finalmente es posible observar el efecto de esta transformación, que, como muestra la __Figura 2.3__ es visible diferenciar con mayor detalle algunas regiones.
+
+{: .center}
+![grafica23]({{ site.baseurl }}/images/logaritmoGraph.png)
+
+{: .center} 
+__Gráfica 2.3__ Las regiones con bajo nivel de brillo, son mapeadas a un rango mas amplio de intensidades.
+
+{: .center}
+![logaritmo]({{ site.baseurl }}/images/transformada1.png)
+
+{: .center}
+__Figura 2.3__ El efecto de la transformación logaritmo, que permite diferenciar regiones en zonas oscuras de la imagen.
+
+> La implementación del algoritmo de __Transformación logaritmo__ (Python y MATLAB) la encuentras en [este](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/2.2%20logaritmo) repositorio.
 
 
 ### Referencias
 + [Capítulo 3 del libro de Digital Image Processing de Gonzalez.](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
 
-+ [Imagen del pulmón tomado de la wiki](https://commons.wikimedia.org/wiki/File:Chest_x-ray_of_Ghon%27s_complex_of_active_tuberculosis.jpg#/media/File:Chest_x-ray_of_Ghon%27s_complex_of_active_tuberculosis.jpg)
++ [Imagen 2.2](https://commons.wikimedia.org/wiki/File:Chest_x-ray_of_Ghon%27s_complex_of_active_tuberculosis.jpg#/media/File:Chest_x-ray_of_Ghon%27s_complex_of_active_tuberculosis.jpg)
 
++[Imagen 2.3](https://multimedia.larepublica.pe/660x392/larepublica/imagen/2019/04/10/noticia-1554945348-netflix.png)
 
 
 
