@@ -90,6 +90,27 @@ __Figura 2.3__ _El efecto de la transformación logaritmo, que permite diferenci
 > La implementación del algoritmo de __Transformación logaritmo__ (Python y MATLAB) la encuentras en [este](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/2.2%20logaritmo) repositorio.
 
 
+## 2.3 Corrección gamma
+
+Además de la función logaritmo, existe toda una familia de funciones (__Figura 2.4__) que permite mejorar la calidad del contraste en una imagen. A estas transformaciones se les conoce como __corrección gamma__ las cuales están constituidas por:
+
+{: .center}
+$$ g(x, y) = c\: f(x, y)^{\gamma}$$
+
+En donde $$c$$ es la misma constante calculada en el bloque anterior, donde prácticamente su valor es 1. Esta transformacion consiste simplemente en aumentar el valor del pixel a la potencia $$\gamma$$, en donde este exponente solo tomará valores positivos. Así, cuando gamma es igual a la unidad, la función de mapeo es una línea recta, que como se demostró anteriormente, no tiene ningún efecto en la imagen. Por otro lado, valores menores a la unidad resultan en un aumento de contraste en regiones oscuras, dado que a las intensidades bajas les corresponde un mayor rango dinámico en la salida. En cambio, con un valor $$\gamma$$ mayor a la unidad, pasa exactamente lo contrario, en regiones con brillos intensos se mapean a un rango de grises mas amplio, lo cual mejora el nivel de detalle que es posible observar. En la __Figura 2.5__ se muestran los distintos resultados, consecuencia de la manipulación del exponente $$\gamma$$
+
+{: .center}
+![familias]({{ site.baseurl }}/images/gammaLibro.PNG)
+
+{: .center}
+![gama1]({{ site.baseurl }}/images/gamma1.png)
+
+{: .center}
+![gama2]({{ site.baseurl }}/images/gamma2.png)
+
+{: .center}
+![gama3]({{ site.baseurl }}/images/gamma3.png)
+
 ### Referencias
 + [Capítulo 3 del libro de Digital Image Processing de Gonzalez.](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
 
