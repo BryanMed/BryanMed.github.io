@@ -103,6 +103,10 @@ En donde $$c$$ es la misma constante calculada en el bloque anterior, donde prá
 ![familias]({{ site.baseurl }}/images/gammaLibro.PNG)
 
 {: .center}
+__Figura 2.5__ _La forma del mapeo depende unicamente del valor de gamma, en el cual con valores menores a 1, ampliara el rango en colores oscuros, en cambio, cuando es mayor a 1 mapea las regiones muy iluminadas._
+
+
+{: .center}
 ![gama1]({{ site.baseurl }}/images/gamma1.png)
 
 {: .center}
@@ -110,6 +114,17 @@ En donde $$c$$ es la misma constante calculada en el bloque anterior, donde prá
 
 {: .center}
 ![gama3]({{ site.baseurl }}/images/gamma3.png)
+
+{: .center}
+__Figura 2.5__ _El efecto de corrección gamma, en donde al variar el valor de gamma, se manipula la intensidad de distintas regiones en la imagen_.
+
+
+> La implementación del algoritmo de __Corrección gamma__ (Python y MATLAB) la encuentras en [este](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/2.3%20correccion%20gamma) repositorio.
+
+
+
+
+
 
 ### Referencias
 + [Capítulo 3 del libro de Digital Image Processing de Gonzalez.](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
