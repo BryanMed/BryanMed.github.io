@@ -10,7 +10,7 @@ La adquisición de las imágenes se da a partir de un arreglo de sensores, los c
 
 {: .center}
 ![imagendigital]({{ site.baseurl }}/images/digitalImage.PNG)
- __Figura 1.2__ _Diagrama muy simplificado de la obtención de una imagen digital_.
+ __Figura 1.2__ _Diagrama muy simplificado de la obtención de una fotografía digital_.
 
 Bien, una imagen digital es una función bidimensional $$f(x, y)$$, en donde $$f$$ se refiere al nivel de intensidad (brillo) que se encuentra en la posición $$(x, y)$$. Estas imágenes son representadas como una matriz de tamaño $$M \times N$$, de la forma:
 $$
