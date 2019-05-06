@@ -13,6 +13,7 @@ La adquisición de las imágenes se da a partir de un arreglo de sensores, los c
  __Figura 1.2__ _Diagrama muy simplificado de la obtención de una fotografía digital_.
 
 Bien, una imagen digital es una función bidimensional $$f(x, y)$$, en donde $$f$$ se refiere al nivel de intensidad (brillo) que se encuentra en la posición $$(x, y)$$. Estas imágenes son representadas como una matriz de tamaño $$M \times N$$, de la forma:
+
 $$
 f(x, y) = \begin{bmatrix}
 f(0,0) & f(0,1) & ... & f(0, N-1)\\ 
@@ -21,9 +22,9 @@ f(1,0) & f(1,1) & ... & f(1, N-1)\\
 f(M-1, 0) & f(M-1, 1) & ... & f(M-1, N-1)
 \end{bmatrix}
 $$
-En donde cada elemento de este arreglo es conocido como __pixel__ (del inglés _picture element_), y es la unidad mínima
-por la cual está conformada una imagen. 
 
+En donde cada elemento de este arreglo es conocido como __pixel__ (del inglés _picture element_), y es la unidad mínima
+por la cual está conformada una imagen. En el caso de las _imágenes a color_ cada pixel almacena 3 valores correspondientes a la intensidad de los canales Rojo, Verde y Azul, en la __Figura 1.3__ observamos como la combinación de los 3 canales resulta en la imagen a color. No obstante, a lo largo del blog trabajaremos con _imágenes en escala de grises_ debido a que los algoritmos que veremos son extensibles al color los métodos en cada canal.
 
 
 
