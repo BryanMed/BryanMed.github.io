@@ -15,10 +15,9 @@ Es un conjunto de técnicas que tiene como finalidad obtener una representación
 Antes de continuar con los métodos que se utilizan, es necesario definir una __imagen digital__.
 
 ## Imagen Digital
-La adquisición de las imágenes se da a partir de un arreglo de sensores, los cuales son encargados de transformar un fenómeno (físico o químico) a una variable eléctrica, finalmente esta señal es digitalizada, es decir, _cuantificada_ a valores discretos, los cuales corresponderán a niveles de intensidad en la imagen que sea construida. Un ejemplo es el de una fotografía digital, en donde se utilizan filtros de colores, encargados de separar la luz incidente en sus componentes rojo, verde y azul, posteriormente se encuentra una malla de millones de sensores fotoeléctricos (conversión luz $$\rightarrow$$ electricidad) encargados de registrar la intensidad de luz que absorben, para después discretizar esta señal y almacenarla en la memoria del dispositivo para su posterior visualización.
+La adquisición de las imágenes se da a partir de un arreglo de sensores, los cuales se encargan de transformar un fenómeno (físico o químico) a una variable eléctrica, esta señal es posteriormente digitalizada, es decir, _cuantificada_ a valores discretos, los cuales corresponden a los niveles de intensidad con los cuales será formada la imagen de salida. Un ejemplo de este proceso (mostrado en la __Figura 1.2__) es la obtención de una fotografía digital, en donde la luz reflejada por la escena a capturar incide sobre un conjunto de lentes cuya labor es el de enfocar la luz hacia una matriz de filtros, encargada de separar el espectro de la luz en las longitudes de onda correspondientes a los colores Rojo, Verde y Azul. Posteriormente, esta luz llegará a una malla de millones de sensores fotoeléctricos, los cuales se encargan de transformar la iluminación en un voltaje cuyos valores serán proporcionales a la cantidad de luz que inciden sobre ellos. Finalmente, la señal eléctrica será discretizada y almacenada para su posterior visualización.
 
 
 
 
-
-La construcción de las imágenes no quedan 
+Solemos asociar 
