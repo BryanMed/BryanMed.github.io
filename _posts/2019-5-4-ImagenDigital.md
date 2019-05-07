@@ -57,7 +57,7 @@ Es todo un conjunto de técnicas que tiene como objetivos, obtener una represent
 
 En las siguientes entradas del blog, discutiremos en profundidad estos métodos y posiblemente veamos una que otra aplicación. 
 
-Trataré de poner las referencias de cada método, pero quiero hacer hincapié en que estaré basandome fuertemente en el libro de [Digital Image Processing - Gonzalez & Woods](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728), y en estos [videítos de youtube](https://www.youtube.com/watch?v=UhDlL-tLT2U&list=PLuh62Q4Sv7BUf60vkjePfcOQc8sHxmnDX).
+Trataré de poner las referencias de cada método, pero quiero hacer hincapié en que estaré basándome fuertemente en el libro de [Digital Image Processing - Gonzalez & Woods](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728), y en estos [videítos de youtube](https://www.youtube.com/watch?v=UhDlL-tLT2U&list=PLuh62Q4Sv7BUf60vkjePfcOQc8sHxmnDX).
 
 
 
