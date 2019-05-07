@@ -21,7 +21,7 @@ Es importante recalcar que una imagen es una manera de representar la informaci�
 ![aplicaciones]({{ site.baseurl }}/images/espectro.PNG)
  __Figura 1.3__ _Espectro electromagnético, en donde se aprovechan las propiedades de las distintas longitudes de onda con el objetivo de obtener información para su posterior visualización/interpretación_.
 
-Ahora bien, una imagen digital es una función bidimensional $$f(x, y)$$, en donde al evaluar la $$f$$ en la posición $$(x, y)$$ obtenemos un nivel de intensidad de brillo. Estas imágenes son representadas como una matriz de tamaño $$M \times N$$, de la forma:
+Ahora bien, una imagen digital es una función bidimensional $$f(x, y)$$, en donde al evaluar $$f$$ en la posición $$(x, y)$$ obtenemos un nivel de intensidad de brillo. Estas imágenes son representadas como una matriz de tamaño $$M \times N$$, de la forma:
 
 $$
 f(x, y) = \begin{bmatrix}
