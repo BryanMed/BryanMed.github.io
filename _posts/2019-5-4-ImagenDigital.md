@@ -43,7 +43,7 @@ Y a todo esto, ¿De qué valores de intensidad hablamos? Pues bueno, si bien las
 
 {: .center}
 ![grayscale]({{ site.baseurl }}/images/grayscale.png)
- __Figura 1.5__ _Con solo un bit, tenemos 2 opciones (blanco y negro) que puede tomar un pixel, y a medida que el número de bits aumenta, también lo harán en una proporción de $$2^{bits}$$_.
+ __Figura 1.5__ _Con solo un bit, tenemos 2 opciones (blanco y negro) que puede tomar un pixel, y a medida que el número de bits aumenta, también lo harán en una proporción de $$2^{bits}$$_ imagen tomada de [aquí](https://petapixel.com/2018/09/19/8-12-14-vs-16-bit-depth-what-do-you-really-need/).
 
 Con esta breve explicación de imágenes digitales podemos finalmente pasar a explicar algunas técnicas del Procesamiento Digital de Imágenes (PDI para los cuates, o DIP para los twins, je). 
 
