@@ -2,7 +2,7 @@
 layout: post
 comments: true
 mathjax: true
-title: 2.1|Transformaciones espaciales (Imagen negativa/complemento)
+title: 2.1|Imagen negativa/complemento (Intro a transformaciones espaciales)
 ---
 
 ## Funciones de transformación de intensidad en el dominio espacial
