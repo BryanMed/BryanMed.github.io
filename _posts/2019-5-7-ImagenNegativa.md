@@ -57,6 +57,7 @@ Y ahora si ya estamos ready to go, en la __Figura 2.3__ observamos el efecto de 
  __Figura 2.5__ _A la izquierda encontramos una imagen adquirida por rayos X, en donde un paciente cuenta con lesiones producidas por tuberculosis (complejo de Ghon), a la derecha se aplicó la transformación negativa de esta imagen para ayudar a una mejor comprensión de los detalles.  (imagen tomada de [aqui](https://en.wikipedia.org/wiki/Tuberculosis_radiology#/media/File:Chest_x-ray_of_Ghon%27s_complex_of_active_tuberculosis.jpg)) _.
  
  ## Referencias
+ 
  [capitulo 3 del libro de Gonzalez](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
  
  
