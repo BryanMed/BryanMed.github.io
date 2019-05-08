@@ -2,9 +2,10 @@
 layout: post
 comments: true
 mathjax: true
-title: 2.1| Imagen negativa/complemento (Intro a transformaciones espaciales)
+title: 2.1| Imagen negativa(Intro a transformaciones espaciales)
 ---
-## Funciones de transformación de intensidad en el dominio espacial
+
+## Transformación de intensidad en el dominio espacial.
 
 Cuando hablamos de los métodos que trabajan en el _dominio espacial_, nos referimos a las técnicas que manipulan _directamente_ los pixeles contenidos dentro del plano de la imagen. Estos procedimientos están denotados de la forma:
 
