@@ -2,7 +2,7 @@
 layout: post
 comments: true
 mathjax: true
-title: 2.1| Imagen negativa/complemento _(Intro a transformaciones espaciales)_
+title: 2.1| Imagen negativa/complemento (Intro a transformaciones espaciales)
 ---
 ## Funciones de transformación de intensidad en el dominio espacial
 
@@ -39,5 +39,23 @@ $$g(x, y) = (L-1) - f(x, y)$$
 Y ahora si ya estamos ready to go, en la __Figura 2.3__ observamos el efecto de esta transformación.
 
 {: .center}
-![sameImageVS]({{ site.baseurl }}/images/sameImageVS.PNG)
- __Figura 2.2__ _Aquí, las intensidades en la imagen de salida corresponden con aquellas en la imagen de entrada_.
+![negativeImage]({{ site.baseurl }}/images/negativeImage.PNG)
+ __Figura 2.3__ _En este caso, la imagen de entrada es el complemento a la imagen de salida, si sumamos ambas imágenes obtendriamos una imagen totalmente blanca_.
+ 
+ De igual manera, en la __Figura 2.4__ se muestra de manera mas detallada este proceso, por ejemplo, a un pixel en la imagen de entrada $$f(i, j) = 200$$ le corresponderá $$g(i, j) = 55$$, en la gráfica del medio se muestra la recta que mapea a estas intensidades. 
+ 
+ {: .center}
+![negativeImageVS]({{ site.baseurl }}/images/negativeImageVS.PNG)
+ __Figura 2.4__ _Con esta transformación, a cada pixel de entrada le corresponde el complemento en el pixel de salida_.
+ 
+ Esta transformación tiene múltiples aplicaciones, en donde objetos claros rodeados de un fondo oscuro no son del todo bien percibidos por el ojo humano, en cambio, objetos claros en fondo oscuro si que si, por ejemplo, en la __Figura 2.5__ se muestran unas lesiones adquiridas por tuberculosis, en donde en la imagen de la derecha se le aplica la transformación negativa en favor de una mejor visualización de estas regiones.
+ 
+ {: .center}
+![chest]({{ site.baseurl }}/images/chest.PNG)
+ __Figura 2.5__ _A la izquierda encontramos una imagen adquirida por rayos X, en donde un paciente cuenta con lesiones producidas por tuberculosis (complejo de Ghon), a la derecha se aplicó la transformación negativa de esta imagen para ayudar a una mejor comprensión de los detalles.  (imagen tomada de [aqui](https://en.wikipedia.org/wiki/Tuberculosis_radiology#/media/File:Chest_x-ray_of_Ghon%27s_complex_of_active_tuberculosis.jpg)) _.
+ 
+ ## Referencias
+ [capitulo 3 del libro de Gonzalez](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
+ 
+ 
+ 
