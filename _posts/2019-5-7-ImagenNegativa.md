@@ -26,7 +26,7 @@ Como podemos notar, ambas imágenes son iguales, es decir, que el brillo de los 
 
 ## Imagen Negativa/Complemento
 
-> La implementación de este código en Python y Matlab lo encuentras en este [repositorio](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/2.1%20imagen%20negativa)
+> La implementación de este algoritmo tanto en Python como en MATLAB lo encuentras en este [repositorio](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/2.1%20imagen%20negativa)
 
 Ahora proseguiremos con una de las transformadas más sencillas, en donde obtendremos el _negativo_ de la imagen de entrada, en donde se espera que la intensidad de los pixeles en la imagen de salida sea _complementaria_ a aquella de la imagen de entrada. Para lograrlo, consideramos que la suma de ambas intensidades, debe ser igual $$L-1$$ el cual es la cantidad de niveles de brillo de una imagen (Recuerdas el formato Uint8, pues en ese caso serían 255), de la forma:
 
