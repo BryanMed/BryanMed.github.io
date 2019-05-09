@@ -19,11 +19,23 @@ Por ejemplo, el resultado de elevar $$2$$ a la $$3^{a}$$ potencia ($$2^{3}$$) da
 {: .center} 
 $$2^{3} = 2 \times 2 \times 2 = 8$$
 
-En el logaritmo, nos preguntamos ¿a qué potencia debemos de elevar la base ($$2$$) para obtener $$8$$? y... pues sí, $$3$$
+En el logaritmo nos preguntamos ¿a qué potencia debemos de elevar la base ($$2$$) para obtener $$8$$? y... pues sí, $$3$$
 
 >$$2^{3} = 8 \longleftrightarrow \log_{2}8 = 3$$
 
 Ojito que el logaritmo solo está definido para número reales positivos ($$>0$$).
+
+Y bueno, después de esa breve introducción, ahora si entraremos en materia, el logaritmo es utilizado como función de transformación con el objetivo de ampliar el rango dinámico de ciertas intensidades, teniendo claro, el compromiso de reducirlo en otras. Este método está definido por:
+
+{: .center}
+$$g(x, y) = c \: \log_{10}(1 + f(x, y)$$
+
+En donde $$c$$ es una constante (usualmente 1). El $$1$$ dentro de la función es necesario ya que, como mencionamos antes, el logaritmo no está definido en $$0$$ y es muy probable encontrar pixeles con brillo igual a $$0$$.  
+
+
+
+https://es.khanacademy.org/math/algebra2/exponential-and-logarithmic-functions/introduction-to-logarithms/a/intro-to-logarithms
+
 
 
 
