@@ -21,7 +21,7 @@ $$2^{3} = 2 \times 2 \times 2 = 8$$
 
 En el logaritmo, nos preguntamos ¿a qué potencia debemos de elevar la base ($$2$$) para obtener $$8$$? y... pues sí, $$3$$
 
->$$2^{3} = 8 \longleftrightarrow \log_{2}8 = 3
+>$$2^{3} = 8 \longleftrightarrow \log_{2}8 = 3$$
 
 Ojito que el logaritmo solo está definido para número reales positivos ($$>0$$).
 
