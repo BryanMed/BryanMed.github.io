@@ -27,10 +27,3 @@ Ojito que el logaritmo solo está definido para número reales positivos ($$>0$$
 
 
 
-
-
-
-
-
-
-los logaritmos solo están definidos para números naturales positivos ($$>0$$)
