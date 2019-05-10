@@ -46,7 +46,7 @@ El propósito de esta constante es el de ajustar el rango de valores de salida a
 Una de las mayores aplicaciones de esta transformación es la _comprimir_ el rango dinámico de las imágenes obtenidas por la _transformada de Fourier_ (ya veremos este temita más adelante) en donde las intensidades se pueden encontrar en un rango de $$0$$ hasta $$10^{6}$$ (incluso más). ¿Cual es el problema con el despliegue de estas imágenes? Pues que en el caso de hacer simplemente una relación lineal entre el rango de la imagen de entrada ($$[0 - 10^{6}]$$) para su despliegue en un dispositivo de 8 bits (rango de $$[0 - 255]$$), los valores con mayor intensidad en la entrada, serán considerados blancos en la salida, sin embargo, estos pixeles acapararán toda la atención, y los detalles que ofrecen los pobres pixeles con brillos intermedios y oscuros serán mayormenente ignorados ya que las intensidades que les son asignadas a la salida serán muy similares entre sí, por ejemplo una diferencia de quizá 1000 unidades en la entrada, será igual o menor a una diferencia unitaria en la salida (yup, indeferenciable al ojo humano). Lo que nos permite la transformación logarítmica es, precisamente, _ampliar_ el rango de despliegue de aquellas intensidades bajas y oscuras. En la __Figura 2.2__ encontramos un ejemplo de los efectos de esta transformación en una imagen del espectro de Fourier.
 
 {: .center}
-![logFourier]({{ site.baseurl }}/images/logFourier.PNG)
+![logFourier]({{ site.baseurl }}/images/logF1.PNG)
  __Figura 2.2__ _Se observa la gran mejora en la imagen, que nos permite apreciar con más claridad aquellos detalles que antes de la transformada, estaban ocultos (la imagen la tomé de [aquí](http://www.cs.uregina.ca/Links/class-info/425-nova/Lab5/index.html
 )_.
 
