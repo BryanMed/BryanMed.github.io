@@ -54,7 +54,7 @@ Y bueno, en la __Figura 2.2__ encontramos otro ejemplito en donde se amplia el r
 
 {: .center}
 ![logDark]({{ site.baseurl }}/images/logDark.PNG)
- __Figura 2.2__ _Se observa un mayor __contraste__ en la imagen de salida_.
+ __Figura 2.2__ _Se observa un mayor __contraste__ en la imagen de salida_ ... imagen tomada de la [serie Dark de Netflix](https://www.netflix.com/mx/title/80100172).
  
  Pero esta transformación no siempre es adecuada, como vemos, en la __Figura 2.3__, en el que pareciera que le aplicamos un _offset_ a la imagen, saturandola de intensidades altas.
 
