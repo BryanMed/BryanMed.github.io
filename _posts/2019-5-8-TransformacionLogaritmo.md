@@ -67,10 +67,10 @@ Y bueno, en la __Figura 2.2__ encontramos otro ejemplito en donde se amplia el r
 
 ## Referencias
 
-..* [explicación de logaritmo wiki](https://es.wikipedia.org/wiki/Logaritmo)
-..* [explicación de logaritmo Khanacademy](https://es.khanacademy.org/math/algebra2/exponential-and-logarithmic-functions/introduction-to-logarithms/a/intro-to-logarithms)
-..* [libro de Digital Image Processing de Gonzalez & Woods](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
-..* [buenísima explicación del logaritmo en image processing](https://homepages.inf.ed.ac.uk/rbf/HIPR2/pixlog.htm)
+* [explicación de logaritmo wiki](https://es.wikipedia.org/wiki/Logaritmo)
+* [explicación de logaritmo Khanacademy](https://es.khanacademy.org/math/algebra2/exponential-and-logarithmic-functions/introduction-to-logarithms/a/intro-to-logarithms)
+* [libro de Digital Image Processing de Gonzalez & Woods](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
+* [buenísima explicación del logaritmo en image processing](https://homepages.inf.ed.ac.uk/rbf/HIPR2/pixlog.htm)
 
 
 
