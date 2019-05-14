@@ -15,3 +15,4 @@ En donde $$g(x, y)$$ corresponde a la imagen de salida, el valor de $$c$$ es una
 {: .center}
 $$c = \frac{255}{\max(f(x, y)^{\gamma})$$
 
+SADASD
