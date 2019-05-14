@@ -13,5 +13,5 @@ $$g(x, y) = c \: f(x, y)^{\gamma}$$
 En donde $$g(x, y)$$ corresponde a la imagen de salida, el valor de $$c$$ es una constante de escalamiento, que en este caso está definido por:
 
 {: .center}
-%%c = \frac{255}{\max(f(x, y)^{\gamma})
+$$c = \frac{255}{\max(f(x, y)^{\gamma})$$
 
