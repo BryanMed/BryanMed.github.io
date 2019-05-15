@@ -22,7 +22,15 @@ Y bueno, cuando $$\gamma = 1$$ los valores de los pixeles serán elevados a 1, y
 {: .center}
 ![gammagraph]({{ site.baseurl }}/images/graphGamma.PNG)
 ![gammaLenna]({{ site.baseurl }}/images/gamaLena.PNG)
- __Figura 2.1__ _Espectro electromagnético, en donde se aprovechan las propiedades de las distintas longitudes de onda con el objetivo de obtener información para su posterior visualización/interpretación_.
+ __Figura 2.1__ _babaababa_.
+
+
+{: .center}
+![espinazo]({{ site.baseurl }}/images/gammaEspinazo.PNG)
+
+{: .center}
+![rose]({{ site.baseurl }}/images/gammaRose.PNG)
+
 
 
 
