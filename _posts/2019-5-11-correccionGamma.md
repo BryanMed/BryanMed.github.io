@@ -32,7 +32,9 @@ Y bueno, cuando $$\gamma = 1$$ los valores de los pixeles serán elevados a 1, y
 ![rose]({{ site.baseurl }}/images/gammaRose.PNG)
 
 
-
+## Referencias
+ 
+ [capitulo 3 del libro de Gonzalez](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
 
 http://drosehoops.com/2018/08/derrick-rose-announces-the-rose-scholars-program/
 https://radiopaedia.org/cases/ganglioglioma-of-the-cervical-cord
