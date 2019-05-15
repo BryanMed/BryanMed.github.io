@@ -10,7 +10,7 @@ Además de la [transformación logarítmica](https://bryanmed.github.io/Transfor
 {: .center}
 $$g(x, y) = c \: f(x, y)^{\gamma}$$
 
-En donde $$g(x, y)$$ corresponde a la imagen de salida, el valor de $$c$$, por otro lado, es una constante de escalamiento, que nos permite obtener los valores de salida dentro de un rango deseado (en este caso de 0 - 255), la cual es calculada a partir de:
+En donde $$g(x, y)$$ corresponde a la imagen de salida, el valor de $$c$$, por otro lado, es una constante de escalamiento que nos permite obtener los valores de salida dentro de un rango deseado (en este caso de 0 - 255), la cual es calculada a partir de:
 
 {: .center}
 $$c = \frac{255}{\max(f(x, y)^{\gamma}) }$$
