@@ -20,11 +20,11 @@ La transformación de potencia es conocida también _corrección gamma_ dado que
 Y bueno, cuando $$\gamma = 1$$ los valores de los pixeles serán elevados a 1, y por tanto, no tendrá ningún efecto a la salida. No obstante, cuando los valores de $$\gamma$$ son menores a la unidad, se obtiene un efecto similar al de la transformación logaritmo, en donde a las regiones oscuras se les asigna un mayor rango dinámico en la salida, mejorando el contraste en estas zonas. Por otro lado, con valores de $$\gamma$$ mayores a la unidad, pasa exactamente lo contrario, las regiones de brillos intensos son mapeados a un rango de grises más amplio, mejorando el nivel de detalle. En la __Figura 2.1__ observamos en la gráfica, la morfología que adoptan las funciones de mapeo de acuerdo al valor de $$\gamma$$ asignado, y enseguida podemos notar el efecto que tienen estas transformaciones en la imagen.   
 
 {: .center}
-![gammagraph]({{ site.baseurl }}/images/graphGamma.PNG)
 ![gammaLenna]({{ site.baseurl }}/images/gamaLena.PNG)
+![gammagraph]({{ site.baseurl }}/images/graphGamma.PNG)
  __Figura 2.1__ _babaababa_.
 
-
+A continuación, veremos dos casos en donde, mediante el uso de la transformación de potencia, se logra mejorar el nivel de detalle en las imágenes, en el caso de la __Figura 2.2__ vemos que la imagen original
 {: .center}
 ![espinazo]({{ site.baseurl }}/images/gammaEspinazo.PNG)
 
