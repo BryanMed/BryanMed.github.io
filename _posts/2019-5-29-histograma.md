@@ -25,6 +25,8 @@ $$H[r] = \frac{n}{N}$$
 
 Y cuya suma de todos los componentes resulta en la unidad. A esta representación se le conoce como la función de densidad de probabilidad de una imagen, en donde se nos muestra la probabilidad (en una escala de 0 a 1) de encontrar un pixel en particular con determinado brillo dentro de la imagen.
 
+> La implementación del Histograma de una imagen  (Python y MATLAB) la encuentras en [este](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/2.5%20Histograma) repositorio.
+
 Como mencionamos en un inicio, el histograma es muy útil para caracterizar una imagen, por ejemplo, en la __Figura 2.2__ observamos la manera en la que el histograma cambia de acuerdo a las intensidades que se presentan. La primera imagen está saturada con altos niveles de brillo , es por ello que en el histograma correspondiente observamos que las intensidades altas son las que predominan. Por otro lado, en la imagen oscura, vemos como la distribución del histograma se concentra en los niveles bajos. Una imagen que exhibe un mayor contraste, es aquella que cuenta con una distribución mas amplia de intensidades
 
 {: .center}
