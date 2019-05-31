@@ -21,7 +21,7 @@ __Figura 2.1__ _A la izquierda se muestra una imagen de 5x5, en donde 5 pixeles 
 Muchas veces el histograma es _normalizado_, es decir, que los componentes $$n$$ son divididos por el número total de pixeles ($$N$$) de la imagen, con lo cual se tiene:
 
 {: .center}
-$$H[r] = n/N$$
+$$H[r] = \frac{n}{N}$$
 
 Y cuya suma de todos los componentes resulta en la unidad. A esta representación se le conoce como la función de densidad de probabilidad de una imagen, en donde se nos muestra la probabilidad (en una escala de 0 a 1) de encontrar un pixel en particular con determinado brillo dentro de la imagen.
 
