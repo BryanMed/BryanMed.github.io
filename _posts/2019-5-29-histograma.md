@@ -43,6 +43,9 @@ En la __Figura 2.3__ observamos otro ejemplo de la importancia que tienen los hi
 ![negHist]({{ site.baseurl }}/images/HistInverse.PNG)
 __Figura 2.3__ _La imagen negativa se forma al sustituir el valor de intensidad original por su complemento, en este caso, el histograma refleja este mismo hecho._
 
+## Referencias
+* [Libro de Digital Image Processing de Gonzalez y Woods](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
+* [Notas de fundamentos de DIP - Roger L. Easton jr.] (https://www.cis.rit.edu/class/simg361/Notes_11222010.pdf)
 
 
 
