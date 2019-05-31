@@ -46,7 +46,7 @@ __Figura 2.3__ _La imagen negativa se forma al sustituir el valor de intensidad 
 ## Referencias
 * [Libro de Digital Image Processing de Gonzalez y Woods](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
 
-* [Notas de fundamentos de DIP - Roger L. Easton jr.] (https://www.cis.rit.edu/class/simg361/Notes_11222010.pdf)
+* [Notas de fundamentos de DIP - Roger L. Easton jr.](https://www.cis.rit.edu/class/simg361/Notes_11222010.pdf)
 
 
 
