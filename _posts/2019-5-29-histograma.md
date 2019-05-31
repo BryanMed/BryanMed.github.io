@@ -26,3 +26,14 @@ $$H[r] = n/N$$
 Y cuya suma de todos los componentes resulta en la unidad. A esta representación se le conoce como la función de densidad de probabilidad de una imagen, en donde se nos muestra la probabilidad (en una escala de 0 a 1) de encontrar un pixel en particular con determinado brillo dentro de la imagen.
 
 Como mencionamos en un inicio, el histograma es muy útil para caracterizar una imagen, por ejemplo, en la __Figura 2.2__ observamos la manera en la que el histograma cambia de acuerdo a las intensidades que se presentan. La primera imagen está saturada con altos niveles de brillo , es por ello que en el histograma correspondiente observamos que las intensidades altas son las que predominan. Por otro lado, en la imagen oscura, vemos como la distribución del histograma se concentra en los niveles bajos. Una imagen que exhibe un mayor contraste, es aquella que cuenta con una distribución mas amplia de intensidades
+
+{: .center}
+![lightHist]({{ site.baseurl }}/images/HistLight.PNG)
+![lightHist]({{ site.baseurl }}/images/HistDark.PNG)
+![lightHist]({{ site.baseurl }}/images/HistNorm.PNG)
+__Figura 2.2__ _En la imagen superior se obsera una imagen saturada en altas intensidades, en medio encontramos una imagen predominantemente oscura y finalmente una imagen en donde se aprecian mejor los detalles; a un lado, encontramos su respectivo de histograma que nos da una idea de la distribución de los niveles de brillo de la imagen.
+
+
+
+
+
