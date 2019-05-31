@@ -17,3 +17,12 @@ En donde la variable independiente $$r$$ corresponde a los niveles de brillo de 
 {: .center}
 ![5x5]({{ site.baseurl }}/images/Histograma5x5.PNG)
 __Figura 2.1__ _A la izquierda se muestra una imagen de 5x5, en donde 5 pixeles corresponden al color oscuro y 20 al blanco. A la derecha se muestra su histograma, con el cual podemos observar rápidamente la cantidad de pixeles correspondientes a cada intensidad._
+
+Muchas veces el histograma es _normalizado_, es decir, que los componentes $$n$$ son divididos por el número total de pixeles ($$N$$) de la imagen, con lo cual se tiene:
+
+{: .center}
+$$H[r] = n/N$$
+
+Y cuya suma de todos los componentes resulta en la unidad. A esta representación se le conoce como la función de densidad de probabilidad de una imagen, en donde se nos muestra la probabilidad (en una escala de 0 a 1) de encontrar un pixel en particular con determinado brillo dentro de la imagen.
+
+Como mencionamos en un inicio, el histograma es muy útil para caracterizar una imagen, por ejemplo, en la __Figura 2.2__ observamos la manera en la que el histograma cambia de acuerdo a las intensidades que se presentan. La primera imagen está saturada con altos niveles de brillo , es por ello que en el histograma correspondiente observamos que las intensidades altas son las que predominan. Por otro lado, en la imagen oscura, vemos como la distribución del histograma se concentra en los niveles bajos. Una imagen que exhibe un mayor contraste, es aquella que cuenta con una distribución mas amplia de intensidades
