@@ -29,7 +29,9 @@ Como mencionamos en un inicio, el histograma es muy útil para caracterizar una 
 
 {: .center}
 ![lightHist]({{ site.baseurl }}/images/HistLight.PNG)
+
 ![DarkHist]({{ site.baseurl }}/images/HistDark.PNG)
+
 ![NormHist]({{ site.baseurl }}/images/HistNorm.PNG)
 __Figura 2.2__ _En la imagen superior se obsera una imagen saturada en altas intensidades, en medio encontramos una imagen predominantemente oscura y finalmente una imagen en donde se aprecian mejor los detalles; a un lado, encontramos su respectivo de histograma que nos da una idea de la distribución de los niveles de brillo de la imagen._
 
