@@ -35,6 +35,12 @@ Como mencionamos en un inicio, el histograma es muy útil para caracterizar una 
 ![NormHist]({{ site.baseurl }}/images/HistNorm.PNG)
 __Figura 2.2__ _En la imagen superior se obsera una imagen saturada en altas intensidades, en medio encontramos una imagen predominantemente oscura y finalmente una imagen en donde se aprecian mejor los detalles; a un lado, encontramos su respectivo de histograma que nos da una idea de la distribución de los niveles de brillo de la imagen._
 
+En la __Figura 2.3__ observamos otro ejemplo de la importancia que tienen los histogramas a la hora de mejorar el proceso de comprensión de la información en una imagen. Recordando la [Transformación Negativa](https://bryanmed.github.io/ImagenNegativa/), en donde se obtiene el inverso de una imagen, al observar sus histogramas notamos que este último también es invertido. 
+
+{: .center}
+![negHist]({{ site.baseurl }}/images/HistInverse.PNG)
+__Figura 2.3__ _La imagen negativa se forma al sustituir el valor de intensidad original por su complemento, en este caso, el histograma refleja este mismo hecho._
+
 
 
 
