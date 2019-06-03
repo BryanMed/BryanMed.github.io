@@ -25,16 +25,14 @@ Finalmente en la __Figura 2.3__ observamos el resultado de esta operación, que 
 
 {: .center}
 ![linearG]({{ site.baseurl }}/images/linearG.PNG)
-__Figura 2.3__ _Es posible observar de mejor manera los detalles de la imagen, En su histograma observamos _.
+__Figura 2.3__ _Es posible notar de mejor manera los detalles de la imagen, En su histograma observamos que tiene la misma morfología que aquél de la imagen de entrada, pero "estirado" ocupando un rango mayor de intensidades_.
 
 En la __Figura 2.4__ se muestra otro ejemplo, con una imagen viejita de la iglesia de Santa Catarina, en Rioverde, SLP.
 
 {: .center}
 ![linearG]({{ site.baseurl }}/images/rioverde.PNG)
-__Figura 2.4__ _lalalaalala_.
+__Figura 2.4__ _[Iglesia de Santa Catarina](http://siglo.inafed.gob.mx/enciclopedia/EMM24sanluispotosi/municipios/24024a.html) la cual exhibe un bajo contraste, y que al aplicar la transformación de "estiramiento de contraste" mejora la calidad de la imagen, al permitir utilizar los valores oscuros, como muestra el histograma correspondiente_.
 
-
-https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728
-https://homepages.inf.ed.ac.uk/rbf/HIPR2/stretch.htm
-http://siglo.inafed.gob.mx/enciclopedia/EMM24sanluispotosi/municipios/24024a.html
-
+## Referencias
+[Capítulo 3.4 del libro de Gonzáles](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
+[Explicación de contrast stretching](https://homepages.inf.ed.ac.uk/rbf/HIPR2/stretch.html)
