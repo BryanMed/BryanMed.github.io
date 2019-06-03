@@ -13,19 +13,19 @@ El primer paso de esta metodología es visualizar el [histograma](https://bryanm
 
 {: .center}
 ![linearF]({{ site.baseurl }}/images/linearF.PNG)
-__Figura 2.1__ _lalalaalala_.
+__Figura 2.1__ _[Imagen de un abdomen adquirido por rayos X](https://www.quia.com/pages/ra110a.html) con bajo contraste, en su histograma observamos que el rango de intensidades disponibles en la imagen está muy limitado._
 
 A continuación, es definida la función de mapeo tomando en consideración el rango de valores de la imagen anterior, que serán proyectados a un rango más grande. La recta en verde (__Figura 2.2__) será la encargada de mapear las intensidades de entrada (80 - 175 en el eje X) a los niveles de brillo en la salida (0 - 255 en el eje Y).
 
 {: .center}
 ![linearM]({{ site.baseurl }}/images/linearMapping.PNG)
-__Figura 2.2__ _lalalaalala_.
+__Figura 2.2__ _Función de mapeo que permite proyectar el rango original (80 - 175 en el eje X), a uno más amplio en la imagen de salida (0 - 255 en el eje Y)_.
 
 Finalmente en la __Figura 2.3__ observamos el resultado de esta operación, que como podemos notar, obtenemos una imagen con un mayor contraste, en donde es posible identificar con mayor claridad detalles. En el histograma podemos constatar que las intensidades de esta nueva imagen ocupan todo el rango de valores disponibles en una imagen tipo Uint8 (256 niveles de brillo), y que, como hablaremos más adelante en el tema de [histogram matching](www.bryanmed.github.io), permite obtener imágenes más nítidas.
 
 {: .center}
 ![linearG]({{ site.baseurl }}/images/linearG.PNG)
-__Figura 2.3__ _lalalaalala_.
+__Figura 2.3__ _Es posible observar de mejor manera los detalles de la imagen, En su histograma observamos _.
 
 En la __Figura 2.4__ se muestra otro ejemplo, con una imagen viejita de la iglesia de Santa Catarina, en Rioverde, SLP.
 
@@ -37,4 +37,4 @@ __Figura 2.4__ _lalalaalala_.
 https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728
 https://homepages.inf.ed.ac.uk/rbf/HIPR2/stretch.htm
 http://siglo.inafed.gob.mx/enciclopedia/EMM24sanluispotosi/municipios/24024a.html
-https://www.quia.com/pages/ra110a.html
+
