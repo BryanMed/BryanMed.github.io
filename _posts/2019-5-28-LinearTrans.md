@@ -9,6 +9,8 @@ Las transformaciones que modifican los niveles de intensidad de una imagen no ti
 
 Como su nombre indica, las transformaciones lineales por partes buscan crear una función de mapeo que se adapte a las necesidades del usuario mediante aproximanciones de rectas. Entre estas técnicas, una de las más populares es el llamado _contrast stretching_ ("estiramiento de contraste") que como su nombre indica, tiene como objetivo expandir el rango de intensidades de la imagen.
 
+> La implementación de este algoritmo en Python y MATLAB la encuentras en [este repositorio](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/2.4%20Transformacion%20lineal%20por%20partes).
+
 El primer paso de esta metodología es visualizar el [histograma](https://bryanmed.github.io/histograma/) de la imagen, el cual nos ayudará a identificar el __rango dinámico__. Con esto, en caso de contar con una distribución de valores muy estrecha, la diferencia de intensidades entre pixeles será muy pequeña, percibiéndose así como una ilustración en donde es difícil diferenciar los elementos de esta. Tomemos como ejemplo la imagen de un abdomen adquirida por rayos X que se muestra en la __Figura 2.1__, en ella vemos que exhibe un muy bajo contraste, lo cual es confirmado por el histograma correspondiente, en donde observamos que el rango de valores que tiene la imagen está concentrado en el rango de 80 a 175. 
 
 {: .center}
