@@ -9,6 +9,18 @@ Las transformaciones que modifican los niveles de intensidad de una imagen no ti
 
 Como su nombre indica, las transformaciones lineales por partes buscan crear una función de mapeo que se adapte a las necesidades del usuario mediante aproximanciones de rectas. Entre estas técnicas, una de las más populares es el llamado _contrast stretching_ ("estiramiento de contraste") que como su nombre indica, tiene como objetivo expandir el rango de intensidades de la imagen.
 
-El primer paso de esta metodología es visualizar el [histograma](https://bryanmed.github.io/histograma/) de la imagen, el cual nos ayudará a identificar el __rango dinámico__, que indica la variedad de intensidades que presenta una imagen, así, entre mayor sea este rango, mayor será la cantidad de valores disponibles en la representación y por ende mostrará un mayor contraste. Tomemos como ejemplo la imagen con bajo contraste mostrada en la __Figura 2.1__ en la cual notamos que es dificil de distinguir detalles, a la derecha encontramos el histograma correspondiente, en donde notamos el pequeño rango en el cual se encuentra, lo que produce que la 
+El primer paso de esta metodología es visualizar el [histograma](https://bryanmed.github.io/histograma/) de la imagen, el cual nos ayudará a identificar el __rango dinámico__. Con esto, en caso de contar con una distribución de valores muy estrecha, la diferencia de intensidades entre pixeles será muy pequeña, percibiéndose así como una ilustración en donde es difícil diferenciar los elementos de esta. Tomemos como ejemplo la imagen de un abdomen adquirida por rayos X que se muestra en la __Figura 2.1__, en ella vemos que exhibe un muy bajo contraste, lo cual es confirmado por el histograma correspondiente, en donde observamos que el rango de valores que tiene la imagen está concentrado en el rango de 80 a 175. 
+
+imagen prrona
+
+A continuación, es definida la función de mapeo tomando en consideración el rango de valores de la imagen anterior, que serán proyectados a un rango más grande. La recta en verde (__Figura 2.2__) será la encargada de mapear las intensidades de entrada (80 - 175 en el eje X) a los niveles de brillo en la salida (0 - 255 en el eje Y).
+
+Imagen prrona x2
+
+Finalmente en la __Figura 2.3__ observamos el resultado de esta operación, que como podemos notar, obtenemos una imagen con un mayor contraste, en donde es posible identificar con mayor claridad detalles. En el histograma podemos constatar que las intensidades de esta nueva imagen ocupan todo el rango de valores disponibles en una imagen tipo Uint8 (256 niveles de brillo), y que, como hablaremos más adelante en el tema de [histogram matching](www.bryanmed.github.io), permite obtener imágenes más nítidas.
+
+
+
+
 
 
