@@ -36,5 +36,5 @@ En la __Figura 2.4__ se muestra otro ejemplo, con una imagen viejita de la igles
 __Figura 2.4__ _[Iglesia de Santa Catarina](http://siglo.inafed.gob.mx/enciclopedia/EMM24sanluispotosi/municipios/24024a.html) la cual exhibe un bajo contraste, y que al aplicar la transformación de "estiramiento de contraste" mejora la calidad de la imagen, al permitir utilizar los valores oscuros, como muestra el histograma correspondiente_.
 
 ## Referencias
-[Capítulo 3.4 del libro de Gonzáles](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
-[Explicación de contrast stretching](https://homepages.inf.ed.ac.uk/rbf/HIPR2/stretch.html)
+* [Capítulo 3.4 del libro de Gonzalez](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
+* [Explicación de contrast stretching](https://homepages.inf.ed.ac.uk/rbf/HIPR2/stretch.html)
