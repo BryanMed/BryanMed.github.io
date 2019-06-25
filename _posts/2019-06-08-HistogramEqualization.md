@@ -23,7 +23,20 @@ Finalmente, la __Figura 3__ corresponde a la imagen original, y podemos notar qu
 ![zorroNormie]({{ site.baseurl }}/images/gamaLena.PNG)
 __Figura 3__ _ayura_.
 
-No obstante, aún es posible mejorar el contraste de esta imagen. Podemos pensar en utilizar la técnica anteriormente discutida de [contrast stretching](https://bryanmed.github.io/LinearTrans/), sin embargo, su función es precisamente ampliar el rango dinámico, y en este caso eso ya no es un problema. Una técnica que se puede utilizar es la llamada _Ecualización del histograma_
+No obstante, aún es posible mejorar el contraste de esta imagen. Podemos pensar en utilizar la técnica anteriormente discutida de [contrast stretching](https://bryanmed.github.io/LinearTrans/), sin embargo, su función es precisamente ampliar el rango dinámico, y en este caso eso ya no es un problema. Una técnica que se puede utilizar es la llamada _Ecualización del histograma_, la cual tiene como objetivo mejorar el contraste de una imagen, al generar una _distribución uniforme_ de las intensidades de salida, esto se ejemplifica en el diagrama de la __Figura 4__.
+
+{: .center}
+![zorroNormie]({{ site.baseurl }}/images/gamaLena.PNG)
+__Figura 4__ _ayura_.
+
+Para demostrar esto, consideremos el caso continuo, en donde las función de transformación se encuentra de la forma:
+
+{: .center}
+$$s = T(r), r \in \[0, L-1\]$$
+
+
+
+
 
 
 
