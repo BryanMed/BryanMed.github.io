@@ -28,7 +28,7 @@ __Figura 3__ _Mejor distribución de los niveles de intensidad, sin embargo, aú
 No obstante, aún es posible mejorar el contraste de esta imagen. Podemos pensar en utilizar la técnica anteriormente discutida de [contrast stretching](https://bryanmed.github.io/LinearTrans/), sin embargo, su función es precisamente ampliar el rango dinámico, y en este caso eso ya no es un problema. Una técnica que se puede utilizar es la llamada _Ecualización del histograma_, la cual tiene como objetivo mejorar el contraste de una imagen, al generar una _distribución uniforme_ de las intensidades de salida, esto se ejemplifica en el diagrama de la __Figura 4__.
 
 {: .center}
-![zorroNormie]({{ site.baseurl }}/images/zorroEqualizado.PNG)
+![zorroNormie]({{ site.baseurl }}/images/equalizacionGoals.PNG)
 __Figura 4__ _El objetivo de la ecualizacion de histograma es precisamente el de generar una distribución equiprobable en todos los niveles de intensidad_.
 
 Para demostrar esto, consideremos el caso continuo, en donde las función de transformación se encuentra de la forma:
@@ -66,7 +66,7 @@ $$P_{s}(s) = P_{r}(r) \dot |\frac{dr}{ds}|$$
 
 $$P_{s}(s) = P_{r}(r) |\frac{1}{(L-1)P_{r}(r)}|$$
 
-$$P_{s}(s) = \frac{1}{(L-1)P_{r}(r)}$$
+$$P_{s}(s) = \frac{1}{(L-1)}$$
 
 Con lo cual, se concluye que la distribución será un valor constante, independientemente del valor de entrada (y tendra una distribución uniforme -> equiprobable).
 
