@@ -5,8 +5,6 @@ mathjax: true
 title: 2.6| Ecualización de Histograma
 ---
 
-> La implementación de este código en Python y MATLAB la encuentras en [este](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/2.5.1%20Equalizacion%20de%20histograma) repositorio.
-
 Tomémonos un tiempo para analizar y discutir los siguientes histogramas (con su respectiva imagen). En el primer caso, que se muestra en la __Figura 1__ observamos que la distribución del histograma está concentrada en los valores bajos de intensidad, esto a su vez se ve reflejado en la imagen correspondiente, la cual es predominantemente oscura, y con un bajísimo contraste. 
 
 {: .center}
@@ -30,6 +28,8 @@ No obstante, aún es posible mejorar el contraste de esta imagen. Podemos pensar
 {: .center}
 ![zorroNormie]({{ site.baseurl }}/images/equalizacionGoals.PNG)
 __Figura 4__ _El objetivo de la ecualizacion de histograma es precisamente el de generar una distribución equiprobable en todos los niveles de intensidad_.
+
+> La implementación de este código en Python y MATLAB la encuentras en [este](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/2.5.1%20Equalizacion%20de%20histograma) repositorio.
 
 Para demostrar esto, consideremos el caso continuo, en donde las función de transformación se encuentra de la forma:
 
@@ -92,7 +92,7 @@ __Figura Bonus__ _La poderosísima facultad de ciencias, de la UASLP_.
 
 * [libro de Gonzalez](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
 * [libro de A. Jain](https://www.amazon.com/Fundamentals-Digital-Image-Processing-Anil/dp/0133361659)
-* [imagen del zorrito fennec] (https://www.expertoanimal.com/el-zorro-fenec-como-mascota-20353.html)
+* [imagen del zorrito fennec](https://www.expertoanimal.com/el-zorro-fenec-como-mascota-20353.html)
 * [demostración de la ecualización de histograma](http://appliedmaths.sun.ac.za/TW793/slides/slides_3_2.pdf)
 * [ecualización de histograma](http://www.ent.mrt.ac.lk/~ranga/courses/it3604_2009/L02_Point_Operations_Article.pdf)
 
