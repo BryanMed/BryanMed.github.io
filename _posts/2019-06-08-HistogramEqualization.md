@@ -77,7 +77,7 @@ Y bueno, si bien en las imágenes digitales, dada su naturaleza discreta, es imp
 __Figura 5__ _Función de densidad de probabilidad acumulada, utilizada como función de mapeo para generar la ecualización de histograma_.
 
 {: .center}
-![zorroOscuro]({{ site.baseurl }}/images/zorroEqualized.PNG)
+![zorroOscuro]({{ site.baseurl }}/images/zorroEqualizado.PNG)
 __Figura 6__ _Resultado de aplicar la ecualización de histograma, obsérvese como se mejora la distribución de los niveles de intensidad en el histograma respecto a los ejemplos anteriores_.
 
 En resumen, y siendo un poquitíto muy práctico, la implementación de la ecualización de histograma en imágenes digitales se lleva a cabo utilizando la función de distribución acumulada, que no es más que la suma de las probabilidades hasta una intensidad en particular. En varios lenguajes de programación es fácil encontrarlo como la "suma acumulada" - cumsum pa los cuates.
