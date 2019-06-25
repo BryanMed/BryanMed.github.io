@@ -32,7 +32,7 @@ __Figura 4__ _ayura_.
 Para demostrar esto, consideremos el caso continuo, en donde las función de transformación se encuentra de la forma:
 
 {: .center}
-$$s = T(r), \hspace(1cm) r \in [0, L - 1]$$
+$$s = T(r), r \in [0, L - 1]$$
 
 En donde $$s$$ es la imagen de salida, $$T$$ es la función de transformación y $$r$$ es la imagen de entrada. Para realizar este método se toma en cuenta una sola consideración y es que:
 
@@ -48,18 +48,22 @@ Una función que cumple con el enunciado de ser monotónicamente creciente, es l
 {: .center}
 $$s = T(r) = (L-1) \int_{0}^{r} P_{r}(w) dw$$
 
-Con esto, al diferenciar respecto a $$r$$, la ecuación $$s = T(r)$$, tenemos: 
+Así, al diferenciar respecto a $$r$$, la ecuación $$s = T(r)$$, tenemos: 
 
 {: .center}
 $$\frac{ds}{dr} = \frac{dT(r)}{ds}$$
+
 $$\frac{ds}{dr} = (L-1) \frac{d {P_{r}(r) \dot |\frac{dr}{ds}|}{dr}$$
+
 $$\frac{ds}{dr} = (L-1) P_{r}(r)$$
 
 Con esto, sustituimos $$\frac{ds}{dr}$$ en la primera ecuación, de tal manera que:
 
 {: .center}
 $$P_{s}(s) = P_{r}(r) \dot |\frac{dr}{ds}|$$
+
 $$P_{s}(s) = P_{r}(r) \dot |frac{1}{(L-1)P_{r}(r)|$$
+
 $$P_{s}(s) = frac{1}{(L-1)P_{r}(r)$$
 
 Con lo cual, se concluye que la distribución será un valor constante, independientemente del valor de entrada (y tendra una distribución uniforme -> equiprobable)
