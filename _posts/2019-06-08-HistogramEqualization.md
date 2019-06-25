@@ -62,11 +62,37 @@ Con esto, sustituimos $$\frac{ds}{dr}$$ en la primera ecuación, de tal manera q
 {: .center}
 $$P_{s}(s) = P_{r}(r) \dot |\frac{dr}{ds}|$$
 
-$$P_{s}(s) = P_{r}(r) \dot |frac{1}{(L-1)P_{r}(r)}|$$
+$$P_{s}(s) = P_{r}(r) |\frac{1}{(L-1)P_{r}(r)}|$$
 
-$$P_{s}(s) = frac{1}{(L-1)P_{r}(r)}$$
+$$P_{s}(s) = \frac{1}{(L-1)P_{r}(r)}$$
 
-Con lo cual, se concluye que la distribución será un valor constante, independientemente del valor de entrada (y tendra una distribución uniforme -> equiprobable)
+Con lo cual, se concluye que la distribución será un valor constante, independientemente del valor de entrada (y tendra una distribución uniforme -> equiprobable).
+
+Y bueno, si bien en las imágenes digitales, dada su naturaleza discreta, es imposible obtener una distribución totalmente uniforme, como ejemplo, en la __Figura 5__ observamos que el histograma y los valores de cada nivel de intensidad están mejor distribuidos. 
+
+{: .center}
+![zorroOscuro]({{ site.baseurl }}/images/gamaLena.PNG)
+__Figura 1__ _ayura_.
+
+En resumen, y siendo un poquitíto muy práctico, la implementación de la ecualización de histograma en imágenes digitales se lleva a cabo utilizando la función de distribución acumulada, que no es más que la suma de las probabilidades hasta una intensidad en particular. En varios lenguajes de programación es fácil encontrarlo como la "suma acumulada" - cumsum pa los cuates.
+
+> La implementación de este código en Python y MATLAB la encuentras en [este](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/2.5.1%20Equalizacion%20de%20histograma) repositorio.
+
+### Referencias
+
+* [libro de Gonzalez](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
+* [libro de A. Jain](https://www.amazon.com/Fundamentals-Digital-Image-Processing-Anil/dp/0133361659)
+* [imagen del zorrito fennec] (https://www.expertoanimal.com/el-zorro-fenec-como-mascota-20353.html)
+* [demostración de la ecualización de histograma](http://appliedmaths.sun.ac.za/TW793/slides/slides_3_2.pdf)
+* [ecualización de histograma](http://www.ent.mrt.ac.lk/~ranga/courses/it3604_2009/L02_Point_Operations_Article.pdf)
+
+
+
+
+
+
+
+
 
 
 
