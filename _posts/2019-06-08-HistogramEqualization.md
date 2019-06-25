@@ -53,7 +53,7 @@ Así, al diferenciar respecto a $$r$$, la ecuación $$s = T(r)$$, tenemos:
 {: .center}
 $$\frac{ds}{dr} = \frac{dT(r)}{ds}$$
 
-$$\frac{ds}{dr} = (L-1) \frac{d {P_{r}(r) \dot |\frac{dr}{ds}|}{dr}$$
+$$\frac{ds}{dr} = (L-1) \frac{dP_{r}(r) \dot |\frac{dr}{ds}|}{dr}$$
 
 $$\frac{ds}{dr} = (L-1) P_{r}(r)$$
 
@@ -62,9 +62,9 @@ Con esto, sustituimos $$\frac{ds}{dr}$$ en la primera ecuación, de tal manera q
 {: .center}
 $$P_{s}(s) = P_{r}(r) \dot |\frac{dr}{ds}|$$
 
-$$P_{s}(s) = P_{r}(r) \dot |frac{1}{(L-1)P_{r}(r)|$$
+$$P_{s}(s) = P_{r}(r) \dot |frac{1}{(L-1)P_{r}(r)}|$$
 
-$$P_{s}(s) = frac{1}{(L-1)P_{r}(r)$$
+$$P_{s}(s) = frac{1}{(L-1)P_{r}(r)}$$
 
 Con lo cual, se concluye que la distribución será un valor constante, independientemente del valor de entrada (y tendra una distribución uniforme -> equiprobable)
 
