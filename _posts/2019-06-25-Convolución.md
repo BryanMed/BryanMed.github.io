@@ -10,7 +10,10 @@ LLegó el momento de hablar de la convolución, esta es una herramienta primordi
 * __La correlación__ es utilizada para medir el grado de __similitud__ entre dos señales.
 * __la convolución__ en cambio, sirve para conocer el efecto de una señal respecto a la otra.
 
-Para fines prácticos me limitaré a explicar en este post únicamente la convolución. Y bueno, la __convolución__ en 1D de dos señales $$f$$ y $$g$$ está definida por $$f * \ast g$$
+Para fines prácticos me limitaré a explicar en este post únicamente la convolución. Y bueno, la __convolución__ _discreta_ en 1D de dos señales $$x$$ y $$h$$, estando representada por el operador$$* $$, con lo cual se define de la siguiente manera:
+
+{: .center}
+$$(f[m] * h[m]) = \sum_{-\infty}^{\infty} x[k]h[n - k]$$
 
 la __convolución__ en 1D est
 
