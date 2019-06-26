@@ -10,13 +10,13 @@ LLegó el momento de hablar de la convolución, esta es una herramienta primordi
 * __La correlación__ es utilizada para medir el grado de __similitud__ entre dos señales.
 * __la convolución__ en cambio, sirve para conocer el efecto de una señal respecto a la otra.
 
-Para fines prácticos me limitaré a explicar en este post únicamente la convolución. Y bueno, la __convolución__ _discreta_ en 1D de dos señales $$x$$ y $$h$$, estando representada por el operador$$* $$, con lo cual se define de la siguiente manera:
+Para fines prácticos me limitaré a explicar en este post únicamente la convolución. Y bueno, la __convolución__ _discreta_ en 1D de dos señales $$x$$ y $$h$$, estando representada por el operador __*__, con lo cual se define de la siguiente manera:
 
 {: .center}
-$$(f[m] * h[m]) = \sum_{-\infty}^{\infty} x[k]h[n - k]$$
+$$(x[n] * h[n]) = \sum_{k = -\infty}^{\infty} x[k]h[n - k]$$
 
-la __convolución__ en 1D est
-
+En el siguiente _combo-cuates_ se resume el proceso de la convolución:
+* __Reflexión__ Se refleja $$h(k)$$
 
 
 Bueno, la convolución es un operador matemático que se encarga de transformar dos señales (las imágenes son también señales pero en 2D) y calcular la respuesta al impulso
