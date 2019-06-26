@@ -2,7 +2,7 @@
 layout: post
 comments: true
 mathjax: true
-title: 2.7| Convolución (Filtrado espacial)
+title: 3| Convolución (Filtrado espacial)
 --- 
 
 LLegó el momento de hablar de la convolución, esta es una herramienta primordial en el procesamiento digital de imágenes, visión computacional, e incluso es un pilar importante en el machine learning. Una de las dudas frecuentes, es la confusión que existe entre convolución y correlación. Pues bien, ambos procesos son muy similares, de hecho, la única diferencia es que en la convolución una señal está invertida, pero esto es suficiente para generar aplicaciones un tanto diferentes, de tal manera que:
@@ -15,8 +15,14 @@ Para fines prácticos me limitaré a explicar en este post únicamente la convol
 {: .center}
 $$(x[n] * h[n]) = \sum_{k = -\infty}^{\infty} x[k]h[n - k]$$
 
-En el siguiente _combo-cuates_ se resume el proceso de la convolución:
-* __Reflexión__ Se refleja $$h(k)$$
+Veamos como se realiza el proceso que se indica en la operación de arriba, en el siguiente _combo-cuates_:
+
+* __Reflexión__: Se refleja $$h(k)$$, obteniendo así $$h[-k]$$
+* __Desplazamiento__: Ahora $$h(-k)$$ se desplaza en un instante de tiempo $$n_0$$, resultando en $$h[n_0 - k]$$
+* __Multiplicación__: Esta vez se multiplican las señales $$x[k]$$ y $$h[n_0 - k]$$, obteniendo una secuencia de valores.  
+* __Suma__: Finalmente se suman los valores de esta secuencia de valores, siendo esta sumatoria el resultado de la convolución en el instante en $$n = n_0$$
+
+
 
 
 Bueno, la convolución es un operador matemático que se encarga de transformar dos señales (las imágenes son también señales pero en 2D) y calcular la respuesta al impulso
