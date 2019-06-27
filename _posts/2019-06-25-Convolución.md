@@ -22,7 +22,4 @@ Veamos como se realiza el proceso que se indica en la operación de arriba, en e
 * __Multiplicación__: Esta vez se multiplican las señales $$x[k]$$ y $$h[n_0 - k]$$, obteniendo una secuencia de valores.  
 * __Suma__: Finalmente se suman los valores de esta secuencia de valores, siendo esta sumatoria el resultado de la convolución en el instante en $$n = n_0$$
 
-
-
-
-Bueno, la convolución es un operador matemático que se encarga de transformar dos señales (las imágenes son también señales pero en 2D) y calcular la respuesta al impulso
+Ahora veamos un ejemplo práctico de la convolución en 1D. Consideramos las señales $$x = [1, 2, 3]$$ y a $$h = [1, 2]$$
