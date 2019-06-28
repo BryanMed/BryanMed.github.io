@@ -72,16 +72,14 @@ Ahora trabajaremos en 2 dimensiones, con lo cual, los ingredientes necesarios pa
 * La imagen de entrada $$f[x, y]$$
 * El _filtro_, _mask_, _kernel_ $$w[x, y]$$, el cual es el análogo a la respuesta al impulso ($$h[n]$$), si bien podemos escoger el tamaño de la __matriz__ como queramos, es recomendable utilizar ventanas de tamaño impar, debido a que cuentan con un centro real.
 
-En la __Figura 3.1__ se observa la composición tanto de la imagen como del filtro. En la imagen de entrada, usualmente se considera su origen en la esquina superior izquierda. Por otro lado, el origen del kernel se encuentra en el centro de este (por eso es preferible utilizarlos de tamaño impar)
+En la __Figura 3.1__ se observa la composición tanto de la imagen como del filtro. En la imagen de entrada, usualmente se considera su origen en la esquina superior izquierda. Por otro lado, el origen del kernel se encuentra en el centro de este (por eso es preferible utilizarlos de tamaño impar).
 
-
-
-Bueno, la convolución en imágenes está definido de la siguiente manera:
+Bueno, la convolución en imágenes está definido por la formula:
 
 {: .center}
-$$g[x, y] = \sum_{s = -a}^{a} \sum_{t = -b}^{b} w[s, t]f[x + s, t + t]$$
+$$g[x, y] = \sum_{s = -a}^{a} \sum_{t = -b}^{b} w[s, t]f[x + s, y + t]$$
 
-En la figura
+
 
 
 
