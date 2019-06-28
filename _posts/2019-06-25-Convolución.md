@@ -33,12 +33,12 @@ Estas señales serán puestas en función de $$k$$, así, en el caso de $$x[n]$$
 {: .center}
 ![conv1d2]({{ site.baseurl }}/images/conv1d2.PNG)
 
-Ahora realizaremos el proceso de convolución, el primer elemento de interés de la convolución es aquel en donde empiezan a _sobreponerse_, en este caso, cuando $$n = 0$$, así, $$y[0]$$ es igual a la suma de los productos de aquellos elementos que se "traslapan" (se muestran en rojo). Por cierto, se agregan los 0s necesarios en la señal $$x[k]$$ para poder realizar las multiplicaciones, cuando no se traslapan. 
+Ahora realizaremos el proceso de convolución, el primer elemento de interés de la convolución es aquel en donde empiezan a _sobreponerse_, en este caso, cuando $$n = 0$$, así, $$y[0]$$ es igual a la suma de los productos de aquellos elementos que se "traslapan" (se muestran en rojo). Por cierto, se agregan los 0s necesarios en la señal $$x[k]$$ para poder realizar las multiplicaciones, de aquellos elemento que no se traslapan. 
 
 {: .center}
 ![conv1d3]({{ site.baseurl }}/images/conv1d3.PNG)
 
-Esta vez, consideramos a $$n = 1$$ con lo cual la respuesta al impulso $$h[n - k]$$ es deplazada un elemento ($$h[1-k]$$), ahora los elementos 1 y 2 de ambas señales son las que se superponen, con lo cual se realiza la multiplicación de los elementos correspondientes (para el elemento 1: 1 x 2; para el elemento 2: 2 x 1), siendo la salida de la convolución $$y[1] = 1 \times 2 + 2 \times 1 = 4$$.
+Esta vez, consideramos a $$n = 1$$ con lo cual la respuesta al impulso $$h[n - k]$$ es deplazada un elemento ($$h[1-k]$$), ahora los elementos 1 y 2 de ambas señales son las que se superponen, entonces al realizar la multiplicación de los elementos correspondientes (para el elemento 1: 1 x 2; para el elemento 2: 2 x 1), se obtiene la salida de la convolución $$y[1] = 1 \times 2 + 2 \times 1 = 4$$.
 
 {: .center}
 ![conv1d4]({{ site.baseurl }}/images/conv1d4.PNG)
