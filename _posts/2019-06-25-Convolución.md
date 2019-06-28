@@ -56,7 +56,7 @@ Finalmente, se desplaza nuevamente la señal en $$n = 3$$, esta vez la función 
 El resultado de la convolución se muestra a continuación, obviamente no se toman en cuenta aquellos elementos en donde $$x[n]$$ y $$h[n]$$ no se sobreponen.
 
 {: .center}
-![conv1d6]({{ site.baseurl }}/images/conv1d6.PNG)
+![conv1d6]({{ site.baseurl }}/images/conv1d7.PNG)
 
 Con esto ya estamos listos para dar el salto a la convolución en 2D :)
 
