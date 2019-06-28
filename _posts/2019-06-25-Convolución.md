@@ -58,5 +58,5 @@ El resultado de la convolución se muestra a continuación, obviamente no se tom
 {: .center}
 ![conv1d6]({{ site.baseurl }}/images/conv1d7.PNG)
 
-Con esto ya estamos listos para dar el salto a la convolución en 2D :)
+Con esto ya estamos listos para dar el salto a la convolución en 2D woooo.
 
