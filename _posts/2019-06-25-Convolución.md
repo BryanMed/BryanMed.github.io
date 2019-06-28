@@ -10,6 +10,8 @@ LLegó el momento de hablar de la convolución, esta es una herramienta primordi
 * __La correlación__ es utilizada para medir el grado de __similitud__ entre dos señales.
 * __la convolución__ en cambio, sirve para conocer el efecto de una señal respecto a la otra.
 
+## Convolución en 1D
+
 Para fines prácticos me limitaré a explicar en este post únicamente la convolución. Y bueno, la __convolución__ _discreta_ en 1D de dos señales $$x$$ y $$h$$, estando representada por el operador __*__, con lo cual se define de la siguiente manera:
 
 {: .center}
@@ -58,5 +60,31 @@ El resultado de la convolución se muestra a continuación, obviamente no se tom
 {: .center}
 ![conv1d6]({{ site.baseurl }}/images/conv1d7.PNG)
 
+> La implementación de la convolución en 1D en Python la encuentras en [este](https://github.com/BryanMed/Procesamiento-de-imagen/blob/master/2.6%20Convolucion_correlacion/correlacion-convolucion1d.py) repositorio.
+
 Con esto ya estamos listos para dar el salto a la convolución en 2D woooo.
+____
+
+## Convolución en 2D (filtrado espacial)
+
+Ahora trabajaremos en 2 dimensiones, con lo cual, los ingredientes necesarios para realizar la extensión de la convolución en el espacio bidimensioanl queda de la siguiente manera: 
+
+* La imagen de entrada $$f[x, y]$$
+* El _filtro_, _mask_, _kernel_ $$w[x, y]$$, el cual es el análogo a la respuesta al impulso ($$h[n]$$), si bien podemos escoger el tamaño de la __matriz__ como queramos, es recomendable utilizar ventanas de tamaño impar, debido a que cuentan con un centro real.
+
+Bueno, la convulución en imágenes está definido de la siguiente manera:
+
+{: .center}
+$$g[x, y] = \sum_{s = -a}^{a} \sum_{t = -b}^{b} w[s, t]f[x + s, t + t]$$
+
+
+
+
+
+
+
+
+
+
+
 
