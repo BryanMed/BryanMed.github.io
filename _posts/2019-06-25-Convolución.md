@@ -20,7 +20,12 @@ Veamos como se realiza el proceso que se indica en la operación de arriba, en e
 * __Reflexión__: Se refleja $$h(k)$$, obteniendo así $$h[-k]$$
 * __Desplazamiento__: Ahora $$h(-k)$$ se desplaza en un instante de tiempo $$n_0$$, resultando en $$h[n_0 - k]$$
 * __Multiplicación__: Esta vez se multiplican las señales $$x[k]$$ y $$h[n_0 - k]$$, obteniendo una secuencia de valores.  
-* __Suma__: Finalmente se suman los valores de esta secuencia de valores, siendo esta sumatoria el resultado de la convolución (la señal de salida $$y[n]$$) en el instante en $$n = n_0$$.
+* __Suma__: Finalmente se suman los valores de la secuencia anterior, siendo esta sumatoria el resultado de la convolución (la señal de salida $$y[n]$$) en el instante en el que $$n = n_0$$.
 
 _____
-Ahora veamos un ejemplo práctico de la convolución en 1D, el cual se . Consideramos las señales $$x = [1, 2, 3]$$ y a $$h = [1, 2]$$
+Ahora veamos un ejemplo práctico de la convolución en 1D. Consideramos las señales $$x = [1, 2, 3]$$ y  $$h = [1, 2]$$. 
+
+{: .center}
+![conv1d1]({{ site.baseurl }}/images/conv1d1.PNG)
+
+Estas señales serán puestas en función de $$k$$, así, en el caso de $$x[n]$$ simplemente realizamos un cambio de variable, obteniendo $$x[k]$$, por otro lado, $$h[n]$$ se convertirá en primera instancia a $$h[-k]$$ lo cual invierte el sentido de la señal, para acto seguido, desplazar esta señal arbitrariamente $$n$$ veces.
