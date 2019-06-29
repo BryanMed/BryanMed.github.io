@@ -2,17 +2,17 @@
 layout: post
 comments: true
 mathjax: true
-title: 3| Convolución (Filtrado espacial)
+title: 3.1| Convolución 1D
 --- 
 
-LLegó el momento de hablar de la convolución, esta es una herramienta primordial en el procesamiento digital de imágenes, visión computacional, e incluso es un pilar importante en el machine learning. Una de las dudas frecuentes, es la confusión que existe entre convolución y correlación. Pues bien, ambos procesos son muy similares, de hecho, la única diferencia es que en la convolución una señal está invertida, pero esto es suficiente para generar aplicaciones un tanto diferentes, de tal manera que:
+LLegó el momento de hablar de la convolución, esta es una herramienta primordial en el procesamiento digital de imágenes, visión computacional, e incluso un pilar fundamental en el machine learning. Una de las dudas frecuentes, es la confusión que existe entre convolución y correlación. Pues bien, ambos procesos son muy similares, de hecho, la única diferencia es que en la convolución una señal está invertida, pero esto es suficiente para generar aplicaciones un tanto diferentes, de tal manera que:
 
 * __La correlación__ es utilizada para medir el grado de __similitud__ entre dos señales.
 * __la convolución__ en cambio, sirve para conocer el efecto de una señal respecto a la otra.
 
 ## Convolución en 1D
 
-Para fines prácticos me limitaré a explicar en este post únicamente la convolución. Y bueno, la __convolución__ _discreta_ en 1D de dos señales $$x$$ y $$h$$, estando representada por el operador __*__, con lo cual se define de la siguiente manera:
+Para fines prácticos me limitaré a explicar en este post únicamente la convolución, debido a que es el más utilizado, sin embargo, el procedimiento es casi el mismo. Retomando, la __convolución__ _discreta_ en 1D de dos señales $$x$$ y $$h$$, estando representada por el operador __*__, con lo cual se define de la siguiente manera:
 
 {: .center}
 $$y[n] = (x[n] * h[n]) = \sum_{k = -\infty}^{\infty} x[k]h[n - k]$$
@@ -62,22 +62,15 @@ El resultado de la convolución se muestra a continuación, obviamente no se tom
 
 > La implementación de la convolución en 1D en Python la encuentras en [este](https://github.com/BryanMed/Procesamiento-de-imagen/blob/master/2.6%20Convolucion_correlacion/correlacion-convolucion1d.py) repositorio.
 
-Con esto ya estamos listos para dar el salto a la convolución en 2D woooo.
-____
+Con esto ya estamos listos para dar el salto a la convolución en 2D woooo, en el cual abordaremos algunas de las aplicaciones de la convolución y veremos de donde provienen algunos de los filtros más utilizados en imágenes.
 
-## Convolución en 2D (filtrado espacial)
+### Referencias
 
-Ahora trabajaremos en 2 dimensiones, con lo cual, los ingredientes necesarios para realizar la extensión de la convolución en el espacio bidimensioanl queda de la siguiente manera: 
+* [Explicación de la convolución de wikipedia](https://es.wikipedia.org/wiki/Convoluci%C3%B3n).
+* [Este videíto](https://www.youtube.com/watch?v=MWOfQwM7Pvk)
 
-* La imagen de entrada $$f[x, y]$$
-* El _filtro_, _mask_, _kernel_ $$w[x, y]$$, el cual es el análogo a la respuesta al impulso ($$h[n]$$), si bien podemos escoger el tamaño de la __matriz__ como queramos, es recomendable utilizar ventanas de tamaño impar, debido a que cuentan con un centro real.
 
-En la __Figura 3.1__ se observa la composición tanto de la imagen como del filtro. En la imagen de entrada, usualmente se considera su origen en la esquina superior izquierda. Por otro lado, el origen del kernel se encuentra en el centro de este (por eso es preferible utilizarlos de tamaño impar).
 
-Bueno, la convolución en imágenes está definido por la formula:
-
-{: .center}
-$$g[x, y] = \sum_{s = -a}^{a} \sum_{t = -b}^{b} w[s, t]f[x + s, y + t]$$
 
 
 
