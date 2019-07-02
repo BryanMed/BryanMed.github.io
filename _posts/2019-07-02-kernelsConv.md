@@ -13,6 +13,24 @@ El operador identidad dentro del proceso de convolución, es aquél que devuelve
 
 $$w = [0 \; 1 \; 0 ]$$
 
-En el ejemplo de la __Figura 1__ encontramos una señal de ECGt
+En el ejemplo de la __Figura 1__ encontramos una señal de electrocardiograma, la cual haremos convolucionar con la señal anterior $$w$$, y como podemos observar, es la misma señal resultante.
+
+{: .center} 
+![ecgIdentidad]({{ site.baseurl }}/images/zorroOscuro.PNG)
+__Figura 1__ _Al utilizar el operador identidad obtenemos exactamente la misma señal a la salida_.
+
+Ahora pasemos a imágenes, en este caso el operador identidad está definido por la matriz (en este caso de 3x3 pero puede ser de cualquier tamaño impar):
+
+$$
+\begin{vmatrix}
+a&b\\
+c&d\\
+e&f\\
+\end{vmatrix}
+$$
+
+
+
+
 
 
