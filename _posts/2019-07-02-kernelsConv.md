@@ -11,9 +11,9 @@ En el post anterior hablamos acerca del cómo se realiza el proceso de [convoluc
 
 El operador identidad dentro del proceso de convolución, es aquél que devuelve el mismo valor que la entrada ($$g[x, y] = f[x, y]$$). Regresemos un poquito a las señales. El operador identidad está definido como:
 
-$$w = [0 \quad \underline1 \quad 0 ]$$
+$$w = [0 \quad \underline 1 \quad 0 ]$$
 
-En el ejemplo de la __Figura 1__ encontramos una señal de electrocardiograma, la cual haremos convolucionar con la señal anterior $$w$$, y como podemos observar, es la misma señal resultante.
+En donde la línea debajo del 1 indica que es el origen de la función (posición w[0]). En el ejemplo de la __Figura 1__ encontramos una señal de electrocardiograma, la cual haremos convolucionar con la señal anterior $$w$$, y como podemos observar, es la misma señal resultante.
 
 {: .center} 
 ![ecgIdentidad]({{ site.baseurl }}/images/zorroOscuro.PNG)
@@ -39,7 +39,7 @@ __Figura 2__ _Al utilizar el operador identidad obtenemos exactamente la misma i
 ### Operador para modificar la amplitud
 En este caso, al multiplicar el operador identidad con algún valor deseado, podemos modificar la amplitud de la señal. Por ejemplo, veamos las siguientes máscaras:
 
-$$w_2 = [0 \quad 2 \quad 0 ] \qquad \qquad \qquad w_{0.5} = [0 \quad 0.5 \quad 0 ]$$
+$$w_2 = [0 \quad \underline 2 \quad 0 ] \qquad \qquad \qquad w_{0.5} = [0 \quad \underline 0.5 \quad 0 ]$$
 
 Al ver su composición podemos intuir que la señal $$w_2$$ duplicará la amplitud de la señal, y caso contrario con la señal $$w_{0.5}$$, y esto lo podemos ver en la __Figura 3__ en donde se hizo convolucionar la señal de ECG con las señales anteriores.
 
@@ -75,9 +75,30 @@ __Figura 4__ _En la izquierda podemos observar el resultado de convolucionar la 
 
 Ahora consideremos que el valor de la señal no se encuentra centrado, por ejemplo el kernel $$w_{desp20}$$ muestra una señal en donde el origen se encuentra desplazado 20 unidades, como se muestra a continuación.
 
-$$w_{desp20} = [\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 1]$$
+$$w_{desp20} = [\underline 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 1]$$
 
+Lo que sucede con la señal al aplicar la convolución con esta función, es que la salida corresponderá al 20vo valor de la entrada. Algo así como $$g[x] =  f[x - 20]$$. Como se muestra en la __Figura 5__
 
+{: .center} 
+![ECGdesplazamiento]({{ site.baseurl }}/images/zorroOscuro.PNG)
+__Figura 5__ _Se observa como la señal de salida (en naranja) está desplazada 20 unidades respecto a la señal original (en azul)_.
+
+¿Pasará algo similar con las imágenes? Pues si, aquí podemos controlar el desplazamiento de la imagen posicionando el 1 en cualquiera de los ejes alrededor del origen. Tomemos como ejemplo la matriz $$w_{desp2}$$:
+
+w_{desp2} = \begin{vmatrix}
+0&0&0&0&0\\
+0&0&0&0&0\\
+0&0&0&0&1\\
+0&0&0&0&0\\
+0&0&0&0&0\\
+\end{vmatrix}
+$$
+
+Que como podrás adivinar, la convolución de la imagen con este kernel resultará en un desplazamiento de la imagen en 2 unidades hacia la izquierda, dado que el pixel de salida $$g[x, y]$$ tomará el valor que tiene la imagen dos unidades a la derecha. como se ejemplifica en la __Figura 6__.
+
+{: .center} 
+![ECGdesplazamiento]({{ site.baseurl }}/images/zorroOscuro.PNG)
+__Figura 6__ _El resultado de aplicar la convolución con el kernel $$w_desp2$$ es el desplazamiento de la imagen 2 pósiciones a la izquierda_.
 
 
 
