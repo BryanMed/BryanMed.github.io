@@ -56,16 +56,26 @@ w_2 = \begin{vmatrix}
 0&0&0\\
 \end{vmatrix}
 
-\qquad \qquad
+\qquad \qquad \qquad
 
 w_{0.5} = \begin{vmatrix}
 0&0&0\\
 0&0.5&0\\
 0&0&0\\
 \end{vmatrix}
-
 $$
 
+En donde el efecto de realizar la convolución de la imagen de entrada con el kernel $$w_2$$ será el de generar una imagen más clara, debido a que estamos _duplicando_ la _amplitud_ de los niveles de gris. Caso contrario con el kernel $$w_{0.5}$$ en donde _partimos a la mitad_ estas intensidades, por lo cual la imagen se vuelve un tanto oscura, como se muestra en la __Figura 4__.
+
+{: .center} 
+![imgDark&light]({{ site.baseurl }}/images/zorroOscuro.PNG)
+__Figura 4__ _En la izquierda podemos observar el resultado de convolucionar la imagen con el kernel $$w_2$$, en la derecha al hacerlo con $$w_{0.5}_.
+
+### Operador de desplazamiento
+
+Ahora consideremos que el valor de la señal no se encuentra centrado, por ejemplo el kernel $$w_{desp20}$$ muestra una señal en donde el origen se encuentra desplazado 20 unidades, como se muestra a continuación.
+
+$$w_{desp20} = [\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 1]$$
 
 
 
