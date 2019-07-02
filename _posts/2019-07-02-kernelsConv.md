@@ -2,7 +2,7 @@
 layout: post
 comments: true
 mathjax: true
-title: 3.3| convolución - tipos de kernels y sus aplicaciones
+title: 3.3| Convolución - tipos de kernels y sus aplicaciones.
 --- 
 
-holita bolita
+Esta vez veremos algunos de los filtros más utilizados en el filtrado espacial
