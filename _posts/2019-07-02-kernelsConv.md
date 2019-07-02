@@ -11,6 +11,6 @@ En el post anterior hablamos acerca del cómo se realiza el proceso de [convoluc
 
 El operador identidad dentro del proceso de convolución, es aquél que devuelve el mismo valor que la entrada ($$g[x, y] = f[x, y]$$). Regresemos un poquito a las señales. El operador identidad está definido como:
 
-$$w = [0 1 0 ]
+$$w = [0 1 0 ]$$
 
 
