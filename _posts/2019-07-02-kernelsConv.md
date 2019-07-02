@@ -75,7 +75,7 @@ __Figura 4__ _En la izquierda podemos observar el resultado de convolucionar la 
 
 Ahora consideremos que el valor de la señal no se encuentra centrado, por ejemplo el kernel $$w_{desp20}$$ muestra una señal en donde el origen se encuentra desplazado 20 unidades, como se muestra a continuación.
 
-$$w_{desp20} = [\underline 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 1]$$
+$$w_{desp20} = [\; \underline 0 \; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 0\; 1]$$
 
 Lo que sucede con la señal al aplicar la convolución con esta función, es que la salida corresponderá al 20vo valor de la entrada. Algo así como $$g[x] =  f[x - 20]$$. Como se muestra en la __Figura 5__
 
