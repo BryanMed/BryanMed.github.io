@@ -11,7 +11,7 @@ En el post anterior hablamos acerca del cómo se realiza el proceso de [convoluc
 
 El operador identidad dentro del proceso de convolución, es aquél que devuelve el mismo valor que la entrada ($$g[x, y] = f[x, y]$$). Regresemos un poquito a las señales. El operador identidad está definido como:
 
-$$w = [0 \quad 1 \quad 0 ]$$
+$$w = [0 \quad \underline1 \quad 0 ]$$
 
 En el ejemplo de la __Figura 1__ encontramos una señal de electrocardiograma, la cual haremos convolucionar con la señal anterior $$w$$, y como podemos observar, es la misma señal resultante.
 
