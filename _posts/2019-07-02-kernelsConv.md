@@ -22,7 +22,7 @@ __Figura 1__ _Al utilizar el operador identidad obtenemos exactamente la misma s
 Ahora pasemos a imágenes, en este caso el operador identidad está definido por la matriz (en este caso de 3x3 pero puede ser de cualquier tamaño impar):
 
 $$
-\begin{vmatrix}
+w = \begin{vmatrix}
 0&0&0\\
 0&1&0\\
 0&0&0\\
@@ -30,6 +30,7 @@ $$
 $$
 
 Y en la __Figura 2__ podemos observar el resultado, el cual es la misma imagen que la entrada.
+
 {: .center} 
 ![ecgIdentidad]({{ site.baseurl }}/images/zorroOscuro.PNG)
 __Figura 2__ _Al utilizar el operador identidad obtenemos exactamente la misma imagen a la salida_.
@@ -38,11 +39,32 @@ __Figura 2__ _Al utilizar el operador identidad obtenemos exactamente la misma i
 ### Operador para modificar la amplitud
 En este caso, al multiplicar el operador identidad con algún valor deseado, podemos modificar la amplitud de la señal. Por ejemplo, veamos las siguientes máscaras:
 
-$$w_2 = [0 \quad 2 \quad 0 ] \qquad \qquad w_{0.5} = [0 \quad 0.5 \quad 0 ]$$
+$$w_2 = [0 \quad 2 \quad 0 ] \qquad \qquad \qquad w_{0.5} = [0 \quad 0.5 \quad 0 ]$$
 
+Al ver su composición podemos intuir que la señal $$w_2$$ duplicará la amplitud de la señal, y caso contrario con la señal $$w_{0.5}$$, y esto lo podemos ver en la __Figura 3__ en donde se hizo convolucionar la señal de ECG con las señales anteriores.
 
+{: .center} 
+![ecg205]({{ site.baseurl }}/images/zorroOscuro.PNG)
+__Figura 3__ _En la izquierda podemos observar el resultado de convolucionar el ECG con el kernel $$w_2$$, en la derecha al hacerlo con $$w_{0.5}_.
 
+Ahora en el caso de las imágenes, las matrices correspondiente a ambos casos anteriores se encuentran de la forma:
 
+$$
+w_2 = \begin{vmatrix}
+0&0&0\\
+0&2&0\\
+0&0&0\\
+\end{vmatrix}
+
+\qquad \qquad
+
+w_{0.5} = \begin{vmatrix}
+0&0&0\\
+0&0.5&0\\
+0&0&0\\
+\end{vmatrix}
+
+$$
 
 
 
