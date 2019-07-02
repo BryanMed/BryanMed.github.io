@@ -11,7 +11,7 @@ En el post anterior hablamos acerca del cómo se realiza el proceso de [convoluc
 
 El operador identidad dentro del proceso de convolución, es aquél que devuelve el mismo valor que la entrada ($$g[x, y] = f[x, y]$$). Regresemos un poquito a las señales. El operador identidad está definido como:
 
-$$w = [0 \; 1 \; 0 ]$$
+$$w = [0 \quad 1 \quad 0 ]$$
 
 En el ejemplo de la __Figura 1__ encontramos una señal de electrocardiograma, la cual haremos convolucionar con la señal anterior $$w$$, y como podemos observar, es la misma señal resultante.
 
@@ -38,7 +38,7 @@ __Figura 2__ _Al utilizar el operador identidad obtenemos exactamente la misma i
 ### Operador para modificar la amplitud
 En este caso, al multiplicar el operador identidad con algún valor deseado, podemos modificar la amplitud de la señal. Por ejemplo, veamos las siguientes máscaras:
 
-$$w_2 = [0 \; 2 \; 0 ] \qquad \qquad w_0.5 = [0 \; 0.5 \; 0 ]$$
+$$w_2 = [0 \quad 2 \quad 0 ] \qquad \qquad w_{0.5} = [0 \quad 0.5 \quad 0 ]$$
 
 
 
