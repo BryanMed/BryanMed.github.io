@@ -23,9 +23,9 @@ Ahora pasemos a imágenes, en este caso el operador identidad está definido por
 
 $$
 \begin{vmatrix}
-a&b\\
-c&d\\
-e&f\\
+0&0&0\\
+0&1$0\\
+0&0&0\\
 \end{vmatrix}
 $$
 
