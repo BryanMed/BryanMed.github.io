@@ -94,12 +94,15 @@ w_{desp2} = \begin{vmatrix}
 \end{vmatrix}
 $$
 
-Que como podrás adivinar, la convolución de la imagen con este kernel resultará en un desplazamiento de la imagen en 2 unidades hacia la izquierda, dado que el pixel de salida $$g[x, y]$$ tomará el valor que tiene la imagen dos unidades a la derecha. como se ejemplifica en la __Figura 6__.
+Que como podrás adivinar, la convolución de la imagen con este kernel resultará en un desplazamiento de la imagen en 2 unidades hacia la derecha, como se ejemplifica en la __Figura 6__.
 
 {: .center} 
 ![ECGdesplazamiento]({{ site.baseurl }}/images/zorroOscuro.PNG)
-__Figura 6__ _El resultado de aplicar la convolución con el kernel $$w_desp2$$ es el desplazamiento de la imagen 2 pósiciones a la izquierda_.
+__Figura 6__ _El resultado de aplicar la convolución con el kernel $$w_desp2$$ es el desplazamiento de la imagen 2 pósiciones a la derecha_.
 
+### Operadores de suavizado/promedio
+
+En este tipo de operadores se modifica l
 
 
 
