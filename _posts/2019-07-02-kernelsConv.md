@@ -24,10 +24,27 @@ Ahora pasemos a imágenes, en este caso el operador identidad está definido por
 $$
 \begin{vmatrix}
 0&0&0\\
-0&1$0\\
+0&1&0\\
 0&0&0\\
 \end{vmatrix}
 $$
+
+Y en la __Figura 2__ podemos observar el resultado, el cual es la misma imagen que la entrada.
+{: .center} 
+![ecgIdentidad]({{ site.baseurl }}/images/zorroOscuro.PNG)
+__Figura 2__ _Al utilizar el operador identidad obtenemos exactamente la misma imagen a la salida_.
+
+
+### Operador para modificar la amplitud
+En este caso, al multiplicar el operador identidad con algún valor deseado, podemos modificar la amplitud de la señal. Por ejemplo, veamos las siguientes máscaras:
+
+$$w_2 = [0 \; 2 \; 0 ] \qquad \qquad w_0.5 = [0 \; 0.5 \; 0 ]$$
+
+
+
+
+
+
 
 
 
