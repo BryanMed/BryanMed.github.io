@@ -143,7 +143,7 @@ $$
 
 {: .center} 
 ![LenaSmooth]({{ site.baseurl }}/images/zorroOscuro.PNG)
-__Figura 7__ _A la izquierda observamos el resultado de la imagen al convolucionarla con una ventana de promedio móvil de 9 elementos, a la derecha considerando un filtro de 31\times31_.
+__Figura 7__ _A la izquierda observamos el resultado de la imagen al convolucionarla con una ventana de promedio móvil de 9 elementos, a la derecha considerando un filtro de 31x31_.
 
 En la imagen anterior se evidencía la perdida de detalle que existe a medida que aumenta el tamaño del kernel de promediado, es decir, al igual que pasaba con la señal de ECG, las diferencias entre valores/pixeles vecinos van disminuyendo.
 
