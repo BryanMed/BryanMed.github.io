@@ -69,7 +69,7 @@ En donde el efecto de realizar la convolución de la imagen de entrada con el ke
 
 {: .center} 
 ![imgDark&light]({{ site.baseurl }}/images/zorroOscuro.PNG)
-__Figura 4__ _En la izquierda podemos observar el resultado de convolucionar la imagen con el kernel $$w_2$$, en la derecha al hacerlo con $$w_{0.5}_.
+__Figura 4__ _En la izquierda podemos observar el resultado de convolucionar la imagen con el kernel $$w_2$$, en la derecha al hacerlo con $$w_{0.5}$$_.
 
 ## Operador de desplazamiento
 
@@ -121,7 +121,8 @@ __Figura 7__ _A la izquierda observamos el resultado de la señal al convolucion
 
 Como observamos, a medida que aumentamos el tamaño de este filtro, la señal se volverá más uniforme. Los kernels utilizados en imágenes para suavizar la imagen tienen una forma muy similar, como se muestra en la siguiente matriz $$w_{prom}$$.
 
-$$w_{prom} = \begin{vmatrix}
+$$
+w_{prom} = \begin{vmatrix}
 \frac{1}{N}&\cdots&0\frac{1}{N}\\
 \vdots&\frac{1}{N}&\vdots\\
 \frac{1}{N}&\cdots&0\frac{1}{N}\\
