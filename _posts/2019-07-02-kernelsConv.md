@@ -45,7 +45,7 @@ Al ver su composición podemos intuir que la señal $$w_2$$ duplicará la amplit
 
 {: .center} 
 ![ecg205]({{ site.baseurl }}/images/zorroOscuro.PNG)
-__Figura 3__ _En la izquierda podemos observar el resultado de convolucionar el ECG con el kernel $$w_2$$, en la derecha al hacerlo con $$w_{0.5}_.
+__Figura 3__ _En la izquierda podemos observar el resultado de convolucionar el ECG con el kernel $$w_2$$, en la derecha al hacerlo con $$w_{0.5}$$_.
 
 Ahora en el caso de las imágenes, las matrices correspondiente a ambos casos anteriores se encuentran de la forma:
 
@@ -153,7 +153,7 @@ El principal objetivo de los filtros de sharpening es el contrario al del operad
 
 En el caso de las señales, la aproximación de la de una derivada de primer orden está dada por las diferencias de valores consecutivos de la señal:
 
-$$ \pdv{f}{x} = f(x + 1) - f(x) + \pdv{x}$$
+$$\frac{\partial f}{\partial x} = f(x + 1) - f(x)$$
 
 
 
