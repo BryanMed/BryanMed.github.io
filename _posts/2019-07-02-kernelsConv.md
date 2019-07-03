@@ -185,6 +185,13 @@ Finalmente llego la hora de aplicar la técnica de _sharpening_ en imágenes, pa
 
 $$ \nabla^{2}f = \frac{\partial^{2} f}{\partial^{2} x} + \frac{\partial^{2} f}{\partial^{2} y}$$
 
+Looks familiar, right? Pues para los cuates es básicamente la unión de las derivadas de segundo orden de $$x$$ y $$y$$. Y como vimos en anteriormente, podemos aproximar las segundas derivada de la siguiente manera:
+
+$$\frac{\partial^{2} f}{\partial^{2} x} = f(x + 1) + f(x - 1) - 2f(x)$$
+$$\frac{\partial^{2} f}{\partial^{2} y} = f(y + 1) + f(y - 1) - 2f(y)$$
+
+
+
 
 
 
