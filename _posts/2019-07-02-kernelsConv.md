@@ -85,7 +85,7 @@ __Figura 5__ _Se observa como la señal de salida (en naranja) está desplazada 
 
 ¿Pasará algo similar con las imágenes? Pues si, aquí podemos controlar el desplazamiento de la imagen posicionando el 1 en cualquiera de los ejes alrededor del origen. Tomemos como ejemplo la matriz $$w_{desp2}$$:
 
-&&
+$$
 w_{desp2} = \begin{vmatrix}
 0&0&0&0&0\\
 0&0&0&0&0\\
