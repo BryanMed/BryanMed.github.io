@@ -143,7 +143,7 @@ $$
 
 {: .center} 
 ![LenaSmooth]({{ site.baseurl }}/images/zorroOscuro.PNG)
-__Figura 7__ _A la izquierda observamos el resultado de la imagen al convolucionarla con una ventana de promedio móvil de 9 elementos, a la derecha considerando un filtro de 31x31_.
+__Figura 8__ _A la izquierda observamos el resultado de la imagen al convolucionarla con una ventana de promedio móvil de 9 elementos, a la derecha considerando un filtro de 31x31_.
 
 En la imagen anterior se evidencía la perdida de detalle que existe a medida que aumenta el tamaño del kernel de promediado, es decir, al igual que pasaba con la señal de ECG, las diferencias entre valores/pixeles vecinos van disminuyendo.
 
@@ -154,6 +154,18 @@ El principal objetivo de los filtros de sharpening es el contrario al del operad
 En el caso de las señales, la aproximación de la de una derivada de primer orden está dada por las diferencias de valores consecutivos de la señal:
 
 $$\frac{\partial f}{\partial x} = f(x + 1) - f(x)$$
+
+Una señal que tiene la propiedad pasada se muestra a continuación, en donde básicamente se describe la diferencia de dos valores vecinos.
+
+$$w_{sharp} = [-1 \qquad 1]$$
+
+Ahora veamos en la __Figura 9__ el efecto que tiene al realizar la convolución con la ventana $$w_{sharp}$$.
+
+{: .center} 
+![ecgSharp1]({{ site.baseurl }}/images/zorroOscuro.PNG)
+__Figura 9__ _El utilizar la primera derivada en la señal de ECG, observamos que en aquellas zonas cuyos valores consecutivos son semejantes, la señal de salida se encuentra aproximadamente en cero, en cambio, aquellas regiones en donde la diferencia es más grande muestra una señal con amplitud distinta de cero._
+
+Gracias a esta señal, podemos magnificar las diferencias que existen entre valores vecinos, en donde valores muy semejantes o inluso iguales resultarán en una salida cerca de 0. Por otro lado, la amplitud de la señal de salida será mayor a medida que lo sea la diferencia entre valores consecutivos.
 
 
 
