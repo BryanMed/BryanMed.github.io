@@ -17,7 +17,7 @@ En donde la línea debajo del 1 indica que es el origen de la función (posició
 
 {: .center} 
 ![ecgIdentidad]({{ site.baseurl }}/images/ecg1.PNG)
-__Figura 1__ _Al utilizar el operador identidad obtenemos exactamente la misma señal a la salida_.
+__Figura 1__ _Al utilizar el operador identidad obtenemos exactamente la misma señal en la salida (están superpuestas)_.
 
 Ahora pasemos a imágenes, en este caso el operador identidad está definido por la matriz (en este caso de 3x3 pero puede ser de cualquier tamaño impar):
 
