@@ -103,7 +103,24 @@ __Figura 6__ _El resultado de aplicar la convolución con el kernel $$w_desp2$$ 
 
 ### Operadores de suavizado/promedio
 
-En este tipo de operadores se modifica l
+El objetivo de este tipo de operadores es _suavizar_ las señales, esto es logrado al convolucionar la señal/imagen con una ventana que promediará el pixel de salida con su vecindad, también es conocido como _filtro pasa bajas_. Entre las ventajas encontramos que logra _reducir el ruido_, sin embargo, citando al tío Ben: "un gran poder conlleva una gran responsabilidad" y uno de los problemas es que también se da una _perdida de detalle_.
+
+El operador de suavizado $$w_{suave}$$ en las señales tiene la siguiente forma:
+
+$$w_{suave} = [\frac{1}{N} \qquad \cdots \underline\frac{1}{N} \qquad \cdots \frac{1}{N}]$$
+
+En donde $$N$$ es el número de elementos del filtro. Como podemos ver, al realizar el proceso de convolución estaremos sustituyendo cada valor de la señal de entrada por la media que genera con los valores vecinos. Tomemos como ejemplo la siguiente máscara:
+
+$$w_{suave} = [\frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \underline \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15}]
+
+Al convolucionar con la señal de ECG, podemos observar en la parte izquierda de la __Figura 7__ como las diferencias en amplitud disminuyen, en la imagen derecha utilizamos una ventana con 101 elementos para evidenciar este hecho. 
+
+
+
+
+
+
+
 
 
 
