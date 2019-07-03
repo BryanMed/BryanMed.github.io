@@ -125,9 +125,9 @@ Como observamos, a medida que aumentamos el tamaño de este filtro, la señal se
 
 $$
 w_{prom} = \begin{vmatrix}
-\frac{1}{N}&\cdots&0\frac{1}{N}\\
+\frac{1}{N}&\cdots&\frac{1}{N}\\
 \vdots&\frac{1}{N}&\vdots\\
-\frac{1}{N}&\cdots&0\frac{1}{N}\\
+\frac{1}{N}&\cdots&\frac{1}{N}\\
 \end{vmatrix}
 $$
 
@@ -147,8 +147,13 @@ __Figura 7__ _A la izquierda observamos el resultado de la imagen al convolucion
 
 En la imagen anterior se evidencía la perdida de detalle que existe a medida que aumenta el tamaño del kernel de promediado, es decir, al igual que pasaba con la señal de ECG, las diferencias entre valores/pixeles vecinos van disminuyendo.
 
-##
+## Operadores de Sharpening
 
+El principal objetivo de los filtros de sharpening es el contrario al del operador de suavizado, aquí se espera _resaltar_  las transiciones entre los valores. Como vimos, el proceso de _smoothing_ consistía en un _promediado_, el cual es análogo a la _integración_, por su parte, el proceso de _sharpening_ es análogo a la _derivación_.
+
+En el caso de las señales, la aproximación de la de una derivada de primer orden está dada por las diferencias de valores consecutivos de la señal:
+
+$$ \pdv{f}{x} = f(x + 1) - f(x)$$
 
 
 
