@@ -153,7 +153,7 @@ El principal objetivo de los filtros de sharpening es el contrario al del operad
 
 En el caso de las señales, la aproximación de la de una derivada de primer orden está dada por las diferencias de valores consecutivos de la señal:
 
-$$ \pdv{f}{x} = f(x + 1) - f(x)$$
+$$ \pdv{f}{x} = f(x + 1) - f(x) + \pdv{x}$$
 
 
 
