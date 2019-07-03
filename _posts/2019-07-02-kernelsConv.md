@@ -112,7 +112,7 @@ $$w_{suave} = [\frac{1}{N} \qquad \cdots \qquad \underline{\frac{1}{N}} \qquad \
 En donde $$N$$ es el número de elementos del filtro. Como podemos ver, al realizar el proceso de convolución estaremos sustituyendo cada valor de la señal de entrada por la media que genera con los valores vecinos. Tomemos como ejemplo la siguiente máscara:
 
 $$
-w_{suave} = [\frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \underline \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15}] 
+w_{suave} = [\frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \underline{\frac{1}{15}} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15} \qquad \frac{1}{15}] 
 $$
 
 Al convolucionar con la señal de ECG, podemos observar en la parte izquierda de la __Figura 7__ como las diferencias en amplitud disminuyen, en la imagen derecha utilizamos una ventana con 101 elementos para evidenciar como las variaciones entre valores consecutivos son cada vez menores. 
