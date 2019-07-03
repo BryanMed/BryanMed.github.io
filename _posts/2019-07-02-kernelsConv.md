@@ -157,9 +157,9 @@ $$\frac{\partial f}{\partial x} = f(x + 1) - f(x)$$
 
 Una señal que tiene la propiedad pasada se muestra a continuación, en donde básicamente se describe la diferencia de dos valores vecinos.
 
-$$w_{sharp} = [-1 \qquad 1]$$
+$$w_{dv1} = [-1 \qquad 1]$$
 
-Ahora veamos en la __Figura 9__ el efecto que tiene al realizar la convolución con la ventana $$w_{sharp}$$.
+Ahora veamos en la __Figura 9__ el efecto que tiene al realizar la convolución con la ventana $$w_{dv1}$$.
 
 {: .center} 
 ![ecgSharp1]({{ site.baseurl }}/images/zorroOscuro.PNG)
@@ -170,6 +170,28 @@ Gracias a esta señal, podemos magnificar las diferencias que existen entre valo
 Ahora veamos la segunda derivada, la cual es utilizada para indicar los _cambios de signo_, esta se consigue al derivar nuevamente la primera derivada, es así que tenemos que la derivada de segundo orden se encuetra definida por:
 
 $$\frac{\partial^{2} f}{\partial^{2} x} = f(x + 1) + f(x - 1) - 2f(x)$$
+
+Y la podemos representar mediante la siguiente señal $$w_{dv2}$$:
+
+$$w_{dv2} = [1 \qquad -2 \qquad 1]$$
+
+Al momento de efectuar la convolución (y de antemano una disculpa si no es muy evidente dado la señal que escogí) notamos que en aquellos valores en donde se encuentra precísamente este cambio de signo (en el complejo QRS), existe un cambio en la señal, en cambio, donde no existe tal cambio los valores serán 0. Como podemos medio observar en la __Figura 10__
+
+{: .center} 
+![ecgSharp2]({{ site.baseurl }}/images/zorroOscuro.PNG)
+__Figura 10__ _Dado que la frecuencia de muestreo de la señal es grande, la diferencia entre valores consecutivos no es muy evidente, sin embargo, podemos notar que en aquellos puntos críticos más notorios (complejo QRS), existe una respuesta en la señal de salida, en cambio en los demás es cero._
+
+Finalmente llego la hora de aplicar la técnica de _sharpening_ en imágenes, para ello utilizaremos una aproximación del Laplaciano de dos variables, el cual se encuentra definido como:
+
+$$ \nabla^{2}f = \frac{\partial^{2} f}{\partial^{2} x} + \frac{\partial^{2} f}{\partial^{2} y}$$
+
+
+
+
+
+
+
+
 
 
 
