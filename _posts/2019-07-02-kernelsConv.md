@@ -107,7 +107,7 @@ El objetivo de este tipo de operadores es _suavizar_ las señales, esto es logra
 1
 El operador de suavizado $$w_{suave}$$ en las señales tiene la siguiente forma:
 
-$$w_{suave} = [\frac{1}{N} \qquad \cdots \underline \frac{1}{N} \qquad \cdots \frac{1}{N}]$$
+$$w_{suave} = [\frac{1}{N} \qquad \cdots \frac{1}{N} \qquad \cdots \frac{1}{N}]$$
 
 En donde $$N$$ es el número de elementos del filtro. Como podemos ver, al realizar el proceso de convolución estaremos sustituyendo cada valor de la señal de entrada por la media que genera con los valores vecinos. Tomemos como ejemplo la siguiente máscara:
 
