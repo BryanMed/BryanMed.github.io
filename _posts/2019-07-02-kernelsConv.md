@@ -183,15 +183,42 @@ __Figura 10__ _Dado que la frecuencia de muestreo de la señal es grande, la dif
 
 Finalmente llego la hora de aplicar la técnica de _sharpening_ en imágenes, para ello utilizaremos una aproximación del Laplaciano de dos variables, el cual se encuentra definido como:
 
-$$ \nabla^{2}f = \frac{\partial^{2} f}{\partial^{2} x} + \frac{\partial^{2} f}{\partial^{2} y}$$
+$$ \nabla^{2}f(x, y) = \frac{\partial^{2} f}{\partial^{2} x} + \frac{\partial^{2} f}{\partial^{2} y}$$
 
-Looks familiar, right? Pues para los cuates es básicamente la unión de las derivadas de segundo orden de $$x$$ y $$y$$. Y como vimos en anteriormente, podemos aproximar las segundas derivada de la siguiente manera:
+Looks familiar, right? Pues para los cuates es básicamente la unión de las derivadas de segundo orden de $$x$$ y $$y$$, se usan las de segundo orden en lugar de las de primer orden, debido a que es un control más fino al momento de encontrar diferencias entre valores vecinos. Y como vimos en anteriormente, podemos aproximar las segundas derivadas de la siguiente manera:
 
-$$\frac{\partial^{2} f}{\partial^{2} x} = f(x + 1) + f(x - 1) - 2f(x)$$
+$$\frac{\partial^{2} f}{\partial^{2} x} = f(x + 1, y) + f(x - 1, y) - 2f(x, y)$$
 
-$$\frac{\partial^{2} f}{\partial^{2} y} = f(y + 1) + f(y - 1) - 2f(y)$$
+$$\frac{\partial^{2} f}{\partial^{2} y} = f(x, y + 1) + f(x, y - 1) - 2f(x, y)$$
 
+Por lo tanto, el operador quedaría aproximado de la manera:
 
+$$ \nabla^{2}f(x, y) = f(x + 1, y) + f(x - 1, y) + f(x, y + 1) + f(x, y - 1) - 4f(x, y)$$
+
+Y en formato de matriz, por el filtro $$w_{sharp2D}$$:
+
+$$
+w_{sharp2D} = \begin{vmatrix}
+0&1&0\\
+1&-4&1\\
+0&1&0\\
+\end{vmatrix}
+$$
+
+En la __Figura 11__ encontramos el resultado de la convolución con este filtro, cen ella observamos que las zonas oscuras corresponden a aquellas regiones en donde la diferencia entre vecinos es mínica, por otro lado, las líneas blancas indican los bordes dentro de la imagen, las cuales son originadas por diferencias considerables entre pixeles vecinos.
+
+{: .center} 
+![ecgSharp2]({{ site.baseurl }}/images/zorroOscuro.PNG)
+__Figura 11__ _Resultado de la convolución con el operador de sharpening $$w_{sharp2d}$$, cuyas líneas blancas se refieren a los bordes en la imagen, en cambio, aquellos con amplitud nula (zonas oscuras) se refieren a aquellas regiones que son parte de una misma región (poca diferencia entre ellos)._
+
+Más adelante veremos más aplicaciones, resultado de aplicar estos filtros de manera conjunta...además de más filtros :)
+
+______
+
+### Referencias
+* [libro de gonzalez](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
+* [libro de A. Jain](https://www.amazon.com/Fundamentals-Digital-Image-Processing-Anil/dp/0133361659)
+* [video que explica algunos de los filtros espaciales](https://www.youtube.com/watch?v=q9AqlQ274ss)
 
 
 
