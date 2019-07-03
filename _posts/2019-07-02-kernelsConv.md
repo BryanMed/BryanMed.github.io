@@ -167,6 +167,10 @@ __Figura 9__ _El utilizar la primera derivada en la señal de ECG, observamos qu
 
 Gracias a esta señal, podemos magnificar las diferencias que existen entre valores vecinos, en donde valores muy semejantes o inluso iguales resultarán en una salida cerca de 0. Por otro lado, la amplitud de la señal de salida será mayor a medida que lo sea la diferencia entre valores consecutivos.
 
+Ahora veamos la segunda derivada, la cual es utilizada para indicar los _cambios de signo_, esta se consigue al derivar nuevamente la primera derivada, es así que tenemos que la derivada de segundo orden se encuetra definida por:
+
+$$\frac{\partial^{2} f}{\partial^{2} x} = f(x + 1) + f(x - 1) - 2f(x)$$
+
 
 
 
