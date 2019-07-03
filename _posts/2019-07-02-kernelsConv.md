@@ -149,7 +149,7 @@ En la imagen anterior se evidencía la perdida de detalle que existe a medida qu
 
 ## Operadores de Sharpening
 
-El principal objetivo de los filtros de sharpening es el contrario al del operador de suavizado, aquí se espera _resaltar_  las transiciones entre los valores. Como vimos, el proceso de _smoothing_ consistía en un _promediado_, el cual es análogo a la _integración_, por su parte, el proceso de _sharpening_ es análogo a la _derivación_.
+El principal objetivo de los filtros de sharpening es el contrario al del operador de suavizado, aquí se espera _resaltar_  las transiciones entre los valores. Como vimos, el proceso de _smoothing_ consistía en un _promediado_, el cual es análogo a la _integración_, por su parte, el proceso de _sharpening_ es análogo a la _derivación_, a este tipo de filtros también se les conoce como _filtros pasa altas_.
 
 En el caso de las señales, la aproximación de la de una derivada de primer orden está dada por las diferencias de valores consecutivos de la señal:
 
