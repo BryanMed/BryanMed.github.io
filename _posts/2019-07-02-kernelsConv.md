@@ -141,6 +141,16 @@ w_{prom3x3} = \begin{vmatrix}
 \frac{1}{9}&\frac{1}{9}&\frac{1}{9}\\
 \frac{1}{9}&\frac{1}{9}&\frac{1}{9}\\
 \end{vmatrix}
+
+\qquad
+
+w_{prom31x31} = \begin{vmatrix}
+\frac{1}{31}&\cdots&\frac{1}{31}\\
+\vdots&\frac{1}{31}&\vdots\\
+\frac{1}{31}&\cdots&\frac{1}{31}\\
+\end{vmatrix}
+
+
 $$
 
 {: .center} 
