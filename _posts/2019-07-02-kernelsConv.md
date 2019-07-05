@@ -8,7 +8,11 @@ title: 3.3| Convolución - tipos de kernels y sus aplicaciones.
 En el post anterior hablamos acerca del cómo se realiza el proceso de [convolución](https://bryanmed.github.io/conv2d/), esta vez veremos la importancia de los _kernels (filtros, máscaras, ventanas)_ y algunas de sus aplicaciones en el procesamiento digital de imágenes.
 
 >Encontrarás la implementación de la convolución en [este](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/2.6%20Convolucion_correlacion) repositorio.
-_____
+
+
+_______
+
+{: .center} 
 ## Operador identidad
 
 El operador identidad dentro del proceso de convolución, es aquél que devuelve el mismo valor que la entrada ($$g[x, y] = f[x, y]$$). Regresemos un poquito a las señales. El operador identidad está definido como:
@@ -38,6 +42,8 @@ Y en la __Figura 2__ podemos observar el resultado, el cual es la misma imagen q
 __Figura 2__ _Al utilizar el operador identidad obtenemos exactamente la misma imagen a la salida_.
 
 _____
+
+{: .center} 
 ## Operador para modificar la amplitud
 En este caso, al multiplicar el operador identidad con algún valor deseado, podemos modificar la amplitud de la señal. Por ejemplo, veamos las siguientes máscaras:
 
@@ -74,6 +80,8 @@ En donde el efecto de realizar la convolución de la imagen de entrada con el ke
 __Figura 4__ _En la izquierda podemos observar el resultado de convolucionar la imagen con el kernel $$w_2$$, en la derecha al hacerlo con $$w_{0.5}$$_.
 
 ________
+
+{: .center} 
 ## Operador de desplazamiento
 
 Ahora consideremos que el valor de la señal no se encuentra centrado, por ejemplo el kernel $$w_{desp20}$$ muestra una señal en donde el origen se encuentra desplazado 20 unidades, como se muestra a continuación.
@@ -105,10 +113,12 @@ Que como podrás adivinar, la convolución de la imagen con este kernel resultar
 __Figura 6__ _El resultado de aplicar la convolución con el kernel $$w_desp2$$ es el desplazamiento de la imagen 2 pósiciones a la derecha_.
 
 _________
+
+{: .center} 
 ## Operadores de suavizado/promedio
 
 El objetivo de este tipo de operadores es _suavizar_ las señales, esto es logrado al convolucionar la señal/imagen con una ventana que promediará el pixel de salida con su vecindad, también es conocido como _filtro pasa bajas_. Entre las ventajas encontramos que logra _reducir el ruido_, sin embargo, citando al tío Ben: "un gran poder conlleva una gran responsabilidad" y uno de los problemas es que también se da una _perdida de detalle_.
-1
+
 El operador de suavizado $$w_{suave}$$ en las señales tiene la siguiente forma:
 
 $$w_{suave} = [\frac{1}{N} \qquad \cdots \qquad \underline{\frac{1}{N}} \qquad \cdots \qquad \frac{1}{N}]$$
@@ -162,6 +172,8 @@ __Figura 8__ _A la izquierda observamos el resultado de la imagen al convolucion
 En la imagen anterior se evidencía la perdida de detalle que existe a medida que aumenta el tamaño del kernel de promediado, es decir, al igual que pasaba con la señal de ECG, las diferencias entre valores/pixeles vecinos van disminuyendo.
 
 ________
+
+{: .center} 
 ## Operadores de Sharpening
 
 El principal objetivo de los filtros de sharpening es el contrario al del operador de suavizado, aquí se espera _resaltar_  las transiciones entre los valores. Como vimos, el proceso de _smoothing_ consistía en un _promediado_, el cual es análogo a la _integración_, por su parte, el proceso de _sharpening_ es análogo a la _derivación_, a este tipo de filtros también se les conoce como _filtros pasa altas_.
