@@ -179,13 +179,13 @@ __Figura 9__ _El utilizar la primera derivada en la señal de ECG, observamos qu
 
 Gracias a esta señal, podemos magnificar las diferencias que existen entre valores vecinos, en donde valores muy semejantes o inluso iguales resultarán en una salida cerca de 0. Por otro lado, la amplitud de la señal de salida será mayor a medida que lo sea la diferencia entre valores consecutivos.
 
-Ahora veamos la segunda derivada, la cual es utilizada para indicar los _cambios de signo_, esta se consigue al derivar nuevamente la primera derivada, es así que tenemos que la derivada de segundo orden se encuetra definida por:
+Ahora veamos la segunda derivada, la cual es utilizada para indicar los _cambios de signo_, esta se consigue al derivar nuevamente la primera derivada, es así que tenemos que la derivada de segundo orden se encuentra definida por:
 
 $$\frac{\partial^{2} f}{\partial^{2} x} = f(x + 1) + f(x - 1) - 2f(x)$$
 
 Y la podemos representar mediante la siguiente señal $$w_{dv2}$$:
 
-$$w_{dv2} = [1 \qquad -2 \qquad 1]$$
+$$w_{dv2} = [1 \qquad \underline{-2} \qquad 1]$$
 
 Al momento de efectuar la convolución (y de antemano una disculpa si no es muy evidente dado la señal que escogí) notamos que en aquellos valores en donde se encuentra precísamente este cambio de signo (en el complejo QRS), existe un cambio en la señal, en cambio, donde no existe tal cambio los valores serán 0. Como podemos medio observar en la __Figura 10__
 
