@@ -14,6 +14,12 @@ Y bueno, como mencionamos en el párrafo anterior, los bordes se forman a partir
 
 En la __Figura 1__ encontramos los 3 casos de bordes. En el primer renglón encontramos los bordes como los encontramos dentro de una imagen, en el segundo renglón vemos los perfiles de intensidad, en donde visualizamos a las intensidades como una superficie, donde la altura máxima corresponde al brillo total (1 ya que estamos trabajando con imágenes tipo _float_) y 0 para la auscencia de este. Finalmente, en el tercer renglón vemos como se modelan los bordes mediante señales.
 
+{: .center} 
+![levels]({{ site.baseurl }}/images/levels.PNG)
+__Figura 1__ _En el renglón superior encontramos los distintos bordes que podemos encontrar en una imagen, en el renglón central observamos la representación 3D, en donde la altura está determinada por el nivel de intensidad, finalmente encontramos la manera en la que se encuentran modeladas estas señales_.
+
+
+
 Es así, que se pueden caracterizar como _cambios abruptos_ (y algunos no tanto) de intensidad. 
 
 El objetivo de la detección de bordes es el de reducir en gran medida la cantidad de datos, al preservar únicamente la información concerniente a lo que delimita las estructuras.
