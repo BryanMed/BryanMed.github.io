@@ -18,6 +18,7 @@ En la __Figura 1__ encontramos los 3 casos de bordes. En el primer renglón enco
 ![levels]({{ site.baseurl }}/images/levels.PNG)
 __Figura 1__ _En el renglón superior encontramos los distintos bordes que podemos encontrar en una imagen, en el renglón central observamos la representación 3D, en donde la altura está determinada por el nivel de intensidad, finalmente encontramos la manera en la que se encuentran modeladas estas señales_.
 
+> El código para visualizar los bordes en Python, lo puedes encontrar (aquí)[https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/4.1%20visualizador%20de%20bordes]
 
 
 Es así, que se pueden caracterizar como _cambios abruptos_ (y algunos no tanto) de intensidad. 
