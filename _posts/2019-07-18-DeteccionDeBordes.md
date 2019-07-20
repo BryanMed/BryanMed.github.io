@@ -10,7 +10,9 @@ Y bueno, como mencionamos en el párrafo anterior, los bordes se forman a partir
 
 * __Step edges__: Se encuentran en zonas donde existe un cambio súbito de intensidad (idealmente de un pixel a otro). Con lo cual estos bordes son modelados como una funcion de escalón unitario. Este es el borde ideal, sin embargo es poco usual encontrarlo en imágenes no artificales.
 * __Ramp edges__: Estos se producen cuando el cambio de brillo no es instantáneo, si no que existe una ventana de tiempo en la que va variando hasta alcanzar la nueva intensidad. La función que la representa es precisamente la función rampa. Son de los más comunes de encontrar, dado que en la gran mayoría de imágenes encontramos ya sea ruido, o desenfoques que producen cierto suavizado en regiones, lo cual produce una transición más _smooth_ entre las regiones, resultando en una transición más lenta (asemejandose a la función rampa).
-* __Roof edges__: 
+* __Roof edges__: Se encuentran cuando existe una doble transición de intensidades en un periodo relativamente corto de tiempo, normalmente es generado por líneas.
+
+En la __Figura 1__ encontramos los 3 casos de bordes. En el primer renglón encontramos los bordes como los encontramos dentro de una imagen, en el segundo renglón vemos los perfiles de intensidad, en donde visualizamos a las intensidades como una superficie, donde la altura máxima corresponde al brillo total (1 ya que estamos trabajando con imágenes tipo _float_) y 0 para la auscencia de este. Finalmente, en el tercer renglón vemos como se modelan los bordes mediante señales.
 
 Es así, que se pueden caracterizar como _cambios abruptos_ (y algunos no tanto) de intensidad. 
 
