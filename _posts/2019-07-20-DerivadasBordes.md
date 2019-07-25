@@ -10,12 +10,8 @@ Y bueno, para detectar bordes la herramienta predilecta es _la [convolución](ht
 
 Bien, entonces ya sabemos que un borde es una transición de intensidad en un tiempo relativamente corto de tiempo, y que para detectarlos usamos la convolución, pero, ¿qué características buscamos en un _edge detector_?... principalmente dos: 
 
-1. Que en las zonas de brillo uniforme (donde no existen cambios tan grandes de intensidad) la respuesta del detector sea mínima. "Pues aquí no hay nada men, todo tranqui".
+* Que en las zonas de brillo uniforme (donde no existen cambios tan grandes de intensidad) la respuesta del detector sea mínima. "Pues aquí no hay nada men, todo tranqui".
 
-2. Por otro lado, en la zonas donde existe un cambio "abrupto" de intensidad, la respuesta del detector debe ser grande (y por respuesta me refiero al valor resultante de la convolución), que nos indique "épale men, here´s something".
+* Por otro lado, en la zonas donde existe un cambio "abrupto" de intensidad, la respuesta del detector debe ser grande (y por respuesta me refiero al valor resultante de la convolución), que nos indique "épale men, here´s something".
 
-
-, nuestro detector nos debe indicar: "pues aquí no hay bordes, men, todo tranqui". Y bueno, precisamente el resultado de derivar una constante es 0 ($$f(c) = 0$$), así que punto para las derivadas.
-
-2. En las zonas donde existe una transición de intensidad (yup, bordes) debería existir una respuesta por parte de nuestro detector tipo: "may, aquí hay algo". Y la diferenciación aparece de nuevo para ayudarnos con esta tarea, ya que la derivada de una _variación x_ es 1 ($$f(x) = 1$$).
-
+Es ahora cuando viene la pregunta ¿Existirá algo que permita generar este tipo de respuestas tan específicas?. Aquí es cuando entran en juego las _derivadas_ que, long story short, son las _diferencias_ entre valores consecutivos, el qué tanto cambió el valor actual respecto al valor pasado. Tomemos como ejemplo la función rampa de la __Figura 1__.
