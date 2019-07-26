@@ -62,6 +62,8 @@ __Figura 4__ _Ahora vemos el resultado de la segunda derivada, notamos que es m�
 
 Como podemos ver, el detector utilizando la 2da derivada es un poquito más sensible a identificar los bordes. Nos produce una doble respuesta: una positiva y otra negativa, pasando en el camino por cero (lo que se conoce como _zero crossing_). Las segundas derivadas tienden a generar bordes más delgados que aquellos producidos por las primera derivada. Además posee otra propiedad importante, con el signo podemos conocer el estado de transición del borde (cuando tenemos un signo negativo, indica que la transición del borde va de blanco a negro. Con signo positivo corresponde a un cambio de oscuro a blanco).
 
+> Puedes encontrar en [este](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/4.2%20detector%20de%20bordes%201d) repositorio, el código en Python para visualizar los efectos de convolucionar las señales con las máscaras de derivadas.
+
 En el siguiente post veremos ahora si imágenes :)
 
 ____
