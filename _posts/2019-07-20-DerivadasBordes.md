@@ -30,7 +30,7 @@ $$w_{dv1} = [-1 \qquad 1]$$
 
 La versión de este kernel que que utilizaremos, el cual permite que el resultado de la convolución esté centrado en x, es:
 
-$$w_{dv1} = [-1 \qquad 0 \qquad 1]$$
+$$w_{dv1} = [-1 \qquad \underline{0} \qquad 1]$$
 
 Ahora, en la __Figura 3__ mostramos lo que sucede cuando realizamos la convolución de la señal escalón, con el kernel de la primera derivada.
 
@@ -48,6 +48,11 @@ El efecto que produce el convolucionar la función escalón con el filtro $$w_{d
 
 
 
+
+Como podemos ver, el detector utilizando la 2da derivada es un poquito más sensible a identificar los bordes. Nos produce una doble respuesta: una positiva y otra negativa, pasando en el camino por cero (lo que se conoce como _zero crossing_). Las segundas derivadas tienden a generar bordes más delgados que aquellos producidos por las primera derivada. Además posee otra propiedad importante, con el signo podemos conocer el estado de transición del borde (cuando tenemos un signo negativo, indica que la transición del borde va de blanco a negro. Con signo positivo corresponde a un cambio de oscuro a blanco).
+____
+
+Ahora saltemos a 2D, 
 
 
 
