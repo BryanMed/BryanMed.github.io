@@ -17,13 +17,13 @@ Bien, entonces ya sabemos que un borde es una transición de intensidad en un ti
 Es ahora cuando viene la pregunta ¿Existirá algo que permita generar este tipo de respuestas tan específicas?. Aquí es cuando entran en juego las _derivadas_ que, long story short, son las _diferencias_ entre valores consecutivos, el qué tanto cambió el valor actual respecto al valor pasado. Tomemos como ejemplo el renglón de pixeles de la __Figura 1__.
 
 {: .center} 
-![stepEdge]({{ site.baseurl }}/images/jordan.PNG)
+![stepEdge]({{ site.baseurl }}/images/stepEdge.PNG)
 __Figura 1__ _Encontramos un renglón de pixeles correspondientes a una imagen, en donde existe una transición de intensidad en los pixeles 25-26 (step edge)_.
 
 Como podemos observar, la transición de intensidad se da entre los pixeles 25-26 (pixel 25 = 0, pixel 26 = 1). Esto representado como señal se modela como una función unidimensional de impulso unitario, con punto de quiebre en los valores 25-26, mostrado en la __Figura 2__.
 
 {: .center} 
-![stepEdge]({{ site.baseurl }}/images/derivadaImpulso.png)
+![stepEdge]({{ site.baseurl }}/images/funcionImpulso.png)
 __Figura 2__ _El modelado de la función correspondiente a la figura anterior, en donde pasamos del mínimo al máximo brillo en los elementos 25-26_.
 
 Ahora recomiendo mucho leer la sección de _operadores de sharpening_ del post de [convolución](https://bryanmed.github.io/kernelsConv/) ya que ahí explico un poquito el transfondo del kernel de derivada. Resumiendo un poquito, la derivada de una señal $$f$$ se puede aproximar como las diferencias de valores consecutivos, de la forma:
