@@ -64,6 +64,9 @@ Como podemos ver, el detector utilizando la 2da derivada es un poquito más sens
 
 > Puedes encontrar en [este](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/4.2%20detector%20de%20bordes%201d) repositorio, el código en Python para visualizar los efectos de convolucionar las señales con las máscaras de derivadas.
 
+* Para finalizar, me gustaría recalcar las propiedades de las derivadas y su aplicación en los bordes. en zonzas de brillo constante, la respuesta de la derivada es 0, debido a que la derivada de una constante $$c$$ es : $$f(c) = 0$$. Por otro lado, cuando existe una transición de intensidad, el comportamiento es una función lineal $$x$$, en donde la derivada de $$x$$ es $$f(x) = 1$$.
+
+
 En el siguiente post veremos ahora si imágenes :)
 
 ____
