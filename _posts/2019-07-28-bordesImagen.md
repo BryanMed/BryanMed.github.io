@@ -27,8 +27,7 @@ $$
 Los kernels correspondientes son:
 
 $$[-1 \qquad 1] \qquad \qquad \qquad
-
-\left[ begin{array}{cc}
+\left[ \begin{array}{cc}
 -1 \\
 1\\
 \end{array} \right]
