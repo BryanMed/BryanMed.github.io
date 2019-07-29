@@ -15,9 +15,14 @@ Para formar nuestro operador de la primera derivada en una imagen $$f$$, simplem
 
 $$\nabla f \equiv grad(f) = 
 \left[ \begin{array}{cc} 
-1 \\
-2\\
-\end{array} \right]$$
+g_{x} \\
+g_{y}\\
+\end{array} \right] = 
+\left[ \begin{array}{cc}
+\frac{\partial f}{\partial x}\\
+\frac{\partial f}{\partial y}\\
+\end{array} \right]
+$$
 
 
 
