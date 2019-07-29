@@ -14,10 +14,10 @@ $$f'(x) = f(x + 1) - f(x)$$         --- es equivalente al kernel--->          $$
 Para formar nuestro operador de la primera derivada en una imagen $$f$$, simplemente realizamos la la diferenciación en ambas dimensiones, es así que nuestro gradiente $$\nabla f$$ queda definido como:
 
 $$\nabla f \equiv grad(f) \equiv = 
-\left[\begin{array}{cc} 
+[\begin{array}{cc} 
 1 \\
 2\\
-\end{array} } \right]$$
+\end{array}]$$
 
 
 
@@ -58,8 +58,4 @@ $$\nabla f \equiv grad(f) \equiv =
 
 
 
-
-
-
-..
 
