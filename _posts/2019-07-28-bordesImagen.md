@@ -35,13 +35,25 @@ $$\left[ \begin{array}{cc}
 \end{array} \right]
 $$
 
+Ahora vamos a realizar la detección de bordes en la imagen de la __Figura 1__.
 
+{: .center} 
+![puenteDeFierro]({{ site.baseurl }}/images/zorroNormal.PNG) 
+__Figura 1__ _Puente de Fierro, en Rioverde, SLP._
 
+Para ello, utilizaremos los kernels de las primeras derivadas en _x_ y _y_ que mencionamos anteriormente, en la __Figura 2__ mostramos el resultado de ambas convoluciones.
 
+{: .center} 
+![puenteDeFierro]({{ site.baseurl }}/images/zorroNormal.PNG) 
+__Figura 2__ _En la izquierda_
 
+Antes que nada, vamos a explicar lo que significan los colores en estas imágenes. Las derivadas pueden tener valores positivos, pero también negativos, y al estar trabajando con imagenes tipo float (0.0 - 1.0), pues que onda, ¿cómo visualizamos los valores negativos (menores de cero)? para ello, Matplotlib o MATLAB realizan una adecuación de colores, asignando el color negro a la mínima intensidad y blanco al máximo, y justo en el medio, con color grisáceo está el 0. Ahora si, volvamos a discutir el resultado de la convolución, como podemos notar, al utilizar el kernel de la derivada en _x_, observamos como van apareciendo los bordes verticales (dado que estamos sacando la diferencia entre columnas), por otro lado, al utilizar el kernel de la primera derivada en _y_, notamos la formación de bordes horizontales (porque estamos diferenciando entre renglones). Para ayudar a la comprensión, en la __Figura 3__ se muestra el valor absoluto de las imágenes anteriores, en donde valores negativos o positivos se encuentran en color blanco.
 
+{: .center} 
+![puenteDeFierro]({{ site.baseurl }}/images/zorroNormal.PNG) 
+__Figura 2__ _En la izquierda_
 
-
+Entre los inconvenientes que se tiene al utilizar estos detectores, es que al momento de encontrar bordes diagonales pues la cosa ya no funcionaba muy bien. Uno de las primeras soluciones fue crear kernel que se a
 
 
 
