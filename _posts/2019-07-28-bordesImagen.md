@@ -24,8 +24,8 @@ g_{y}\\
 \end{array} \right]
 $$
 
-Los kernels correspondientes son:
-
+Las máscaras que corresponden a estas derivadas, son las siguientes:
+kernel de la 1a derivada en x              kernel de la 1a derivada en y
 $$[-1 \qquad 1] \qquad \qquad \qquad
 \left[ \begin{array}{cc}
 -1 \\
