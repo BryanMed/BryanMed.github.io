@@ -25,9 +25,11 @@ g_{y}\\
 $$
 
 Las máscaras que corresponden a estas derivadas, son las siguientes:
-kernel de la 1a derivada en x              kernel de la 1a derivada en y
-$$[-1 \qquad 1] \qquad \qquad \qquad
-\left[ \begin{array}{cc}
+
+kernel de la 1a derivada en x: $$[-1 \qquad 1]$$
+
+kernel de la 1a derivada en y:
+$$\left[ \begin{array}{cc}
 -1 \\
 1\\
 \end{array} \right]
