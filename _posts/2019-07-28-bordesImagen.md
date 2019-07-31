@@ -51,9 +51,42 @@ Antes que nada, vamos a explicar lo que significan los colores en estas imágene
 
 {: .center} 
 ![puenteDeFierro]({{ site.baseurl }}/images/zorroNormal.PNG) 
-__Figura 2__ _En la izquierda_
+__Figura 3__ _En la izquierda_
 
-Entre los inconvenientes que se tiene al utilizar estos detectores, es que al momento de encontrar bordes diagonales pues la cosa ya no funcionaba muy bien. Uno de las primeras soluciones fue crear kernel que se a
+Entre los inconvenientes que se tiene al utilizar estos detectores, es que al momento de encontrar bordes diagonales pues la cosa ya no funcionaba tan bien. Uno de las primeras intentos por crear un kernel que priorizara los bordes diagonales, es el _filtro Roberts_, en donde se realiza la diferenciación en direcciones precisamente diagonales, cuyas máscaras se muestran a continuación:
+$$g_{x} = 
+\left[ {\begin{array}{cccc}
+-1 & 0 \\
+0 & 1 \\
+\end{array} } \right]
+$$
+
+$$g_{y} = 
+\left[ {\begin{array}{cccc}
+0 & -1 \\
+1 & 0 \\
+\end{array} } \right]
+$$
+
+El resultado de convolucionar con ambos kernels se puede ver en la __Figura 4__ . Nótese como están caracterizados los bordes en las diagonales, en donde dependiendo del filtro que utilicemos la respuesta será más fuerte.
+
+{: .center} 
+![puenteDeFierro]({{ site.baseurl }}/images/zorroNormal.PNG) 
+__Figura 4__ _En la izquierda_
+
+Podemos calcular la __Magnitud $$M$$__ (que vendría siendo la _longitud_ del vector gradiente) al utilizar el resultado de ambos kernels anteriores, siguiendo la siguiente fórmula:
+
+$$M(x, y) = mag(\nabla f) = \sqrt{g_{x}^2 + g_{y}^2}$$
+
+No obstante, computacionalmente la raiz cuadrada es relativamente costosa, por ello, se utiliza una aproximación, que para nuestro propósito es igualmente efectiva, al utilizar el valor absoluto, de tal suerte que tenemos:
+
+$$M(x, y) \approx |g_{x}| + |g_{y}| $$
+
+En la __Figura 5__ y citando a Hannah Montana, vemos que _you get the best of both worlds_, teniendo bordes aún más definidos.
+
+{: .center} 
+![puenteDeFierro]({{ site.baseurl }}/images/zorroNormal.PNG) 
+__Figura 5__ _En la izquierda_
 
 
 
