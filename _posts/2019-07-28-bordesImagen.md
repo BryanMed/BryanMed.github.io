@@ -93,7 +93,7 @@ En la __Figura 6__ y citando a Hannah Montana, vemos que _you get the best of bo
 ![puenteDeFierro]({{ site.baseurl }}/images/PuenteRobertsMag.PNG) 
 __Figura 6__ _En la izquierda_
 
-
+Como ya mencionamos en el post de convolución, en el caso de imágenes es preferible trabajar con kernels de número impar
 
 
 
