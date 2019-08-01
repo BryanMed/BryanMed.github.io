@@ -93,7 +93,28 @@ En la __Figura 6__ y citando a Hannah Montana, vemos que _you get the best of bo
 ![puenteDeFierro]({{ site.baseurl }}/images/PuenteRobertsMag.PNG) 
 __Figura 6__ _En la izquierda_
 
-Como ya mencionamos en el post de convolución, en el caso de imágenes es preferible trabajar con kernels de número impar
+Como ya mencionamos en el post de convolución, en el caso de imágenes es preferible trabajar con kernels de número impar, ya que son simétricas respecto a un punto central. Una ventaja con los kernels impares, es que permiten comparar mejor entre los lados opuestos respecto al centro de este. En señales, para conseguir dicha función, utilizamos la siguiente máscara:
+
+$$w = \left[ -1 \qquad 0 \qquad 1] $$
+
+El _filtro Prewitt_ es  una extensión de esta idea en dos dimensiones, con lo cual se obtiene el siguiente filtro:
+
+$$
+Prewitt_{x} = \begin{vmatrix}
+-1&-1&-1\\
+0&1&0\\
+1&1&1\\
+\end{vmatrix}
+
+\qquad
+
+Prewitt_{y} = \begin{vmatrix}
+-1&0&1\\
+-1&0&1\\
+-1&0&1\\
+\end{vmatrix}
+$$
+
 
 
 
