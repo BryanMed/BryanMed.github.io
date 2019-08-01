@@ -87,7 +87,7 @@ No obstante, computacionalmente la raiz cuadrada es relativamente costosa, por e
 
 $$M(x, y) \approx |g_{x}| + |g_{y}| $$
 
-En la __Figura 6__ y citando a Hannah Montana, vemos que _you get the best of both worlds_, teniendo bordes aún más definidos.
+En la __Figura 6__ y citando a Hannah Montana, vemos que _you get the best of both worlds_, teniendo bordes aún más definidos. Además para hacer más notorios los bordes, podemos binarizar la imagen, definiendo cierto _umbral_, en el que si un pixel llega a superarlo, se le asignará un valor de 1 (blanco) y de no hacerlo, se le asigna un 0 (negro). 
 
 {: .center} 
 ![puenteDeFierro]({{ site.baseurl }}/images/PuenteRobertsMag.PNG) 
@@ -95,9 +95,13 @@ __Figura 6__ _En la izquierda_
 
 Como ya mencionamos en el post de convolución, en el caso de imágenes es preferible trabajar con kernels de número impar, ya que son simétricas respecto a un punto central. Una ventaja con los kernels impares, es que permiten comparar mejor entre los lados opuestos respecto al centro de este. En señales, para conseguir dicha función, utilizamos la siguiente máscara:
 
-$$w = \left[ -1 \qquad 0 \qquad 1] $$
+$$w = [-1 \qquad 0 \qquad 1] $$
 
-El _filtro Prewitt_ es  una extensión de esta idea en dos dimensiones, con lo cual se obtiene el siguiente filtro:
+El _filtro Prewitt_ es  una extensión de esta idea en dos dimensiones, con lo cual se obtiene los siguientes filtros para detectar bordes en los ejes _x_ y _y_, además, en las __Figura 7 - 8__ encontramos el resultado de la convolución con estos operadores.
+
+{: .center} 
+![puenteDeFierro]({{ site.baseurl }}/images/PuenteRobertsMag.PNG) 
+__Figura 7__ _Piso de las tortas alemanas (enfrente de ciencias químicas de la UASLP)._
 
 $$
 Prewitt_{x} = \begin{vmatrix}
@@ -115,16 +119,37 @@ Prewitt_{y} = \begin{vmatrix}
 \end{vmatrix}
 $$
 
+{: .center} 
+![puenteDeFierro]({{ site.baseurl }}/images/PuenteRobertsMag.PNG) 
+__Figura 8__ _Valor absoluto del resultado de la convolución con sus respectivos filtros Prewitt (en _x_ y _y_, para detectar bordes en dirección horizonal y vertical_
 
+De igual manera, también podemos priorizar los bordes en diagonal, y en la __Figura 9__ se muestra los bordes detectados por estos operadores.
 
+$$
+Prewitt_{d1} = \begin{vmatrix}
+ 0&  1&  1\\
+-1&  0&  1\\
+-1& -1&  0\\
+\end{vmatrix}
 
+\qquad
 
+Prewitt_{d2} = \begin{vmatrix}
+ -1& -1&  0\\
+ -1&  0&  1\\
+  0&  1&  1\\
+\end{vmatrix}
+$$
 
+{: .center} 
+![puenteDeFierro]({{ site.baseurl }}/images/PuenteRobertsMag.PNG) 
+__Figura 9__ _Valor absoluto del resultado de la convolución con sus respectivos filtros Prewitt (_diagonal 1 - diagonal 2_), para detectar bordes en direcciónes diagonales._
 
+Finalmente en la __Figura 10__ mostramos la magnitud y a su vez, la versión binarizada de esta imagen.
 
-
-
-
+{: .center} 
+![puenteDeFierro]({{ site.baseurl }}/images/PuenteRobertsMag.PNG) 
+__Figura 10__ _A la izquierda._
 
 
 
