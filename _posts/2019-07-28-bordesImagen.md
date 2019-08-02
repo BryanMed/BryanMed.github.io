@@ -106,7 +106,7 @@ __Figura 7__ _Piso de las tortas alemanas (enfrente de ciencias químicas de la 
 $$
 Prewitt_{x} = \begin{vmatrix}
 -1&-1&-1\\
-0&1&0\\
+0&0&0\\
 1&1&1\\
 \end{vmatrix}
 
