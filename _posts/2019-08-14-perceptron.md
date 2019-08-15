@@ -61,8 +61,20 @@ $$ e =  (y – z) $$
 
 Si el error es menor a un umbral (digamos < 0.1%), entonces nuestra estará lista. En caso contrario habrá que iterar hasta dar con esos valores. 
 
-Y ahora te estarás preguntando en base a que o como ajustar los parámetros. En el caso del umbral $$\theta$$, se le suma este $$\delta \theta$$:
+Y ahora te estarás preguntando en base a que o como ajustar los parámetros. En el caso del umbral $$\theta$$, se le suma este $$\Delta \theta$$:
+
 $$ \Delta \theta = -(\lambda \cdot e)$$
 
 Por otro lado, los pesos $$w$$ se ajustan al sumarle a cada uno el $$\Delta w$$ correspondiente:
+
 $$\Delta w_{i} = \lambda \cdot e \cdot x_{i}$$
+
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
+
