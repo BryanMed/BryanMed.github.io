@@ -43,9 +43,9 @@ Pero mejor veamos un ejemplo de juguete, supongamos que quiero que un perceptró
 
 Una vez entrenado,  el perceptroncito arroja los siguientes valores: 
 
-* $$w_1$$ = -0.2
-* $$w_2$$ = 0.5
-* $$\theta$$ = 0.6
+* $$w_1$$ = 0.5
+* $$w_2$$ = -0.4
+* $$\theta$$ = 0.3
 
 Si estos datos los pasamos a la fórmula para conocer $$z$$, nos daremos cuenta que es la ecuación de una recta y como vemos en la __Figura #__ esta línea crea un _sesga_ a mis prospectos, en donde aquellas chicas que quedan debajo de la recta son muy probables a lastimar mi corazón :(, por otro lado, las que están por encima de esta barrera, ¡si a todo!.
 
@@ -56,12 +56,13 @@ Si estos datos los pasamos a la fórmula para conocer $$z$$, nos daremos cuenta 
 Existe además otro elemento, llamado _factor de aprendizaje_ $$\lambda$$ el cual señala la velocidad de aprendizaje de la red. Un valor de aprendizaje alto, hará que nos quedemos a medias con la búsqueda de los valores ideales, por otro lado, un valor muy bajo hará que el tiempo de búsqueda sea poco eficiente, en donde los coeficientes estarán oscilando entre valores muy cercanos entre sí (redundante). Un valor usualón es de 0.2.
 
 Oye Bryan y ¿cómo sabemos cuándo cambiar o no los parámetros? Ah, pues para ello utilizaremos el error $$e$$, es decir la diferencia entre nuestro valor de salida deseado $$y$$ y nuestro valor de salida actual:
+
 $$ e =  (y – z) $$
 
-Si el error es menor a un umbral (digamos < 0.1%), entonces nuestra red, tal como una little caesar’s, estará hot and __ready__. En caso contrario habrá que iterar hasta dar con esos valores. 
+Si el error es menor a un umbral (digamos < 0.1%), entonces nuestra estará lista. En caso contrario habrá que iterar hasta dar con esos valores. 
 
 Y ahora te estarás preguntando en base a que o como ajustar los parámetros. En el caso del umbral $$\theta$$, se le suma este $$\delta \theta$$:
-$$ \delta \theta = -(\lambda \dot e)$$
+$$ \Delta \theta = -(\lambda \cdot e)$$
 
-Por otro lado, los pesos $$w$$ se ajustan al sumarle a cada uno el $$\delta w$$ correspondiente:
-$$\delta w_{i} = \lambda \dot e \dot x_{i}$$
+Por otro lado, los pesos $$w$$ se ajustan al sumarle a cada uno el $$\Delta w$$ correspondiente:
+$$\Delta w_{i} = \lambda \cdot e \cdot x_{i}$$
