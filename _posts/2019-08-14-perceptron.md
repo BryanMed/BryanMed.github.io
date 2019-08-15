@@ -2,7 +2,7 @@
 layout: post
 comments: true
 mathjax: true
-title: [ IA-1 ] Redes neuronales - El Perceptrón.
+title: IA-1 > Redes neuronales - El Perceptrón.
 ---
 En esta nueva serie de posts, hablaremos acerca de la _inteligencia artificial_. En esta ocasión saltaré directamente a las redes neuronales dado que serán necesarias para proyectos futuros, sin más, vamos a ello.
 
