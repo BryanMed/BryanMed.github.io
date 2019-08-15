@@ -89,4 +89,16 @@ $$\Delta w_{i} = \lambda \cdot e \cdot x_{i}$$
 | [A](2017/results/A) | [A.csv](2017/results/A.csv) | [A-extended.csv](2017/results/A-extended.csv) |
 | [B](2017/results/B) | [B.csv](2017/results/B.csv) | [B-extended.csv](2017/results/B-extended.csv) |
 
+<style>
+.tablelines table, .tablelines td, .tablelines th {
+        border: 1px solid black;
+        }
+</style>
 
+| P | Q | P * Q |
+| - | - | - |
+| T | T | T |
+| T | F | F |
+| F | T | F |
+| F | F | F |
+{: .tablelines}
