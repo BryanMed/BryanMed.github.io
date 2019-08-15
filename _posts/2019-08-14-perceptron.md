@@ -70,10 +70,10 @@ Por otro lado, los pesos $$w$$ se ajustan al sumarle a cada uno el $$\Delta w$$ 
 $$\Delta w_{i} = \lambda \cdot e \cdot x_{i}$$
 
 {: .center}
-             | Tables        | Are           | Cool  |Cool  |
-             | ------------- |:-------------:| -----:|-----:|
-             | col 3 is      | right-aligned | $1600 |$1600 |
-             | col 2 is      | centered      |   $12 |  $12 |
-             | zebra stripes | are neat      |    $1 |  $1  |
+| Tables        | Are           | Cool  |Cool  |
+| ------------- |:-------------:| -----:|-----:|
+| col 3 is      | right-aligned | $1600 |$1600 |
+| col 2 is      | centered      |   $12 |  $12 |
+| zebra stripes | are neat      |    $1 |  $1  |
 
 
