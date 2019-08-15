@@ -71,6 +71,7 @@ $$\Delta w_{i} = \lambda \cdot e \cdot x_{i}$$
 
 
 | Tables        | Are           | Cool  |
+
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
