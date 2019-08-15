@@ -30,7 +30,7 @@ Y tomando en cuenta el comportamiento anterior, es como se creó el modelo del p
  
 Es así que la salida $$z$$ se genera a partir de la siguiente función:
 
-$$z = (\sum_{i} x_i \cdot w_i)) - \theta$$
+$$z = (\sum_{i} x_i \cdot w_i) - \theta$$
 
 Por comodidad, restamos de una vez el umbral $$\theta$$. Así, si esta señal $$z$$ es mayor o igual a cero, el perceptrón se dispara (salida $$z$$ = 1), en caso de no alcanzar el umbral, la salida será 0.
 
@@ -47,7 +47,7 @@ Una vez entrenado,  el perceptroncito arroja los siguientes valores:
 * $$w_2$$ = -0.4
 * $$\theta$$ = 0.3
 
-Si estos datos los pasamos a la fórmula para conocer $$z$$, nos daremos cuenta que es la ecuación de una recta y como vemos en la __Figura #__ esta línea crea un _sesga_ a mis prospectos, en donde aquellas chicas que quedan debajo de la recta son muy probables a lastimar mi corazón :(, por otro lado, las que están por encima de esta barrera, ¡si a todo!.
+Si estos datos los pasamos a la fórmula para conocer $$z$$, nos daremos cuenta que es la ecuación de una recta (z = $$0.5x_1 - 0.4x_2 + 0.3$$), en la __Figura #__ observamos que esta línea crea un _sesga_ a mis prospectos, en donde aquellas chicas que quedan debajo de la recta son muy probables a lastimar mi corazón :(, por otro lado, las que están por encima de esta barrera, ¡si a todo!.
 
 
 
@@ -68,6 +68,10 @@ $$ \Delta \theta = -(\lambda \cdot e)$$
 Por otro lado, los pesos $$w$$ se ajustan al sumarle a cada uno el $$\Delta w$$ correspondiente:
 
 $$\Delta w_{i} = \lambda \cdot e \cdot x_{i}$$
+
+
+
+
 
 {: .center}
 |  x  |  y  |x and y |
