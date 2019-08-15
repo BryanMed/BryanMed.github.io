@@ -69,36 +69,11 @@ Por otro lado, los pesos $$w$$ se ajustan al sumarle a cada uno el $$\Delta w$$ 
 
 $$\Delta w_{i} = \lambda \cdot e \cdot x_{i}$$
 
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-| Web страница        | CSV                         | Разширени резултати CSV                       |
-|:-------------------:|:---------------------------:|:---------------------------------------------:|
-| [A](2018/results/A) | [A.csv](2018/results/A.csv) | [A-extended.csv](2018/results/A-extended.csv) |
-| [E](2018/results/E) | [E.csv](2018/results/E.csv) | [E-extended.csv](2018/results/E-extended.csv) |
+{: .center}
+| Tables        | Are           | Cool  |Cool  |
+| ------------- |:-------------:| -----:|-----:|
+| col 3 is      | right-aligned | $1600 |$1600 |
+| col 2 is      | centered      |   $12 |  $12 |
+| zebra stripes | are neat      |    $1 |  $1  |
 
 
-| Web страница        | CSV                          | Разширени резултати CSV                      |
-
-| Web страница        | CSV                         | Разширени резултати CSV                      |
-|:-------------------:|:---------------------------:|:---------------------------------------------:|
-| [A](2017/results/A) | [A.csv](2017/results/A.csv) | [A-extended.csv](2017/results/A-extended.csv) |
-| [B](2017/results/B) | [B.csv](2017/results/B.csv) | [B-extended.csv](2017/results/B-extended.csv) |
-
-<style>
-.tablelines table, .tablelines td, .tablelines th {
-        border: 1px solid black;
-        }
-</style>
-
-| P | Q | P * Q |
-| - | - | - |
-| T | T | T |
-| T | F | F |
-| F | T | F |
-| F | F | F |
-{: .tablelines}
