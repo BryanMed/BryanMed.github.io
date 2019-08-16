@@ -100,7 +100,7 @@ Ahora nos pondremos más guapos y vamos a entrenar un perceptrón desde 0, a man
 |  1  |   0 |    0   |
 |  1  |   1 |    1   |
  
-El primer paso es escoger los parámetros (peso y bias) de manera aleatoria (en toda la documentación que he encontrado sugieren utilizar valores pequeños), además, el factor de aprendizaje $$\lamda$$ regularmente se pone como 0.2, así:
+El primer paso es escoger los parámetros (peso y bias) de manera aleatoria (en toda la documentación que he encontrado sugieren utilizar valores pequeños), además, el factor de aprendizaje $$\lambda$$ regularmente se pone como 0.2, así:
 
 * $$\lambda = 0.2$$
 * $$\theta = 0.3$$
@@ -115,9 +115,9 @@ $$z = (0 \cdot 0.4) + (0 \cdot 0.5) – 0.3 = -0.3$$
 
 Como $$z < 0$$ entonces el perceptrón no se dispara, es decir, $$z = 0$$. Ahora verificamos el error:
 
-$$e$$ = $$y$$ – $$z$$
+$$e = y \quad – z$$
 
-$$e$$ = 0 – 0 = 0
+$$e = 0 \quad – 0 = 0
 
 Como no hay error, pasamos al siguiente par de valores, $$x_1 = 0$$ y $$x_2 = 1$$ y cuyo valor esperado es $$y = 0$$. Repetimos el procedimiento anterior:
 
@@ -125,7 +125,7 @@ $$z = (0 \cdot 0.4) + (1 \cdot 0.5) – 0.3 = 0.2$$
 
 Al ser $$z \geq 0$$ perceptrín se dispara, con lo cual la salida es $$z = 1$$. Al momento de comprobar el error tenemos:
 
-$$e = 0 – 1 = -1$$
+$$e = 0 \quad – 1 = -1$$
 
 Y Houston, tenemos un problema, el tener esta diferencia con el valor esperado nos indica que debemos de recalcular parámetros, para ello calcularemos sus factores de cambio, empezando por $$\Delta \theta$$:
 
@@ -159,7 +159,7 @@ $$z = (1 \cdot 0.4) + (0 \cdot 0.3) – 0.5 = -0.1$$
 
 Como $$z < 0$$ el perceptrón no se dispara, por lo tanto $$z = 0$$. Al calcular el error:
 
-$$e = 0 – 0$$
+$$e = 0 \quad – 0$$
 
 Vemos que todo funciona smooth, por lo cual no actualizamos lo valores y pasamos a los siguientes valores. Teniendo finalmente el último caso de esta primera iteración $$x_1 = 1$$ y $$x_2 = 1$$ y un valor esperado $$y = 1$$:
 
