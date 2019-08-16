@@ -38,10 +38,9 @@ $$z = (\sum_{i} x_i \cdot w_i) - \theta$$
 
 Por comodidad, restamos de una vez el umbral $$\theta$$. Así, si esta señal $$z$$ es mayor o igual a cero, el perceptrón se dispara (salida $$z$$ = 1), en caso de no alcanzar el umbral, la salida será 0.
 
-$$z = \[ 
+$$z = 
 \left \{0 \qquad si \qquad z < 0\\
-        1 \qquad si \qquad z \geq 0 \right \}
-\]$$
+        1 \qquad si \qquad z \geq 0 \right \}$$
         
 Es ahora que entra en juego un proceso de _entrenamiento_ (así es, las redes neuronales son parte del aprendizaje supervisado) en donde a la red se le dan ejemplos de los resultados esperados, a fin de que sea capaz de generar una respuesta, la cual si llega a ser muy distinta del valor deseado, se tendrán que ajustar los parámetros.
 
