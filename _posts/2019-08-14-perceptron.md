@@ -68,17 +68,104 @@ $$ \Delta \theta = -(\lambda \cdot e)$$
 Por otro lado, los pesos $$w$$ se ajustan al sumarle a cada uno el $$\Delta w$$ correspondiente:
 
 $$\Delta w_{i} = \lambda \cdot e \cdot x_{i}$$
-
-
-
-
-
-{: .center}
+____
+Ahora nos pondremos más guapos y vamos a entrenar un perceptrón desde 0, a mano. Nuestro objetivo es que el perceptrón funcione como una compuerta lógica AND. El comportamiento del operador está dado por la tabla de verdad que se muestra a continuación:
+ 
 |  x  |  y  |x and y |
 |:---:|:---:|:------:|
 |  0  |   0 |    0   |
 |  0  |   1 |    0   |
 |  1  |   0 |    0   |
 |  1  |   1 |    1   |
+ 
+El primer paso es escoger los parámetros (peso y bias) de manera aleatoria (en toda la documentación que he encontrado sugieren utilizar valores pequeños, además, como mencionamos anteriormente, el factor de aprendizaje $$\lamda$$ regularmente se pone como 0.2, así:
+
+* $$\lambda = 0.2$$
+* $$\theta = 0.3$$
+* $$w_1 = 0.4$$
+* $$w_2 = 0.5$$
+
+Ahora que tenemos nuestros ingredientes, vamos a realizar la primera iteración. Empezamos con el primer caso de la tabla de verdad, en aquel donde $$x_1 = 0$$ y $$x_2 = 0$$, cuyo valor de salida esperado es $$y = 0$a$. Así, calculamos nuestra salida $$z$$:
+
+$$z = (x_1 \cdot w_1) + (x_2 \cdot w_2) - \theta$$
+
+$$z = (0 \cdot 0.4) + (0 \cdot 0.5) – 0.3 = -0.3$$
+
+Como $$z < 0$$ entonces el perceptrón no se dispara, es decir, $$z = 0$$. Ahora verificamos el error:
+
+$$e = y – z$$
+
+$$e = 0 – 0 = 0$$
+
+Como no hay error, pasamos al siguiente par de valores, $$x_1 = 0$$ y $$x_2 = 1$$ y cuyo valor esperado es $$y = 0$$. Repetimos el procedimiento anterior:
+
+$$z = (0 \cdot 0.4) + (1 \cdot 0.5) – 0.3 = 0.2$$
+
+Al ser $$z \geq 0$$ perceptrín se dispara, con lo cual la salida es $$z = 1$$. Al momento de comprobar el error tenemos:
+
+$$e = 0 – 1 = -1$$
+
+Y Houston, tenemos un problema, el tener esta diferencia con el valor esperado nos indica que debemos de recalcular parámetros, para ello calcularemos sus factores de cambio, empezando por $$\Delta \theta$$:
+
+$$\Delta \theta = -(\lambda \cdot \e)$$
+
+$$\Delta \theta = -(0.2 \cdot -1) = 0.2$$
+
+Y ahora a calcular los cambios de pesos:
+
+$$\Delta w_i = \lambda \cdot e \cdot x_i$$
+
+$$\Delta w_1 = 0.2 \cdot -1 \cdot 0 = 0$$
+
+$$ \Delta w_2 = 0.2 \cdot -1 \cdot 1 = -0.2$$
+
+Ahora sí, actualizamos los pesos y el bias:
+
+* $$\theta = \theta + \Delta \theta$$
+
+$$\theta = 0.3 + 0.2 = 0.5$$
+
+* $$w_i = w_i + \Delta w_i$$
+
+$$w_1 = 0.4 + 0 = 0.4$$
+
+$$w_2 = 0.5 – 0.2 = 0.3$$
+
+Atención aquí, estos parámetros que acabamos de recalcular son los que utilizaremos para calcular la salida en lo queda de esta iteración (a menos que tengamos que recalcular nuevamente estos valores), no esperamos a que acabe esta primera iteración. Continuando con el ejemplo, tenemos que las entradas siguientes son $$x_1 = 1$$ y $$x_2  = 0$$, con un valor esperado $$ y = 0$$, con lo cual:
+
+$$z = (1 \cdot 0.4) + (0 \cdot 0.3) – 0.5 = -0.1$$
+
+Como $$z < 0$$ el perceptrón no se dispara, por lo tanto $$z = 0$$. Al calcular el error:
+
+$$e = 0 – 0$$
+
+Vemos que todo funciona smooth, por lo cual no actualizamos lo valores y pasamos a los siguientes valores. Teniendo finalmente el último caso de esta primera iteración $$x_1 = 1$$ y $$x_2 = 1$$ y un valor esperado $$y = 1$$:
+
+$$z = (1 \cdot 0.4) + (1 \cdot 0.3) – 0.5 = 0.2$$
+
+Como $$z \geq 0$$ el perceptrón se dispara, resultando en $$z = 1$$, al calcular el error vemos que
+
+$$e = 1 – 1 = 0$$
+
+No hay error, así que nos quedamos (por ahora) con estos valores.
+
+Pero no tan rápido, aún no terminamos. El proceso de entrenamiento termina cuando logramos tener una iteración sin ningún error, así que es tiempo de pasar a la iteración 2, para no hacerla mucho de emoción, resumiré los resultado en la __Tabla 2__
+X_1	X_2	Y	Z 	e
+0	0	0	0	0
+0	1	0	0	0
+1	0	0	0	0
+1	1	1	1	0
+
+
+|  $$x_1$$  | $$x_2$$ | $$y$$ | $$z$$ | $$e$$ |
+|:---------:|:-------:|:-----:|:-----:|:-----:| 
+|     0     |    0    |   0   |   0   |   0   |
+|     0     |    1    |   0   |   0   |   0   |
+|     1     |    0    |   0   |   0   |   0   |
+|     1     |    1    |   1   |   1   |   0   |
+
+Como tenemos una iteración sin errores, hemos encontrado los pesos y el umbral correctos para que nuestro perceptrón se comporte de la manera que deseamos. En la __Figura #__ observamos como la recta resultante separa correctamente ambas clases.
+
+
 
 
