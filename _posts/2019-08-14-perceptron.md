@@ -13,20 +13,24 @@ Y bueno, un área que también hace uso de esto son las ciencias de la computaci
 Pues bien, en cuanto a la inteligencia artificial, uno de los métodos más populares son las _redes neuronales_ que precisamente toma como inspiración el funcionamiento de la neurona biológica para crear un modelo capaz de solucionar problemas. 
 
 ### La neurona biológica
-La explicación que daré de la neurona es muy pero muy superficial, pero servirá para comprender el concepto. A grandísimos rasgos, se encuentra conformada por:
+La explicación que daré de la neurona es muy pero muy superficial, pero servirá para comprender el concepto,  en la __Figura 1__ observamos un dibujo de una neurona, la cual a grandísimos rasgos, se encuentra conformada por:
 
 *	Soma o cuerpo de la neurona, en donde encontramos el nucleo celular.
 *	Dendritas, las cuales son prolongaciones que salen del soma y son las encargadas de recibir la información y conducirla hacia el soma.
-*	Axón, es el encargado de trasmitir la información desde el cuerpo celular hacia la periferia
+*	Axón, es el encargado de trasmitir la información desde el cuerpo celular hacia la periferia.
+
+{: .center}
+![zorroOscuro]({{ site.baseurl }}/images/zorroOscuro.PNG)
+__Figura 1__ _observamos la pobre distribución de los niveles de intensidad utilizados en la imagen, los cuales se encuentran en los niveles bajos, lo que resulta en una imagen oscura de poco contraste_.
  
 Cada neurona cuenta con solo un axón, el cual se ramifica en su porción terminal, lo que permitirá comunicarse con otras dendritas en el proceso de sinapsis. El proceso por el que una neurona puede generar un potencial de acción (señal de salida) se realiza (a grandes rasgos) de la siguiente manera: La célula recibe estímulos internos a partir de las dendritas, y sumaremos las intensidades de estas señales. Para general el potencial de acción, se sigue la ley de “todo o nada” en la que la neurona cuenta con un umbral de excitación. En donde, si el estímulo es mayor al umbral, se genera el potencial de acción, y en caso de no superarlo pues no. Lo interesante acá, es que no importa la intensidad de la señal que forman los estimulos, siempre que se supere el umbral, se generará el mismo potencial de acción.
 
 ### El Perceptrón
-Y tomando en cuenta el comportamiento anterior, es como se creó el modelo del perceptrón (el cual es muy similar al comportamiento de un transistor). Al perceptrón llegarán señales de entrada (el análogo a las dendritas) $$x_n$$, y generará una salida (el paralelismo al axón). Cada entrada podrá recibir únicamente entradas binarias (0 o 1), cuya importancia será ponderada de acuerdo a un peso $$w$$. Finalmente la salida $$z$$ (equivalente al potencial de acción) dependerá de:
+Y tomando en cuenta el comportamiento anterior, es como se creó el modelo del perceptrón (el cual es muy similar al comportamiento de un transistor). Al perceptrón llegarán señales de entrada (el análogo a las dendritas) $$x_n$$, y generará una salida (el paralelismo al axón). Cada entrada podrá recibir únicamente valores binarios (0 o 1), cuya importancia será ponderada de acuerdo a un peso $$w$$. Finalmente la salida $$z$$ (equivalente al potencial de acción) dependerá de:
 
 *	El valor que tomen las entradas $$x_n$$
 *	De sus pesos $$w_n$$
-*	Un umbral de disparo de la neurona ($$\theta$$)
+*	Un umbral de disparo de la neurona o _bias_ ($$\theta$$)
  
 Es así que la salida $$z$$ se genera a partir de la siguiente función:
 
@@ -34,6 +38,9 @@ $$z = (\sum_{i} x_i \cdot w_i) - \theta$$
 
 Por comodidad, restamos de una vez el umbral $$\theta$$. Así, si esta señal $$z$$ es mayor o igual a cero, el perceptrón se dispara (salida $$z$$ = 1), en caso de no alcanzar el umbral, la salida será 0.
 
+$$z = \{0 \qquad si \qquad z < 0//
+        1 \qquad si \qquad z \geq 0 \}$$
+        
 Es ahora que entra en juego un proceso de _entrenamiento_ (así es, las redes neuronales son parte del aprendizaje supervisado) en donde a la red se le dan ejemplos de los resultados esperados, a fin de que sea capaz de generar una respuesta, la cual si llega a ser muy distinta del valor deseado, se tendrán que ajustar los parámetros.
 
 Pero mejor veamos un ejemplo de juguete, supongamos que quiero que un perceptrón me ayude a encontrar el amorts, para escoger a mi chica ideal tomaré en cuenta solo dos factores:
