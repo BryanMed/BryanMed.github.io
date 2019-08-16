@@ -70,7 +70,7 @@ Existe además otro elemento, llamado _factor de aprendizaje_ $$\lambda$$ el cua
 
 Oye Bryan y ¿cómo sabemos cuándo cambiar o no los parámetros? Ah, pues para ello utilizaremos el error $$e$$, es decir la diferencia entre nuestro valor de salida deseado $$y$$ y nuestro valor de salida actual:
 
-$$ e =  (y – z) $$
+$$ e =  (y \; – z) $$
 
 Si el error es menor a un umbral (digamos < 0.1%), entonces nuestra estará lista. En caso contrario habrá que iterar hasta dar con esos valores. 
 
@@ -115,9 +115,9 @@ $$z = (0 \cdot 0.4) + (0 \cdot 0.5) – 0.3 = -0.3$$
 
 Como $$z < 0$$ entonces el perceptrón no se dispara, es decir, $$z = 0$$. Ahora verificamos el error:
 
-$$e = y \quad – z$$
+$$e = y \; – z$$
 
-$$e = 0 \quad – 0 = 0
+$$e = 0 \; – 0 = 0
 
 Como no hay error, pasamos al siguiente par de valores, $$x_1 = 0$$ y $$x_2 = 1$$ y cuyo valor esperado es $$y = 0$$. Repetimos el procedimiento anterior:
 
