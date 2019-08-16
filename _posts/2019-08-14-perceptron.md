@@ -39,10 +39,10 @@ $$z = (\sum_{i} x_i \cdot w_i) - \theta$$
 Por comodidad, restamos de una vez el umbral $$\theta$$. Así, si esta señal $$z$$ es mayor o igual a cero, el perceptrón se dispara (salida $$z$$ = 1), en caso de no alcanzar el umbral, la salida será 0.
 
 $$
-\sigma(s,i) = \left\{
+z = \left\{
     \begin{array}{ll}
-        \tau_{si} & \mbox{si } \{s,i\} \in E \\
-        \infty & \mbox{sinon.}
+        0 \mbox{si < 0 \\
+        1 \mbox{si \geq 0}
     \end{array}
 \right.
 $$
