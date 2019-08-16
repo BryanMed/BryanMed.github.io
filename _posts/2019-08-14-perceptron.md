@@ -42,12 +42,12 @@ $$
 z = \left\{
     \begin{array}{ll}
         0 & \mbox{si } z > 0 \\
-        1 & \mbox{si} z \geq 0
+        1 & \mbox{si } z \geq 0
     \end{array}
 \right.
 $$
 
-Es ahora que entra en juego un proceso de _entrenamiento_ (así es, las redes neuronales son parte del aprendizaje supervisado) en donde a la red se le dan ejemplos de los resultados esperados, a fin de que sea capaz de generar una respuesta, la cual si llega a ser muy distinta del valor deseado, se tendrán que ajustar los parámetros.
+Es ahora que entra en juego un proceso de _entrenamiento_ (así es, en este caso en particular estamos hablando de un _aprendizaje supervisado_) en donde a la red se le dan ejemplos de los resultados esperados, a fin de que sea capaz de generar una respuesta, la cual si llega a ser muy distinta del valor deseado, se tendrán que ajustar los parámetros.
 
 Pero mejor veamos un ejemplo de juguete, supongamos que quiero que un perceptrón me ayude a encontrar el amorts, para escoger a mi chica ideal tomaré en cuenta solo dos factores:
 
@@ -62,9 +62,9 @@ Una vez entrenado,  el perceptroncito arroja los siguientes valores:
 
 Si estos datos los pasamos a la fórmula para conocer $$z$$, nos daremos cuenta que es la ecuación de una recta (z = $$0.5x_1 - 0.4x_2 + 0.3$$), en la __Figura #__ observamos que esta línea crea un _sesga_ a mis prospectos, en donde aquellas chicas que quedan debajo de la recta son muy probables a lastimar mi corazón :(, por otro lado, las que están por encima de esta barrera, ¡si a todo!.
 
-
-
-
+{: .center}
+![zorroOscuro]({{ site.baseurl }}/images/zorroOscuro.PNG)
+__Figura 1__ _observamos la pobre distribución de los niveles de intensidad utilizados en la imagen, los cuales se encuentran en los niveles bajos, lo que resulta en una imagen oscura de poco contraste_.
 
 Existe además otro elemento, llamado _factor de aprendizaje_ $$\lambda$$ el cual señala la velocidad de aprendizaje de la red. Un valor de aprendizaje alto, hará que nos quedemos a medias con la búsqueda de los valores ideales, por otro lado, un valor muy bajo hará que el tiempo de búsqueda sea poco eficiente, en donde los coeficientes estarán oscilando entre valores muy cercanos entre sí (redundante). Un valor usualón es de 0.2.
 
@@ -81,6 +81,15 @@ $$ \Delta \theta = -(\lambda \cdot e)$$
 Por otro lado, los pesos $$w$$ se ajustan al sumarle a cada uno el $$\Delta w$$ correspondiente:
 
 $$\Delta w_{i} = \lambda \cdot e \cdot x_{i}$$
+
+En general, el proceso de aprendizaje de un perceptrón consta de lo siguiente:
+
+* Inicializar con variables aleatorios (pequeños) el bias $$\theta$$ y los pesos $$w_1$$ y $$w_2$$.
+* Calcular la salida $$z$ de la red, de acuerdo a las entradas $$x_1, ... x_2$$.
+* Calcular el error $$e$$ el cual es la diferencia entre el valor deseado $$y$$ y el valor obtenido $$z$$.
+* Si el error es mayor a un 0.1%, entonces debemos de modificar los parámetros.
+* Modificar el umbral $$\theta$$ y los pesos $$w_1$$ y $$w_2$$ según el error obtenido. 
+* Repetir el proceso hasta que el error se encuentre en un rango aceptable, a lo largo de toda una iteración.
 ____
 Ahora nos pondremos más guapos y vamos a entrenar un perceptrón desde 0, a mano. Nuestro objetivo es que el perceptrón funcione como una compuerta lógica AND. El comportamiento del operador está dado por la tabla de verdad que se muestra a continuación:
  
@@ -91,14 +100,14 @@ Ahora nos pondremos más guapos y vamos a entrenar un perceptrón desde 0, a man
 |  1  |   0 |    0   |
 |  1  |   1 |    1   |
  
-El primer paso es escoger los parámetros (peso y bias) de manera aleatoria (en toda la documentación que he encontrado sugieren utilizar valores pequeños, además, como mencionamos anteriormente, el factor de aprendizaje $$\lamda$$ regularmente se pone como 0.2, así:
+El primer paso es escoger los parámetros (peso y bias) de manera aleatoria (en toda la documentación que he encontrado sugieren utilizar valores pequeños), además, el factor de aprendizaje $$\lamda$$ regularmente se pone como 0.2, así:
 
 * $$\lambda = 0.2$$
 * $$\theta = 0.3$$
 * $$w_1 = 0.4$$
 * $$w_2 = 0.5$$
 
-Ahora que tenemos nuestros ingredientes, vamos a realizar la primera iteración. Empezamos con el primer caso de la tabla de verdad, en aquel donde $$x_1 = 0$$ y $$x_2 = 0$$, cuyo valor de salida esperado es $$y = 0$a$. Así, calculamos nuestra salida $$z$$:
+Ahora que tenemos nuestros ingredientes, vamos a realizar la primera iteración. Empezamos con el primer caso de la tabla de verdad, en aquel donde $$x_1 = 0$$ y $$x_2 = 0$$, cuyo valor de salida esperado es $$y = 0$$. Así, calculamos nuestra salida $$z$$:
 
 $$z = (x_1 \cdot w_1) + (x_2 \cdot w_2) - \theta$$
 
@@ -106,9 +115,9 @@ $$z = (0 \cdot 0.4) + (0 \cdot 0.5) – 0.3 = -0.3$$
 
 Como $$z < 0$$ entonces el perceptrón no se dispara, es decir, $$z = 0$$. Ahora verificamos el error:
 
-$$e = y – z$$
+$$e$$ = $$y$$ – $$z$$
 
-$$e = 0 – 0 = 0$$
+$$e$$ = 0 – 0 = 0
 
 Como no hay error, pasamos al siguiente par de valores, $$x_1 = 0$$ y $$x_2 = 1$$ y cuyo valor esperado es $$y = 0$$. Repetimos el procedimiento anterior:
 
