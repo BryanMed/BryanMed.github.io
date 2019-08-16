@@ -41,12 +41,11 @@ Por comodidad, restamos de una vez el umbral $$\theta$$. Así, si esta señal $$
 $$
 z = \left\{
     \begin{array}{ll}
-        0 \mbox{si < 0 \\
-        1 \mbox{si \geq 0}
+        0 & \mbox{si } z > 0 \\
+        1 & \mbox{si} z \geq 0
     \end{array}
 \right.
 $$
-
 
 Es ahora que entra en juego un proceso de _entrenamiento_ (así es, las redes neuronales son parte del aprendizaje supervisado) en donde a la red se le dan ejemplos de los resultados esperados, a fin de que sea capaz de generar una respuesta, la cual si llega a ser muy distinta del valor deseado, se tendrán que ajustar los parámetros.
 
