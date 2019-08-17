@@ -194,7 +194,8 @@ Pero no tan rápido, aún no terminamos. El proceso de entrenamiento termina cua
 Como tenemos una iteración sin errores, hemos encontrado los pesos y el umbral correctos para que nuestro perceptrón se comporte de la manera que deseamos. Ahora si, tenemos la recta resultante que separa a ambas clases, compuesta por el coeficiente y el bias:
 
 $$z = (x_1 * w_1) + (x_2 * w_2) - \theta = 0$$
-$$0.4x_1 + 0.3x_2 - \theta = 0$$
+
+$$z = 0.4x_1 + 0.3x_2 - \theta = 0$$
 
 En la __Figura 5__ observamos la manera en la que, efectivamente, la recta separa correctamente ambas clases
 
