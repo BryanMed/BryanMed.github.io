@@ -2,7 +2,7 @@
 layout: post
 comments: true
 mathjax: true
-title: 3.1| Convolución 1D
+title: PDI-3.1| Convolución 1D
 --- 
 
 LLegó el momento de hablar de la convolución, esta es una herramienta primordial en el procesamiento digital de imágenes, visión computacional, e incluso un pilar fundamental en el machine learning. Una de las dudas frecuentes, es la confusión que existe entre convolución y correlación. Pues bien, ambos procesos son muy similares, de hecho, la única diferencia es que en la convolución una señal está invertida, pero esto es suficiente para generar aplicaciones un tanto diferentes, de tal manera que:
