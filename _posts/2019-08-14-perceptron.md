@@ -10,7 +10,7 @@ El ser humano siempre ha tomado como referencia a la naturaleza para desarrollar
 
 {: .center}
 ![naturaleza]({{ site.baseurl }}/images/IA/natureInspired.PNG)
-__Figura 1__ _observamos la pobre distribución de los niveles de intensidad utilizados en la imagen, los cuales se encuentran en los niveles bajos, lo que resulta en una imagen oscura de poco contraste_.
+__Figura 1__ _Algunos ejemplos de como el ser humano toma como inspiración a la naturaleza, a fin de crear herramientas más eficientes_.
  
 Y bueno, un área que también hace uso de esto son las ciencias de la computación, donde el comportamiento de las manadas, funcionamiento de sistemas biológicos y la herencia de los genes (por mencionar algunos). Un libro que llamó mi atención a la programación es precisamente el [nature of code de Daniel Shiffman]( https://natureofcode.com/) en donde presenta algoritmos basados en fenómenos naturales, encaminados a creas efectos visuales. 
 
@@ -25,7 +25,7 @@ La explicación que daré de la neurona es muy pero muy superficial, pero servir
 
 {: .center}
 ![neurona]({{ site.baseurl }}/images/IA/neurona.PNG)
-__Figura 2__ _observamos la pobre distribución de los niveles de intensidad utilizados en la imagen, los cuales se encuentran en los niveles bajos, lo que resulta en una imagen oscura de poco contraste_.
+__Figura 2__ _diagrama de una neurona, con algunos de sus elementos más representativos_.
  
 Cada neurona cuenta con solo un axón, el cual se ramifica en su porción terminal, lo que permitirá comunicarse con otras dendritas en el proceso de sinapsis. El proceso por el que una neurona puede generar un potencial de acción (señal de salida) se realiza (a grandes rasgos) de la siguiente manera: La célula recibe estímulos internos a partir de las dendritas, y sumaremos las intensidades de estas señales. Para general el potencial de acción, se sigue la ley de “todo o nada” en la que la neurona cuenta con un umbral de excitación. En donde, si el estímulo es mayor al umbral, se genera el potencial de acción, y en caso de no superarlo pues no. Lo interesante acá, es que no importa la intensidad de la señal que forman los estimulos, siempre que se supere el umbral, se generará el mismo potencial de acción.
 
@@ -74,7 +74,7 @@ Si estos datos los pasamos a la fórmula para conocer $$z$$, nos daremos cuenta 
 
 {: .center}
 ![perceptron]({{ site.baseurl }}/images/IA/loveFinder.PNG)
-__Figura 4__ _observamos la pobre distribución de los niveles de intensidad utilizados en la imagen, los cuales se encuentran en los niveles bajos, lo que resulta en una imagen oscura de poco contraste_.
+__Figura 4__ _La recta que obtenemos utilizando los pesos y bias calculado con el perceptrón, permite separar dos grupos, el conjunto superior a la recta corresponde a las chicas de las cuales me quiero enamorar, las que se encuentran debajo no la arman_.
 
 Existe además otro elemento, llamado _factor de aprendizaje_ $$\lambda$$ el cual señala la velocidad de aprendizaje de la red. Un valor de aprendizaje alto, hará que nos quedemos a medias con la búsqueda de los valores ideales, por otro lado, un valor muy bajo hará que el tiempo de búsqueda sea poco eficiente, en donde los coeficientes estarán oscilando entre valores muy cercanos entre sí (redundante). Un valor usualón es de 0.2.
 
@@ -103,18 +103,11 @@ En general, el proceso de aprendizaje de un perceptrón consta de lo siguiente:
 
 _______________________________
 
-Ahora nos pondremos más guapos y vamos a entrenar un perceptrón desde 0, a mano. Nuestro objetivo es que el perceptrón funcione como una compuerta lógica AND. El comportamiento del operador está dado por la tabla de verdad que se muestra a continuación:
- 
-|  x  |  y  |x and y |
-|:---:|:---:|:------:|
-|  0  |   0 |    0   |
-|  0  |   1 |    0   |
-|  1  |   0 |    0   |
-|  1  |   1 |    1   |
+Ahora nos pondremos más guapos y vamos a entrenar un perceptrón desde 0, a mano. Nuestro objetivo es que el perceptrón funcione como una compuerta lógica AND. El comportamiento del operador está dado por la tabla de verdad que se muestra en la __Tabla 1__:
  
  {: .center}
-![perceptron]({{ site.baseurl }}/images/IA/ANDTable.PNG)
-__Figura 4__ _observamos la pobre distribución de los niveles de intensidad utilizados en la imagen, los cuales se encuentran en los niveles bajos, lo que resulta en una imagen oscura de poco contraste_.
+![andTable]({{ site.baseurl }}/images/IA/andTable.PNG)
+__Tabla 1__ _Tabla de verdad correspondiente a la compuerta lógica AND_.
  
 El primer paso es escoger los parámetros (peso y bias) de manera aleatoria (en toda la documentación que he encontrado sugieren utilizar valores pequeños), además, el factor de aprendizaje $$\lambda$$ regularmente se pone como 0.2, es así que empezamos con estos valores random:
 
@@ -189,16 +182,9 @@ No hay error, así que nos quedamos (por ahora) con estos valores.
 
 Pero no tan rápido, aún no terminamos. El proceso de entrenamiento termina cuando logramos tener una iteración sin ningún error, así que es tiempo de pasar a la iteración 2, para no hacerla mucho de emoción, resumiré los resultado en la __Tabla 2__.
 
-|  $$x_1$$  | $$x_2$$ | $$y$$ | $$z$$ | $$e$$ |
-|:---------:|:-------:|:-----:|:-----:|:-----:| 
-|     0     |    0    |   0   |   0   |   0   |
-|     0     |    1    |   0   |   0   |   0   |
-|     1     |    0    |   0   |   0   |   0   |
-|     1     |    1    |   1   |   1   |   0   |
-
- {: .center}
+{: .center}
 ![perceptron]({{ site.baseurl }}/images/IA/iteracion2.PNG)
-__Figura 4__ _observamos la pobre distribución de los niveles de intensidad utilizados en la imagen, los cuales se encuentran en los niveles bajos, lo que resulta en una imagen oscura de poco contraste_.
+__Tabla 2__ _Las primeras dos columnas indican los valores de las entradas, la tercera es el resultado deseado, la cuarta columna corresponde a la salida del perceptrón que acabamos de entrenar, y la última columna es el error, con el cual comprobamos que perceptrín está listo para la vida laboral_.
 
 Como tenemos una iteración sin errores, hemos encontrado los pesos y el umbral correctos para que nuestro perceptrón se comporte de la manera que deseamos. Ahora si, tenemos la recta resultante que separa a ambas clases, compuesta por el coeficiente y el bias:
 
@@ -210,7 +196,7 @@ En la __Figura 5__ observamos la manera en la que, efectivamente, la recta separ
 
 {: .center}
 ![and]({{ site.baseurl }}/images/IA/AND.PNG)
-__Figura 5__ _observamos la pobre distribución de los niveles de intensidad utilizados en la imagen, los cuales se encuentran en los niveles bajos, lo que resulta en una imagen oscura de poco contraste_.
+__Figura 5__ _Observamos la distribución de los 4 valores, con la recta que acabamos de calcular podemos diferenciar los grupos correctamente, así cuando tenemos de entradas $$x_1 = 1$$ y $$x_2 = 1$$_, el resultado que arrojará el perceptrón será de 1, y 0 en caso contrario.
  
 
 
