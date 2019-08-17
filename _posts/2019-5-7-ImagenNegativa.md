@@ -2,7 +2,7 @@
 layout: post
 comments: true
 mathjax: true
-title: 2.1| Imagen negativa(Intro a transformaciones espaciales)
+title: PDI-2.1| Imagen negativa(Intro a transformaciones espaciales)
 ---
 
 ## Transformación de intensidad en el dominio espacial.
