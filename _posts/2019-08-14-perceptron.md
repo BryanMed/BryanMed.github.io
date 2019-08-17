@@ -194,7 +194,7 @@ Como tenemos una iteración sin errores, hemos encontrado los pesos y el umbral 
 
 $$z = (x_1 * w_1) + (x_2 * w_2) - \theta = 0$$
 
-$$z = 0.4x_1 + 0.3x_2 - \theta = 0$$
+$$z = 0.4x_1 + 0.3x_2 - 0.5 = 0$$
 
 En la __Figura 5__ observamos la manera en la que, efectivamente, la recta separa correctamente ambas clases
 
