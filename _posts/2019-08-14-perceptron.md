@@ -70,7 +70,7 @@ Una vez entrenado, el perceptroncito arroja los siguientes valores:
 * $$w_2$$ = 0.5
 * $$\theta$$ = 0.6
 
-Si estos datos los pasamos a la fórmula para conocer $$z$$, nos daremos cuenta que es la ecuación de una recta (z = $$0.5x_1 - 0.4x_2 + 0.3$$), en la __Figura 4__ observamos que esta línea crea un _sesga_ a mis prospectos, en donde aquellas chicas que quedan debajo de la recta son muy probables a lastimar mi corazón :(, por otro lado, las que están por encima de esta barrera, ¡si a todo!.
+Si estos datos los pasamos a la fórmula para conocer $$z$$, nos daremos cuenta que es la ecuación de una recta (z = $$0.5x_1 - 0.4x_2 + 0.3 = 0$$), en la __Figura 4__ observamos que esta línea crea un _sesga_ a mis prospectos, en donde aquellas chicas que quedan debajo de la recta son muy probables a lastimar mi corazón :(, por otro lado, las que están por encima de esta barrera, ¡si a todo!.
 
 {: .center}
 ![perceptron]({{ site.baseurl }}/images/IA/loveFinder.PNG)
@@ -100,7 +100,8 @@ En general, el proceso de aprendizaje de un perceptrón consta de lo siguiente:
 * Si el error es mayor a un 0.1%, entonces debemos de modificar los parámetros.
 * Modificar el umbral $$\theta$$ y los pesos $$w_1$$ y $$w_2$$ según el error obtenido. 
 * Repetir el proceso hasta que el error se encuentre en un rango aceptable, a lo largo de toda una iteración.
-______
+
+_______________________________
 
 Ahora nos pondremos más guapos y vamos a entrenar un perceptrón desde 0, a mano. Nuestro objetivo es que el perceptrón funcione como una compuerta lógica AND. El comportamiento del operador está dado por la tabla de verdad que se muestra a continuación:
  
