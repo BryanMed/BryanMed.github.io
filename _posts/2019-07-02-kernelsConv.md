@@ -2,7 +2,7 @@
 layout: post
 comments: true
 mathjax: true
-title: 3.3| Convolución - tipos de kernels y sus aplicaciones.
+title: PDI-3.3| Convolución - tipos de kernels y sus aplicaciones.
 --- 
 
 En el post anterior hablamos acerca del cómo se realiza el proceso de [convolución](https://bryanmed.github.io/conv2d/), esta vez veremos la importancia de los _kernels (filtros, máscaras, ventanas)_ y algunas de sus aplicaciones en el procesamiento digital de imágenes.
