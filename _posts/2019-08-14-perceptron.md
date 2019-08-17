@@ -84,7 +84,7 @@ Oye Bryan y ¿cómo sabemos cuándo cambiar o no los parámetros? Ah, pues para 
 
 $$ e =  (y \; – z) $$
 
-Si el error es menor a un umbral (digamos < 0.1%), entonces nuestra estará lista. En caso contrario habrá que iterar hasta dar con esos valores. 
+Si el error es menor a un umbral (digamos < 0.1%), entonces nuestra neurona estará lista. En caso contrario habrá que iterar hasta dar con esos valores. 
 
 Y ahora te estarás preguntando en base a que o como ajustar los parámetros. En el caso del umbral $$\theta$$, se le suma este $$\Delta \theta$$:
 
@@ -132,11 +132,11 @@ $$e = 0 \; – 0 = 0$$
 
 Como no hay error, pasamos al siguiente par de valores, $$x_1 = 0$$ y $$x_2 = 1$$ y cuyo valor esperado es $$y = 0$$. Repetimos el procedimiento anterior:
 
-$$z = (0 \cdot 0.4) + (1 \cdot 0.5) – 0.3 = 0.2$$
+$$z = (0 \cdot 0.4) + (1 \cdot 0.5) \; – 0.3 = 0.2$$
 
 Al ser $$z \geq 0$$ perceptrín se dispara, con lo cual la salida es $$z = 1$$. Al momento de comprobar el error tenemos:
 
-$$e = 0 \quad – 1 = -1$$
+$$e = 0 \; – 1 = -1$$
 
 Y Houston, tenemos un problema, el tener esta diferencia con el valor esperado nos indica que debemos de recalcular parámetros, para ello calcularemos sus factores de cambio, empezando por $$\Delta \theta$$:
 
