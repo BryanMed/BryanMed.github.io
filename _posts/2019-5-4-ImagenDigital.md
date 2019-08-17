@@ -2,7 +2,7 @@
 layout: post
 comments: true
 mathjax: true
-title: Introducción al Procesamiento Digital de Imágenes
+title: PDI-1| Introducción al Procesamiento Digital de Imágenes
 ---
 A lo largo de este blog, trataré de explicar los conceptos y las implementaciones de los distintos algoritmos dentro del campo del Procesamiento Digital de Imágenes. ¡Por favor! si tienes alguna duda o sugerencia, no dudes en dejarme un comentario :)
 
