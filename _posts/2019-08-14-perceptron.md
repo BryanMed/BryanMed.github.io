@@ -105,6 +105,8 @@ En general, el proceso de aprendizaje de un perceptrón consta de lo siguiente:
 
 _______________________________
 
+###Entrenando un perceptrón
+
 Ahora nos pondremos más guapos y vamos a entrenar un perceptrón desde 0, a mano. Nuestro objetivo es que el perceptrón funcione como una compuerta lógica AND. El comportamiento del operador está dado por la tabla de verdad que se muestra en la __Tabla 1__:
  
  {: .center}
