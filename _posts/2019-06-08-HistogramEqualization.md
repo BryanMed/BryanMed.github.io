@@ -2,7 +2,7 @@
 layout: post
 comments: true
 mathjax: true
-title: 2.6| Ecualización de Histograma
+title: PDI-2.6| Ecualización de Histograma
 ---
 
 Tomémonos un tiempo para analizar y discutir los siguientes histogramas (con su respectiva imagen). En el primer caso, que se muestra en la __Figura 1__ observamos que la distribución del histograma está concentrada en los valores bajos de intensidad, esto a su vez se ve reflejado en la imagen correspondiente, la cual es predominantemente oscura, y con un bajísimo contraste. 
