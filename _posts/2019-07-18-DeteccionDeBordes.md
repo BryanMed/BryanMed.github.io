@@ -2,7 +2,7 @@
 layout: post
 comments: true
 mathjax: true
-title: 4.1| Detección de Bordes - Tipos de bordes
+title: PDI-4.1| Detección de Bordes - Tipos de bordes
 --- 
 Los _bordes (edges)_  son identificados como el límite que separa dos regiones dentro de una imagen. El objetivo de la detección de bordes es el de reducir en gran medida la cantidad de datos, al preservar únicamente la información concerniente a lo que delimita las estructuras, como observamos en la __Figura 1__, donde a la izquierda encontramos la imagen original y a la derecha únicamente los bordes de esta, esta operación es de vital importancia en áreas como reconocimiento de patrones y aprendizaje automático, entre otras.
 
