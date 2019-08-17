@@ -2,7 +2,7 @@
 layout: post
 comments: true
 mathjax: true
-title: 4.2| Detección de Bordes - Derivadas en 1D
+title: PDI-4.2| Detección de Bordes - Derivadas en 1D
 --- 
 En este post explicaremos el papel que juega la convolución y las derivadas en la detección de bordes. Para fines prácticos y de visualización, usaremos el modelo "ideal" de _impulso unitario_ el cual es el modelado de un borde muy "sharp" (transición de intensidad muy abrupta).
 
