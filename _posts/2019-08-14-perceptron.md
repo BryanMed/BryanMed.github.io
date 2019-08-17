@@ -30,7 +30,13 @@ __Figura 2__ _diagrama de una neurona, con algunos de sus elementos más represe
 Cada neurona cuenta con solo un axón, el cual se ramifica en su porción terminal, lo que permitirá comunicarse con otras dendritas en el proceso de sinapsis. El proceso por el que una neurona puede generar un potencial de acción (señal de salida) se realiza (a grandes rasgos) de la siguiente manera: La célula recibe estímulos internos a partir de las dendritas, y sumaremos las intensidades de estas señales. Para general el potencial de acción, se sigue la ley de “todo o nada” en la que la neurona cuenta con un umbral de excitación. En donde, si el estímulo es mayor al umbral, se genera el potencial de acción, y en caso de no superarlo pues no. Lo interesante acá, es que no importa la intensidad de la señal que forman los estimulos, siempre que se supere el umbral, se generará el mismo potencial de acción.
 
 ### El Perceptrón
-Y tomando en cuenta el comportamiento anterior, es como se creó el modelo del perceptrón (el cual es muy similar al comportamiento de un transistor). Al perceptrón llegarán señales de entrada (el análogo a las dendritas) $$x_n$$, y generará una salida (el paralelismo al axón). Cada entrada podrá recibir únicamente valores binarios (0 o 1), cuya importancia será ponderada de acuerdo a un peso $$w$$. Finalmente la salida $$z$$ (equivalente al potencial de acción) dependerá de:
+Y tomando en cuenta el comportamiento anterior, es como se creó el modelo del perceptrón __Figura 3__(el cual es muy similar al comportamiento de un transistor). 
+
+{: .center}
+![neurona]({{ site.baseurl }}/images/IA/perceptron.PNG)
+__Figura 3__ _El perceptrón se inspira en el funcionamiento de una neurona, de acuerdo a la intensidad de sus entradas (dendritas), se determinará si se supera o no cierto umbral (bias) para originar un potencial de acción (salida z)_.
+
+Al perceptrón llegarán señales de entrada (el análogo a las dendritas) $$x_n$$, y generará una salida (el paralelismo al axón). Cada entrada podrá recibir únicamente valores binarios (0 o 1), cuya importancia será ponderada de acuerdo a un peso $$w$$. Finalmente la salida $$z$$ (equivalente al potencial de acción) dependerá de:
 
 *	El valor que tomen las entradas $$x_n$$
 *	De sus pesos $$w_n$$
@@ -52,10 +58,6 @@ z = \left\{
 $$
 
 El modelo del perceptrón lo puedes observar en la __Figura 3__.
-
-{: .center}
-![neurona]({{ site.baseurl }}/images/IA/perceptron.PNG)
-__Figura 3__ _El perceptrón se inspira en el funcionamiento de una neurona, de acuerdo a la intensidad de sus entradas (dendritas), se determinará si se supera o no cierto umbral (bias) para originar un potencial de acción (salida z)_.
  
 Es ahora que entra en juego un proceso de _entrenamiento_ (así es, en este caso en particular estamos hablando de un _aprendizaje supervisado_) en donde a la red se le dan ejemplos de los resultados esperados, a fin de que sea capaz de generar una respuesta, la cual si llega a ser muy distinta del valor deseado, se tendrán que ajustar los parámetros.
 
