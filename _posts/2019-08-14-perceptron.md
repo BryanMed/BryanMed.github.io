@@ -112,6 +112,10 @@ Ahora nos pondremos más guapos y vamos a entrenar un perceptrón desde 0, a man
 |  1  |   0 |    0   |
 |  1  |   1 |    1   |
  
+ {: .center}
+![perceptron]({{ site.baseurl }}/images/IA/ANDTable.PNG)
+__Figura 4__ _observamos la pobre distribución de los niveles de intensidad utilizados en la imagen, los cuales se encuentran en los niveles bajos, lo que resulta en una imagen oscura de poco contraste_.
+ 
 El primer paso es escoger los parámetros (peso y bias) de manera aleatoria (en toda la documentación que he encontrado sugieren utilizar valores pequeños), además, el factor de aprendizaje $$\lambda$$ regularmente se pone como 0.2, es así que empezamos con estos valores random:
 
 * $$\lambda = 0.2$$
@@ -191,6 +195,10 @@ Pero no tan rápido, aún no terminamos. El proceso de entrenamiento termina cua
 |     0     |    1    |   0   |   0   |   0   |
 |     1     |    0    |   0   |   0   |   0   |
 |     1     |    1    |   1   |   1   |   0   |
+
+ {: .center}
+![perceptron]({{ site.baseurl }}/images/IA/iteracion2.PNG)
+__Figura 4__ _observamos la pobre distribución de los niveles de intensidad utilizados en la imagen, los cuales se encuentran en los niveles bajos, lo que resulta en una imagen oscura de poco contraste_.
 
 Como tenemos una iteración sin errores, hemos encontrado los pesos y el umbral correctos para que nuestro perceptrón se comporte de la manera que deseamos. Ahora si, tenemos la recta resultante que separa a ambas clases, compuesta por el coeficiente y el bias:
 
