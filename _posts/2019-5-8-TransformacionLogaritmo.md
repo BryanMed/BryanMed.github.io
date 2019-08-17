@@ -2,7 +2,7 @@
 layout: post
 comments: true
 mathjax: true
-title: 2.2| Transformación logaritmo
+title: PDI-2.2| Transformación logaritmo
 ---
 Y si, como el título lo indica, aplicaremos el logaritmo a cada uno de los pixeles de la imagen, pero antes de llegar a esa parte refresquemos un poquito, ¿qué es un _logaritmo_?
 
