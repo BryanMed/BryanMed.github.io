@@ -51,7 +51,7 @@ Por comodidad, restamos de una vez el umbral $$\theta$$. Así, si esta señal $$
 $$
 z = \left\{
     \begin{array}{ll}
-        0 & \mbox{si } z > 0 \\
+        0 & \mbox{si } z < 0 \\
         1 & \mbox{si } z \geq 0
     \end{array}
 \right.
