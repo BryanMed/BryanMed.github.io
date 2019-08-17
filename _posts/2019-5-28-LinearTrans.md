@@ -2,7 +2,7 @@
 layout: post
 comments: true
 mathjax: true
-title: 2.4| Transformacion lineal por partes (contrast stretching)
+title: PDI-2.4| Transformacion lineal por partes (contrast stretching)
 ---
 
 Las transformaciones que modifican los niveles de intensidad de una imagen no tienen porqué estar limitados a funciones matemáticas bien definidas, como la [Transformación logaritmo](https://bryanmed.github.io/TransformacionLogaritmo/) o [Transformación gamma](https://bryanmed.github.io/correccionGamma/), de hecho, es posible utilizar funciones de mapeo que son definidas de manera arbitraria por el usuario.
