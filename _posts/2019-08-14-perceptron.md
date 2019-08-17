@@ -51,10 +51,12 @@ z = \left\{
 \right.
 $$
 
-El modelo del per
+El modelo del perceptrón lo puedes observar en la __Figura 3__.
 
-
-
+{: .center}
+![neurona]({{ site.baseurl }}/images/IA/perceptron.PNG)
+__Figura 3__ _observamos la pobre distribución de los niveles de intensidad utilizados en la imagen, los cuales se encuentran en los niveles bajos, lo que resulta en una imagen oscura de poco contraste_.
+ 
 Es ahora que entra en juego un proceso de _entrenamiento_ (así es, en este caso en particular estamos hablando de un _aprendizaje supervisado_) en donde a la red se le dan ejemplos de los resultados esperados, a fin de que sea capaz de generar una respuesta, la cual si llega a ser muy distinta del valor deseado, se tendrán que ajustar los parámetros.
 
 Pero mejor veamos un ejemplo de juguete, supongamos que quiero que un perceptrón me ayude a encontrar el amorts, para escoger a mi chica ideal tomaré en cuenta solo dos factores:
@@ -62,7 +64,7 @@ Pero mejor veamos un ejemplo de juguete, supongamos que quiero que un perceptró
 *	$$x_1$$ = Que tenga buenos sentimientos.
 *	$$x_2$$ = Que esté bonita.
 
-Una vez entrenado,  el perceptroncito arroja los siguientes valores: 
+Una vez entrenado, el perceptroncito arroja los siguientes valores: 
 
 * $$w_1$$ = -0.2
 * $$w_2$$ = 0.5
@@ -71,8 +73,8 @@ Una vez entrenado,  el perceptroncito arroja los siguientes valores:
 Si estos datos los pasamos a la fórmula para conocer $$z$$, nos daremos cuenta que es la ecuación de una recta (z = $$0.5x_1 - 0.4x_2 + 0.3$$), en la __Figura 4__ observamos que esta línea crea un _sesga_ a mis prospectos, en donde aquellas chicas que quedan debajo de la recta son muy probables a lastimar mi corazón :(, por otro lado, las que están por encima de esta barrera, ¡si a todo!.
 
 {: .center}
-![perceptron]({{ site.baseurl }}/images/IA/perceptron.PNG)
-__Figura 3__ _observamos la pobre distribución de los niveles de intensidad utilizados en la imagen, los cuales se encuentran en los niveles bajos, lo que resulta en una imagen oscura de poco contraste_.
+![perceptron]({{ site.baseurl }}/images/IA/loveFinder.PNG)
+__Figura 4__ _observamos la pobre distribución de los niveles de intensidad utilizados en la imagen, los cuales se encuentran en los niveles bajos, lo que resulta en una imagen oscura de poco contraste_.
 
 Existe además otro elemento, llamado _factor de aprendizaje_ $$\lambda$$ el cual señala la velocidad de aprendizaje de la red. Un valor de aprendizaje alto, hará que nos quedemos a medias con la búsqueda de los valores ideales, por otro lado, un valor muy bajo hará que el tiempo de búsqueda sea poco eficiente, en donde los coeficientes estarán oscilando entre valores muy cercanos entre sí (redundante). Un valor usualón es de 0.2.
 
@@ -174,7 +176,7 @@ Vemos que todo funciona smooth, por lo cual no actualizamos lo valores y pasamos
 
 $$z = (1 \cdot 0.4) + (1 \cdot 0.3) – 0.5 = 0.2$$
 
-Como $$z \geq 0$$ el perceptrón se dispara, resultando en $$z = 1$$, al calcular el error vemos que
+Como $$z \geq 0$$ el perceptrón se dispara, resultando en $$z = 1$$, al calcular el error vemos que:
 
 $$e = 1 – 1 = 0$$
 
@@ -194,8 +196,11 @@ Como tenemos una iteración sin errores, hemos encontrado los pesos y el umbral 
 $$z = (x_1 * w_1) + (x_2 * w_2) - \theta = 0$$
 $$0.4x_1 + 0.3x_2 - \theta = 0$$
 
-En la __Figura #__ observamos la manera en la que, efectivamente, la recta separa correctamente ambas clases
+En la __Figura 5__ observamos la manera en la que, efectivamente, la recta separa correctamente ambas clases
 
-
+{: .center}
+![and]({{ site.baseurl }}/images/IA/AND.PNG)
+__Figura 5__ _observamos la pobre distribución de los niveles de intensidad utilizados en la imagen, los cuales se encuentran en los niveles bajos, lo que resulta en una imagen oscura de poco contraste_.
+ 
 
 
