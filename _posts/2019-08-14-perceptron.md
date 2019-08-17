@@ -55,7 +55,7 @@ El modelo del perceptrón lo puedes observar en la __Figura 3__.
 
 {: .center}
 ![neurona]({{ site.baseurl }}/images/IA/perceptron.PNG)
-__Figura 3__ _observamos la pobre distribución de los niveles de intensidad utilizados en la imagen, los cuales se encuentran en los niveles bajos, lo que resulta en una imagen oscura de poco contraste_.
+__Figura 3__ _El perceptrón se inspira en el funcionamiento de una neurona, de acuerdo a la intensidad de sus entradas (dendritas), se determinará si se supera o no cierto umbral (bias) para originar un potencial de acción (salida z)_.
  
 Es ahora que entra en juego un proceso de _entrenamiento_ (así es, en este caso en particular estamos hablando de un _aprendizaje supervisado_) en donde a la red se le dan ejemplos de los resultados esperados, a fin de que sea capaz de generar una respuesta, la cual si llega a ser muy distinta del valor deseado, se tendrán que ajustar los parámetros.
 
@@ -70,7 +70,7 @@ Una vez entrenado, el perceptroncito arroja los siguientes valores:
 * $$w_2$$ = 0.5
 * $$\theta$$ = 0.6
 
-Si estos datos los pasamos a la fórmula para conocer $$z$$, nos daremos cuenta que es la ecuación de una recta (z = $$0.5x_1 - 0.4x_2 + 0.3 = 0$$), en la __Figura 4__ observamos que esta línea crea un _sesga_ a mis prospectos, en donde aquellas chicas que quedan debajo de la recta son muy probables a lastimar mi corazón :(, por otro lado, las que están por encima de esta barrera, ¡si a todo!.
+Si estos datos los pasamos a la fórmula para conocer $$z$$, nos daremos cuenta que es la ecuación de una recta (z = $$-0.2x_1 + 0.5x_2 - 0.6 = 0$$), en la __Figura 4__ observamos que esta línea crea un _sesga_ a mis prospectos, en donde aquellas chicas que quedan debajo de la recta son muy probables a lastimar mi corazón :(, por otro lado, las que están por encima de esta barrera, ¡si a todo!.
 
 {: .center}
 ![perceptron]({{ site.baseurl }}/images/IA/loveFinder.PNG)
@@ -94,12 +94,12 @@ $$\Delta w_{i} = \lambda \cdot e \cdot x_{i}$$
 
 En general, el proceso de aprendizaje de un perceptrón consta de lo siguiente:
 
-* Inicializar con variables aleatorios (pequeños) el bias $$\theta$$ y los pesos $$w_1$$ y $$w_2$$.
-* Calcular la salida $$z$$ de la red, de acuerdo a las entradas $$x_1, ... x_2$$.
-* Calcular el error $$e$$ el cual es la diferencia entre el valor deseado $$y$$ y el valor obtenido $$z$$.
-* Si el error es mayor a un 0.1%, entonces debemos de modificar los parámetros.
-* Modificar el umbral $$\theta$$ y los pesos $$w_1$$ y $$w_2$$ según el error obtenido. 
-* Repetir el proceso hasta que el error se encuentre en un rango aceptable, a lo largo de toda una iteración.
+|Inicializar con variables aleatorios (pequeños) el bias $$\theta$$ y los pesos $$w_1$$ y $$w_2$$.|
+|Calcular la salida $$z$$ de la red, de acuerdo a las entradas $$x_1, ... x_2$$.|
+|Calcular el error $$e$$ el cual es la diferencia entre el valor deseado $$y$$ y el valor obtenido $$z$$.|
+|Si el error es mayor a un 0.1%, entonces debemos de modificar los parámetros.|
+|Modificar el umbral $$\theta$$ y los pesos $$w_1$$ y $$w_2$$ según el error obtenido. |
+|Repetir el proceso hasta que el error se encuentre en un rango aceptable, a lo largo de toda una iteración.|
 
 _______________________________
 
