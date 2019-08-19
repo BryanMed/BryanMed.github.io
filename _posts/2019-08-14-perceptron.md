@@ -201,6 +201,25 @@ En la __Figura 5__ observamos la manera en la que, efectivamente, la recta separ
 {: .center}
 ![and]({{ site.baseurl }}/images/IA/AND.PNG)
 __Figura 5__ _Observamos la distribución de los 4 valores, con la recta que acabamos de calcular podemos diferenciar los grupos correctamente, así cuando tenemos de entradas $$x_1 = 1$$ y $$x_2 = 1$$_, el resultado que arrojará el perceptrón será de 1, y 0 en caso contrario.
+
+y con esto concluye la explicación del perceptrón!
+
+> En [este](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/IA1%20Perceptron) repositorio encontrarás la implementación en Python del perceptrón, siguiendo la explicación anterior.
+
+___________________________
+
+### Referencias
+
+* [libro de inteligencia artificial de García Serrano](https://github.com/BryanMed/Procesamiento-de-imagen/tree/master/IA1%20Perceptron)
+* [explicación del perceptrón](https://www.youtube.com/watch?v=CMtLHs8qb60)
+
+
+
+
+
+
+
+
  
 
 
