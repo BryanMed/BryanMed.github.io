@@ -96,6 +96,13 @@ Se dice que es la que mejor emula el comportamiento de las neuronas biológicas,
 
 
 
+Existen muchísimas más [funciones de activación](https://en.wikipedia.org/wiki/Activation_function), pero por ahora trabajaremos con estas.
+
+
+
+
+
+
 
 
 
