@@ -46,7 +46,60 @@ Organizamos la red por capas, y observamos que cada neurona está conectada con 
 
 
 
-Pero no tan rápido, si trabajamos con el perceptrón como lo conocemos (o a lo que he explicado) la red neuronal será aún incapaz de resolver problemas linealmente no separables. funciones de activación
+Pero no tan rápido, si trabajamos con el perceptrón como lo conocemos (o a lo que he explicado) la red neuronal será aún incapaz de resolver problemas linealmente no separables, y esto es debido a la función de activación de la neurona.
+
+## Funciones de activación
+
+Las funciones de activación nos indican la respuesta que genera el perceptrón a partir de sus entradas. Recordando, la respuesta de una neurona se genera mediante:
+
+$$z = (\sum_{i} x_i \cdot w_i) - \theta$$
+
+En donde $$x_{i}$$ son los valores de entrada, $$w_{i}$$ los pesos correspondientes y $$\theta$$ el umbral de disparo (bias). Ahora, para determinar si la neurona se dispara o no, condicionamos que si $$z$$ es mayor a 0 el perceptrón se activa:
+
+$$
+a = \left\{
+    \begin{array}{ll}
+        0 & \mbox{si } z < 0 \\
+        1 & \mbox{si } z \geq 0
+    \end{array}
+\right.
+$$
+
+Precisamente la condición anterior es nuestra función de activación, mejor conocido como _función de paso unitario_ __Figura 7__, sin embargo, esta función tiene la principal desventaja de que no es diferenciable (en 0 está indeterminada) y dado que los algoritmos de aprendizaje (como el backpropagation que veremos más adelante) requieren de funciones de activación diferenciables, evita que sea una buena opción. El hecho de que el principal objetivo sea obtener unos pesos $$w$$ y bias $$b$$ que aproximen de buena manera la salida esperada, hacen de esto un proceso de optimización, en donde deseamos que las pequeñas variaciones de $$w$$ y $$b$$ produzcan pequeñas variaciones en la salida, pero al poder generar solo 2 valores (0 y 1) hace improbable esta optimización. Es entonces cuando entran en juego otras funciones de activación. 
+
+## Función de activación Sigmoide
+La función sigmoide __Figura 8__ está determinada por:
+
+$$\frac{1}{1 + e^{-x}}$$
+
+Esta función nos permite obtener a la salida valores que están acotados entre 0 - 1, es decir, una función de probabilidad.
+
+
+
+
+## Función de activación ReLU
+Siendo de las más utilizadas, la función Unidad Rectificada Lineal __Figura 9__ que está modelada por:
+
+$$
+ReLU = \left\{
+    \begin{array}{ll}
+        0 & \mbox{si } z < 0 \\
+        x & \mbox{si } z \geq 0
+    \end{array}
+\right.
+$$
+
+Se dice que es la que mejor emula el comportamiento de las neuronas biológicas, además de que permite al modelo aprender más rápido y con y en la gran mayoría de casos con un mejor performance.
+
+
+
+
+
+
+
+
+
+
 
 
 
