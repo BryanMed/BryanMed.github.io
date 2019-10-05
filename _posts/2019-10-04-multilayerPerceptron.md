@@ -23,7 +23,7 @@ De hecho, la principal limitación del perceptrón es que permite resolver solo 
 
 
 
-Pero bueno, volviendo al caso de la puerta XOR podemos pensar que si usamos dos neuronas podremos generar dos líneas que me dividan el plano en 3 regiones __Figura 5__ funciona (kinda) pero no es necesariamente la solución que estamos buscando, pero, si nos ayuda a desarrollar la intuición de que ¡la unión hace la fuerza!. Así que nos daremos a la tarea de hacer que los perceptrones trabajen en conjunto, dando origen a las (taráááán) R E D E S  N E U R O N A L E S.
+Pero bueno, volviendo al caso de la puerta XOR podemos pensar que si usamos dos neuronas podremos generar dos líneas que me dividan el plano en 3 regiones __Figura 5__ funciona (kinda) pero no es necesariamente la solución que estamos buscando, pero, si nos ayuda a desarrollar la intuición de que ¡la unión hace la fuerza!. Así que nos daremos a la tarea de hacer que los perceptrones trabajen en conjunto, dando origen a las (taráááán) __R E D E S__ $$\;$$ __N E U R O N A L E S__.
 
 
 
@@ -39,6 +39,17 @@ Podemos encontrar 3 tipos de capas:
 * Capa de Salida: Constituida por las neuronas que arrojarán la preddición de la red.
 
 * Capas ocultas: Son las que se encuentran entre las capas de salida y las de entrada.
+
+
+
+Organizamos la red por capas, y observamos que cada neurona está conectada con todas las neuronas de la capa anterior y posterior, con esto estamos realizando un proceso jerárquico, en donde las primeras capas se encargarán de identificar características simples, y conforme avancemos en capas, así lo hará la complejidad del conocimiento.
+
+
+
+Pero no tan rápido, si trabajamos con el perceptrón como lo conocemos (o a lo que he explicado) la red neuronal será aún incapaz de resolver problemas linealmente no separables. funciones de activación
+
+
+
 
 
 
