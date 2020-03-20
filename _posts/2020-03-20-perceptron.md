@@ -58,13 +58,15 @@ $$
 Siguiendo el recorrido observamos que al llegar al soma, tenemos un conjunto de señales ponderadas, de la forma $x_n * w_n$, estas señales serán sumadas una vez se encuentren en el soma, es decir, sumaremos los productos de las señales de entradas con su respectivo peso sináptico, esta operación la conocemos como **producto punto** y la representamos de la siguiente manera:
 
 $$z = w_1x_1 + w_2x2 + \dots + w_nx_n \\$$
+
 $$z = [w_1, w_2, \dots, w_n] \begin{bmatrix}
 x_1 \\
 x_2 \\
 \vdots \\
 x_n
-\end{bmatrix}
+\end{bmatrix} \\
 $$
+
 $$z = w^{T}\cdot x$$
 
 En donde $z$ es la salida en esta etapa. Otro valor a considerar es el **bias** o umbral de activación de la neurona que está representado como el peso $w_0$, estos dos nombres ayudan a entender su funcionamiento, se le conoce como _umbral_ porque es el valor que tendrá que superar la sumatoria de señales ponderadas para activarse, es decir:
