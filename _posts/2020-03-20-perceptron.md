@@ -108,7 +108,7 @@ import matplotlib.pyplot as plt
 ```
 El perceptrón lo escribí como una clase, pero podemos discutir algunas de sus funciones, por ejemplo su constructor
 
-```python
+`python
 
 def __init__(self, num_inputs, lr, epochs, pesos=None):
         if pesos:
@@ -119,7 +119,7 @@ def __init__(self, num_inputs, lr, epochs, pesos=None):
         self.lr = lr #learning rate
         self.epochs = epochs #num de iteraciones
 
-```
+`
 
 
 
