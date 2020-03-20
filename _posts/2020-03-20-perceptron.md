@@ -108,7 +108,7 @@ import matplotlib.pyplot as plt
 ```
 El perceptrón lo escribí como una clase, pero podemos discutir algunas de sus funciones, por ejemplo su constructor
 
-`python
+```python
 
 def __init__(self, num_inputs, lr, epochs, pesos=None):
         if pesos:
@@ -118,9 +118,12 @@ def __init__(self, num_inputs, lr, epochs, pesos=None):
             
         self.lr = lr #learning rate
         self.epochs = epochs #num de iteraciones
-
-`
-
+```
+Es decir que al momento de crear un objeto `perceptrón` a fin de inicializarlo, debemos pasarle los siguientes argumentos:
+* num_inputs = número de entradas del perceptrón, en el caso de la puerta AND contamos con 2 entradas $X_0, X_1$. Esto nos permitirá inicializar los pesos de manera aleatoria. 
+* lr = se refiere al learning rate, que tan rápido convergerá el perceptrón a la configuración adecuada.
+* epochs = número de iteraciones en los que deseamos/esperamos que converga el perceptrón
+* pesos = en casos de contar con los pesos de un perceptrón previamente entrenado, se los metemos, esto para evitar reentrenar la red.
 
 
 
