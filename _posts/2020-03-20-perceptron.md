@@ -106,6 +106,20 @@ Lo primero será importar las librerías necesarias para trabajar, en este caso 
 import numpy as np
 import matplotlib.pyplot as plt
 ```
+El perceptrón lo escribí como una clase, pero podemos discutir algunas de sus funciones, por ejemplo su constructor
+
+```python
+
+def __init__(self, num_inputs, lr, epochs, pesos=None):
+        if pesos:
+            self.weights = pesos # en caso de contar con pesos del perceptron cargarlos
+        else:
+            self.weights = np.random.rand(num_inputs+1) # el peso extra es el bias
+            
+        self.lr = lr #learning rate
+        self.epochs = epochs #num de iteraciones
+
+```
 
 
 
