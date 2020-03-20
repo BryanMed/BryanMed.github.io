@@ -5,9 +5,9 @@ mathjax: true
 title: ML-1| Percetrón
 ---
 
-¡Hola! después de un tiempito, publicaré algunos posts enfocados en el Machine Learning, quiero agradecer al Dr. Onofre Orozco por su apoyo y explicaciones en estos temas.
+¡Hola! después de un tiempito, publicaré algunos posts enfocados en el Machine Learning, quiero agradecer al [Dr. Onofre Orozco](https://www.researchgate.net/profile/Onofre_Orozco) por su apoyo y explicaciones en estos temas. 
 
-El objetivo de estos posts es hacerlos un poco más interactivos, es por ello que publicaré una versión del código en Google Colab (una jupyter notebook) para que puedas correr las implementaciones sin instalar nada en tu pc, solo necesitas contar con internet y tu cuenta de Gmail.
+El objetivo de estos posts es hacerlos un poco más interactivos, es por ello que publicaré una versión del código en Google Colab (una jupyter notebook) para que puedas correr las implementaciones sin instalar nada en tu pc, solo necesitas contar con internet y tu cuenta de Gmail. 
 
 # La Neurona biológica
 
@@ -96,5 +96,21 @@ Finalmente podemos representar la señal de salida de la neurona mediante $\hat 
 $$\hat y = \phi (w^{T}\cdot x - \theta) $$ 
 
 Y pasaremos a la implementación de este algoritmo.
+
+## Implementación del perceptrón 
+Lo primero será importar las librerías necesarias para trabajar, en este caso la librería de métodos numéricos de python **Numpy** (**Num**erical **Py**thon) que nos permitirá operar con vectores y matrices (Está muy optimizada), y por otro lado, **Matplotlib** que usaremos para crear gráficas.
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+```
+
+
+
+
+
+
+
+
 
 
