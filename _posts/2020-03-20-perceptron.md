@@ -139,7 +139,21 @@ Ahora seguiremos con las funciones de activacion más populares, ya mencionamos 
         if funcion == 'tanh':
             return (np.exp(x) - np.exp(-x))/(np.exp(x) + np.exp(-x))
 ```
+Quizá más adelante discuta sus propiedades, mientras tanto en la siguiente figura se muestran las funciones de activación implementadas.
 
+![funciones](actfun.PNG)
+> *Funciones de activación de escalón unitario, sigmoide, ReLu, tanh*
+
+La siguiente función que nos interesa es el feedforward, es decir, el producto punto de las entradas con los pesos sinápticos al que restaremos el bias.
+
+```python    
+def predict(self, inputs):
+        """feedforward del perceptron"""
+        return self.act_fn(np.dot(inputs, self.weights[1:]) + self.weights[0])
+```
+A esta función la llamé predict, porque es la encargada de realizar la predicción. Por ejemplo, una vez que ingresemos unas entradas, la función regresará un valor que corresponderá a la ecuación ya mencionada.
+
+Ahora el `entrenamiento`, es en 
 
 
 
