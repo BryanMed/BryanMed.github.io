@@ -97,7 +97,32 @@ Finalmente podemos representar la señal de salida de la neurona mediante $\hat 
 
 $$\hat y = \phi (w^{T}\cdot x - \theta) $$ 
 
-Y pasaremos a la implementación de este algoritmo.
+
+# Entrenamiento 
+
+Hasta el momento ya contamos con un perceptrón, pero dado que los pesos normalmente se inicializan con ceros o valores aleatorios, es muy improbable que esta neurona sea capaz de predecir correctamente una salida que nosotros esperemos. Y esto es porque el perceptrón aún no ha sido entrenado. 
+
+Pensemos en como nosotros como humanos aprendemos a realizar una tarea, digamos aprender a escribir. Al darnos papel y lápiz por primera vez, probablemente lo primero que hagamos será tomar el lápiz y meterlo a la boca o nariz, pero bueno, una vez que nuestros padres nos muestren lo que deberíamos de hacer con estas herramientas empezaremos a garabatear, después trataremos de aprender una tarea más compleja que es aprender a escribir, para ello nos tratarán de enseñar con el ejemplo "este círculo y rayita forman una aaaaaa", y nosotros empezaremos a perfeccionar la técnica para crear una "a", sin embargo, en un inicio no seremos lo suficientemente hábiles para lograrlo a la primera, y cometeremos muchísimos *errores* y a partir de estos seremos capaces de mejorar.
+
+Este mismo proceso se aplica a las redes neuronales. Pensemos en el perceptrón como un empleado al cual le asignaremos una tarea y lo vamos a capacitar para que la realice apropiadamente, nuestra conversación sería algo más o menos así:
+
+Yo: "mira, el usuario va a ingresar estas entradas, ¿cuál va a ser tu salida?"
+perci: "ok, de acuerdo a esas entradas yo voy a generar esta salida"
+yo: "muy bien, pero mira esto es lo que yo esperaría que obtuvieras, así que vamos a comparar"
+
+La mejor manera de comparar es viendo la **diferencia** entre ambas salidas, literalmente vamos a restar el valor arrojado por el perceptrón con el que nosotros esperaríamos. Y aquí hay de dos sopas, si la diferencia es nula el empleado perci realizó bien su tarea, pero si llega a existir diferencia la neurona no cumplió el objetivo, y por ello debemos capacitarla nuevamente, pero antes de eso debemos de tomar en cuenta esa equivocación, por lo que basado en el error modificaremos las herramientas con las que produce la salida y estas son los pesos sinápticos, permitiendo al perceptrón aprender de su error.
+
+A esta manera de aprender se le conoce como la **Delta Rule** debido a que, en caso de que la predicción sea erronea, se realizará un ajusto de pesos y bias al agregarles un pequeño ajuste (un Delta $\Delta$) de la siguiente manera:
+
+bias: $$ w_0 = w_0 + lr * error $$
+
+pesos sinápticos: $$ w_i = w_i + lr * error * x_i$$ 
+
+En donde $lr$ se refiere al *learning rate* y es un factor que indica que tan rápido o lento convergerá el perceptrón a una solución (con el respectivo *tradeoffs* de valocidad-convergencia), normalmente este parámetro se inicializa con 0.2.
+
+Finalmente podemos pasar a la implementación de este algoritmo.
+
+---
 
 ## Implementación del perceptrón 
 Lo primero será importar las librerías necesarias para trabajar, en este caso la librería de métodos numéricos de python **Numpy** (**Num**erical **Py**thon) que nos permitirá operar con vectores y matrices (Está muy optimizada), y por otro lado, **Matplotlib** que usaremos para crear gráficas.
@@ -151,9 +176,38 @@ def predict(self, inputs):
         """feedforward del perceptron"""
         return self.act_fn(np.dot(inputs, self.weights[1:]) + self.weights[0])
 ```
-A esta función la llamé predict, porque es la encargada de realizar la predicción. Por ejemplo, una vez que ingresemos unas entradas, la función regresará un valor que corresponderá a la ecuación ya mencionada.
+A esta función la llamé `predict`, porque es la encargada de realizar la predicción ja.Es decir, nosotros ingresamos un conjunto de entradas, y de acuerdo a estas el perceptrón arrojará una salida.
 
-Ahora el `entrenamiento`, es en 
+Ahora viene la parte del `entrenamiento`:
+
+```python
+def train(self, in_train, clases, verbose=False):
+        """entrenamiento del perceptron"""
+        errores = []
+        for _ in range(self.epochs):
+            e = 0
+            for entrada, clase in zip(in_train, clases):
+                prediccion = self.predict(entrada)
+                error = clase - prediccion
+                self.weights[0] += self.lr * error
+                self.weights[1:] += self.lr * error * entrada
+            
+                e += np.abs(error)   
+            errores.append(e)
+```
+en donde los argumentos `in_train` se refiere a las entradas, `clases` a las salidas esperadas/labels y `verbose` sirve mostrar los errores que ha tenido el perceptrón en cada época. Dentro de la función realiza el ajuste del bias y pesos y esto se realiza hasta iterar "epocas" veces.
+
+Finalmente `get_weights` nos permite recuperar los pesos actuales del perceptrón, lo cual es útil cuando queremos guardar los pesos de la red una vez que esté entrenada y así evitar el proceso de entrenamiento cada vez que corramos el programa.
+
+```python
+  def get_weights(self):
+        """recupero los pesos de la red, útil para no volver a entrenar"""
+        return self.weights
+```
+
+
+
+
 
 
 
