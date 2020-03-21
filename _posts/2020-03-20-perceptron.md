@@ -125,7 +125,20 @@ Es decir que al momento de crear un objeto `perceptrón` a fin de inicializarlo,
 * epochs = número de iteraciones en los que deseamos/esperamos que converga el perceptrón
 * pesos = en casos de contar con los pesos de un perceptrón previamente entrenado, se los metemos, esto para evitar reentrenar la red.
 
+Ahora seguiremos con las funciones de activacion más populares, ya mencionamos la función de activación de escalón sin embargo, como veremos en post posteriores esta no es utilizada, pero sirve muy bien para ejemplar el funcionamiento.
 
+```python
+  def act_fn(self, x, funcion='step'):
+        """función de activación """
+        if funcion == 'step':    
+            return np.where(x>0, 1, 0)
+        if funcion == 'sigmoid':
+            return 1/(1 + np.exp(-x)) 
+        if funcion == 'relu':
+            return np.where(x>0, x, 0)
+        if funcion == 'tanh':
+            return (np.exp(x) - np.exp(-x))/(np.exp(x) + np.exp(-x))
+```
 
 
 
