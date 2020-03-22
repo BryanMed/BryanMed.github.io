@@ -4,7 +4,7 @@ comments: true
 mathjax: true
 title: ML-1| Percetrón
 ---
-> La implementación del perceptrón en python :snake: la encuentras en [este repositorio](https://github.com/BryanMed/ML-Blog/tree/master/Perceptron). Para que corras este código de manera interactiva sin la necesidad de instalar nada, puedes correr la siguiente notebook [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BryanMed/ML-Blog/blob/master/Perceptron/perceptron.ipynb)
+> La implementación del perceptrón en python la encuentras en [este repositorio](https://github.com/BryanMed/ML-Blog/tree/master/Perceptron). Para que corras este código de manera interactiva sin la necesidad de instalar nada, puedes correr la siguiente notebook [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BryanMed/ML-Blog/blob/master/Perceptron/perceptron.ipynb)
 
 ¡Hola! después de un tiempito, publicaré algunos posts enfocados en el Machine Learning, quiero agradecer al [Dr. Onofre Orozco](https://www.researchgate.net/profile/Onofre_Orozco) por su apoyo y explicaciones en estos temas. 
 
@@ -14,7 +14,7 @@ El objetivo de estos posts es hacerlos un poco más interactivos, es por ello qu
 
 La unidad principal del sistema nervioso central, y se encarga de **recibir**, **procesar** y **transmitir** información a través de señales electroquímicas. Estas características en su funcionamiento despertarón el interés para crear un modelo que emulara este comportamiento. En la siguiente imagen podemos observar un modelo de una neurona, en donde discutiremos la función de algunas de sus partes que más llaman nuestro interés.
 
-![neurona]({{ site.baseurl }}/images//neurona.PNG)
+![neurona]({{ site.baseurl }}/images/ML1 perceptron//neurona.PNG)
 > *neurona biológica, fotografía tomada de la [wiki](https://commons.wikimedia.org/wiki/File:Neurons_uni_bi_multi_pseudouni.svg)*
 
 * **Dendritas:** Son las pequeñas ramificaciones que se encuentran en el soma, y su importancia recae en que su función principal es el recibir estimulos nerviosos provenientes de otras neuronas (sinápsis), y enviarlas al soma. Es importante considerar que no todos los impulsos de las neuronas que conectan con las dendritas tienen la misma intensidad, siendo determinado por distintos factores como la mielización de la neurona pre-sináptica (que tan bien se propaga la señal en el axón), cantidad de neurontransmisor, el número de conexiones del axón con las dendrítas, entre otros. 
