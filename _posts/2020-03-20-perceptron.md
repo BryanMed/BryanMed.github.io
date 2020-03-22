@@ -4,11 +4,7 @@ comments: true
 mathjax: true
 title: ML-1| Percetrón
 ---
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BryanMed/ML-Blog/blob/master/Perceptron/perceptron.ipynb)
-
-
-
+> La implementación del perceptrón en python :snake: la encuentras en [este repositorio](https://github.com/BryanMed/ML-Blog/tree/master/Perceptron). Para que corras este código de manera interactiva sin la necesidad de instalar nada, puedes correr la siguiente notebook [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BryanMed/ML-Blog/blob/master/Perceptron/perceptron.ipynb)
 
 ¡Hola! después de un tiempito, publicaré algunos posts enfocados en el Machine Learning, quiero agradecer al [Dr. Onofre Orozco](https://www.researchgate.net/profile/Onofre_Orozco) por su apoyo y explicaciones en estos temas. 
 
