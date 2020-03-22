@@ -5,6 +5,11 @@ mathjax: true
 title: ML-1| Percetrón
 ---
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BryanMed/ML-Blog/blob/master/Perceptron/perceptron.ipynb]
+
+
+
+
 ¡Hola! después de un tiempito, publicaré algunos posts enfocados en el Machine Learning, quiero agradecer al [Dr. Onofre Orozco](https://www.researchgate.net/profile/Onofre_Orozco) por su apoyo y explicaciones en estos temas. 
 
 El objetivo de estos posts es hacerlos un poco más interactivos, es por ello que publicaré una versión del código en Google Colab (una jupyter notebook) para que puedas correr las implementaciones sin instalar nada en tu pc, solo necesitas contar con internet y tu cuenta de Gmail. 
