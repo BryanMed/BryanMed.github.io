@@ -24,7 +24,7 @@ La explicación que daré de la neurona es muy pero muy superficial, pero servir
 *	Axón, es el encargado de trasmitir la información desde el cuerpo celular hacia la periferia.
 
 {: .center}
-![neurona]({{ site.baseurl }}/images/IA/neurona.PNG)
+![neurona]({{ site.baseurl }}/images/ML1 perceptron/neurona.PNG)
 __Figura 2__ _diagrama de una neurona, con algunos de sus elementos más representativos_.
  
 Cada neurona cuenta con solo un axón, el cual se ramifica en su porción terminal, lo que permitirá comunicarse con otras dendritas en el proceso de sinapsis. El proceso por el que una neurona puede generar un potencial de acción (señal de salida) se realiza (a grandes rasgos) de la siguiente manera: La célula recibe estímulos internos a partir de las dendritas, y sumaremos las intensidades de estas señales. Para general el potencial de acción, se sigue la ley de “todo o nada” en la que la neurona cuenta con un umbral de excitación. En donde, si el estímulo es mayor al umbral, se genera el potencial de acción, y en caso de no superarlo pues no. Lo interesante acá, es que no importa la intensidad de la señal que forman los estimulos, siempre que se supere el umbral, se generará el mismo potencial de acción.
