@@ -2,7 +2,7 @@
 layout: post
 comments: true
 mathjax: true
-title: :computer: ML-1| Percetrón
+title: ML-1| Percetrón
 ---
 > La implementación del perceptrón en python :snake: la encuentras en [este repositorio](https://github.com/BryanMed/ML-Blog/tree/master/Perceptron). Para que corras este código de manera interactiva sin la necesidad de instalar nada, puedes correr la siguiente notebook [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BryanMed/ML-Blog/blob/master/Perceptron/perceptron.ipynb)
 
@@ -205,6 +205,8 @@ Finalmente `get_weights` nos permite recuperar los pesos actuales del perceptró
         """recupero los pesos de la red, útil para no volver a entrenar"""
         return self.weights
 ```
+> Para que puedas experimentar con la explicación del código anterior, te recomiendo que veas la notebook siguiente [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BryanMed/ML-Blog/blob/master/Perceptron/perceptron.ipynb)
+
 
 
 
