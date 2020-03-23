@@ -170,8 +170,8 @@ Ahora seguiremos con las funciones de activacion más populares, ya mencionamos 
 ```
 Quizá más adelante discuta sus propiedades, mientras tanto en la siguiente figura se muestran las funciones de activación implementadas.
 
-![funciones](actfun.PNG)
-> *Funciones de activación de escalón unitario, sigmoide, ReLu, tanh*
+![perceptron]({{ site.baseurl }}/images/ML1 perceptron//fun_act.PNG)
+> *distintos tipos de funciones de activación*
 
 La siguiente función que nos interesa es el feedforward, es decir, el producto punto de las entradas con los pesos sinápticos al que restaremos el bias.
 
