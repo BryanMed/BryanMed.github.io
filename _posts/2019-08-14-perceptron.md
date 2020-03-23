@@ -1,9 +1,3 @@
----
-layout: post
-comments: true
-mathjax: true
-title: IA-1 > Redes neuronales - El Perceptrón.
----
 En esta nueva serie de posts, hablaremos acerca de la _inteligencia artificial_. En esta ocasión saltaré directamente a las redes neuronales dado que serán necesarias para proyectos futuros, sin más, vamos a ello.
 
 El ser humano siempre ha tomado como referencia a la naturaleza para desarrollar herramientas cada vez más eficientes. Ejemplos hay muchos, como la manera en la que la morfología de las aves inspira al diseño de aviones, permitiendo mejorar diversos aspectos como resistencia al viento, consumo de combustible, etc. En la arquitectura, donde se nota la manera en la que se utilizan las estructuras de las plantas para lograr un diseño estético y sobretodo funcional, en la __Figura 1__ vemos alguunos ejemplos. 
