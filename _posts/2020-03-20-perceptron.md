@@ -211,6 +211,13 @@ Finalmente `get_weights` nos permite recuperar los pesos actuales del perceptró
 > Para que puedas experimentar con la explicación del código anterior, te recomiendo que veas la notebook siguiente [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BryanMed/ML-Blog/blob/master/Perceptron/perceptron.ipynb)
 
 
+## Referencias
+Alguna de la documentación utilizada para este post:
+
+* Shiffman, D., Fry, S., & Marsh, Z. (2012). The nature of code (pp. 323-330). D. Shiffman.
+* Haykin, S. (1994). Neural networks: a comprehensive foundation. Prentice Hall PTR.
+* https://en.wikipedia.org/wiki/Neuron
+* [videos de Dot CSV <3](https://www.youtube.com/watch?v=MRIv2IwFTPg&t=76s)
 
 
 
