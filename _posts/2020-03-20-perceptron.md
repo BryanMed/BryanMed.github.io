@@ -209,9 +209,9 @@ Finalmente `get_weights` nos permite recuperar los pesos actuales del perceptró
         return self.weights
 ```
 
-## La implementación del perceptrón para que actúe como una compuerta lógica AND la encuentras en el siguiente enlace!
+## La implementación del perceptrón para que actúe como una compuerta lógica AND la encuentras en el siguiente enlace de google colab!
 
-## > Para que puedas experimentar con la explicación del código anterior, te recomiendo que veas la notebook siguiente [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BryanMed/ML-Blog/blob/master/Perceptron/perceptron.ipynb)
+> Para que puedas experimentar con la explicación del código anterior, te recomiendo que veas la notebook siguiente [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BryanMed/ML-Blog/blob/master/Perceptron/perceptron.ipynb)
 
 
 ## Referencias
@@ -221,12 +221,4 @@ Alguna de la documentación utilizada para este post:
 * Haykin, S. (1994). Neural networks: a comprehensive foundation. Prentice Hall PTR.
 * https://en.wikipedia.org/wiki/Neuron
 * [videos de Dot CSV <3](https://www.youtube.com/watch?v=MRIv2IwFTPg&t=76s)
-
-
-
-
-
-
-
-
 
