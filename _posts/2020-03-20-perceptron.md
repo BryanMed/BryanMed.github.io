@@ -27,7 +27,7 @@ La unidad principal del sistema nervioso central, y se encarga de **recibir**, *
 
 Es básicamente una representación matemática muy burda del funcionamiento de la neurona biológica, que, en solitario, permite la resolución de problemas linealmente separables (más de esto más adelante, pero son aquellos problemas en los que podemos separar distintos grupos mediante lineas rectas). En el siguiente diagrama podemos observar una representación de este modelo y como trata de emular la estructura de la neurona. 
 
-![perceptron](perceptron.PNG)
+![perceptron]({{ site.baseurl }}/images/ML1 perceptron//perceptron.PNG)
 > *diagrama de un perceptrón/neurona matemática*
 
 Ahora, vamos a discutir sus partes y paralelísmos con la neurona biológica
@@ -91,7 +91,7 @@ $$
 
 Al ver la gráfica de la función en la siguiente imagen, podemos observar el comportamiento de $\phi$, en donde para aquellos valores menos a 0, la función vale 0, y valdrá 1 en caso contrario. 
 
-![step](step.png)
+![step]({{ site.baseurl }}/images/ML1 perceptron//step.PNG)
 > *Función de activación de escalón unitario*
 
 Finalmente podemos representar la señal de salida de la neurona mediante $\hat y$.
