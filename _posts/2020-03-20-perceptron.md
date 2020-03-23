@@ -106,7 +106,7 @@ Hasta el momento ya contamos con un perceptrón, pero dado que los pesos normalm
 Pensemos en como nosotros como humanos aprendemos a realizar una tarea, digamos aprender a escribir. Al darnos papel y lápiz por primera vez, probablemente lo primero que hagamos será tomar el lápiz y meterlo a la boca o nariz, pero bueno, una vez que nuestros padres nos muestren lo que deberíamos de hacer con estas herramientas empezaremos a garabatear, después trataremos de aprender una tarea más compleja que es aprender a escribir, para ello nos tratarán de enseñar con el ejemplo "este círculo y rayita forman una aaaaaa", y nosotros empezaremos a perfeccionar la técnica para crear una "a", sin embargo, en un inicio no seremos lo suficientemente hábiles para lograrlo a la primera, y cometeremos muchísimos *errores* y a partir de estos seremos capaces de mejorar.
 
 ![niño]({{ site.baseurl }}/images/ML1 perceptron//niño_tarea.jfif)
-> *diagrama de un perceptrón/neurona matemática*
+> *El aprendizaje de cualquier tarea se da a partir de prueba y error*
 
 Este mismo proceso se aplica a las redes neuronales. Pensemos en el perceptrón como un empleado al cual le asignaremos una tarea y lo vamos a capacitar para que la realice apropiadamente, nuestra conversación sería algo más o menos así:
 
@@ -208,7 +208,10 @@ Finalmente `get_weights` nos permite recuperar los pesos actuales del perceptró
         """recupero los pesos de la red, útil para no volver a entrenar"""
         return self.weights
 ```
-> Para que puedas experimentar con la explicación del código anterior, te recomiendo que veas la notebook siguiente [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BryanMed/ML-Blog/blob/master/Perceptron/perceptron.ipynb)
+
+## La implementación del perceptrón para que actúe como una compuerta lógica AND la encuentras en el siguiente enlace!
+
+## > Para que puedas experimentar con la explicación del código anterior, te recomiendo que veas la notebook siguiente [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BryanMed/ML-Blog/blob/master/Perceptron/perceptron.ipynb)
 
 
 ## Referencias
